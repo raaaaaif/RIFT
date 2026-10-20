@@ -163,6 +163,7 @@ export default function App() {
               <div className="run-actions">
                 <button className="text-button" onClick={() => setHelp((h) => !h)} aria-expanded={help}>How to read this</button>
                 <button className="text-button" onClick={() => (drawer ? setDrawer(false) : ui.inspect("overview"))} aria-expanded={drawer} aria-controls="inspector">{drawer ? "Close inspector" : "Open inspector"} <span aria-hidden="true">{drawer ? "×" : "↗"}</span></button>
+                <a className="text-button source-link" href="https://github.com/raaaaaif/RIFT" target="_blank" rel="noopener noreferrer" aria-label="View RIFT source on GitHub (opens in a new tab)">GitHub <span aria-hidden="true">↗</span></a>
               </div>
             </div>
             <nav className="nav" aria-label="Investigation stages">

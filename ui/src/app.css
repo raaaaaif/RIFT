@@ -142,6 +142,8 @@ body{font-size:15.5px}
 @media(max-width:1100px){.race-grid{grid-template-columns:1fr}.result-row{grid-template-columns:1fr}}
 @media(max-width:700px){.how{grid-template-columns:1fr 1fr}.race{padding:14px}.race-head{flex-direction:column}.race-controls .play{min-width:0;flex:1 1 100%}.race-controls .scrub{flex:1 1 120px}}
 .run-actions{display:flex;gap:14px;flex-shrink:0}
+.run-actions .source-link{text-decoration:none;white-space:nowrap}
+.run-actions .source-link:hover{text-decoration:underline}
 @media(max-width:540px){.run-line{flex-wrap:wrap}.run-actions{width:100%;justify-content:flex-start}.run-line .run-actions>.text-button{min-width:0;text-align:left}}
 @media(max-width:420px){.how{grid-template-columns:1fr}}
 .workspace.drawer-closed{grid-template-columns:minmax(0,1fr)}
