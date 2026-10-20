@@ -1,0 +1,2519 @@
+{
+  "schema_version": 1,
+  "verifier": "rift.evaluate.verify/v1",
+  "submission": "artifacts/studies/20261019T223054203514Z-repair-aa93dd/submission.json",
+  "submission_digest": "sha256:cb8e98090ece139be31b03607b241cd5b56e554b2129c0f349deaf8d4e491310",
+  "case_id": "C1_bank_only_omission",
+  "contract_id": "repair-acceptance-v1",
+  "basket_id": "heldout-v1",
+  "parent_models": {
+    "A": "lic_exact_v1",
+    "B": "bank_only_v1"
+  },
+  "candidate_model_id": "control_wrong_structure_C1",
+  "patch_digest": "sha256:50538e334ea216031255e53e201c4fbe146e3f2c5ed63fc2bf9ec8c6843d1891",
+  "semantic_change": "negative control: wrong shared-link structure [8,0]",
+  "status": "REJECTED",
+  "failed_rules": [
+    "R2",
+    "R5"
+  ],
+  "rules": {
+    "R6": {
+      "passed": true,
+      "detail": "only the editable design's specification changed"
+    },
+    "R5": {
+      "passed": false,
+      "detail": "13 of 13 replayed development witnesses remain strict reversals"
+    },
+    "R1": {
+      "passed": true,
+      "detail": "0 candidate MODEL_ERROR/TIMEOUT outcomes"
+    },
+    "R2": {
+      "passed": false,
+      "detail": "strict reversals: parent 1, candidate 1"
+    },
+    "R3": {
+      "passed": true,
+      "detail": "0 regressions",
+      "regressed_workloads": []
+    },
+    "R4": {
+      "passed": true,
+      "detail": "candidate 0.0354s vs parent 0.0199s (ratio 1.78)",
+      "ratio": 1.780417328842685
+    }
+  },
+  "retained_model": "bank_only_v1",
+  "families": {
+    "H1_word_permutations": {
+      "workloads": 12,
+      "parent_reversals": 0,
+      "candidate_reversals": 0,
+      "parent_mean_regret": 0.0,
+      "candidate_mean_regret": 0.0,
+      "parent_wrong_choices": 0,
+      "candidate_wrong_choices": 0,
+      "config_B": "bfly4_8x16"
+    },
+    "H2_dependency_prefix": {
+      "workloads": 12,
+      "parent_reversals": 0,
+      "candidate_reversals": 0,
+      "parent_mean_regret": 0.004831411037084796,
+      "candidate_mean_regret": 0.004831411037084796,
+      "parent_wrong_choices": 3,
+      "candidate_wrong_choices": 3,
+      "config_B": "bfly4_8x16"
+    },
+    "H3_heldout_architecture": {
+      "workloads": 12,
+      "parent_reversals": 0,
+      "candidate_reversals": 0,
+      "parent_mean_regret": 0.0,
+      "candidate_mean_regret": 0.0,
+      "parent_wrong_choices": 0,
+      "candidate_wrong_choices": 0,
+      "config_B": "bfly2_8x16"
+    },
+    "H4_representative": {
+      "workloads": 12,
+      "parent_reversals": 1,
+      "candidate_reversals": 1,
+      "parent_mean_regret": 0.008978009808574593,
+      "candidate_mean_regret": 0.008978009808574593,
+      "parent_wrong_choices": 2,
+      "candidate_wrong_choices": 2,
+      "config_B": "bfly4_8x16"
+    }
+  },
+  "heldout_rows": [
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61000,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:b361b39cda8af35b530624a19c6eca1417d3e87248c22e5b6de8e0965116be48",
+      "rtl_costs": {
+        "A": 73,
+        "B": 73
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223056129172Z-rtl-c11638",
+        "B": "20261019T223056189427Z-rtl-d77815"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 73,
+          "B": 73
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056200072Z-model-81c996",
+          "B": "20261019T223056205644Z-model-0cd616"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 73,
+          "B": 73
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056200072Z-model-81c996",
+          "B": "20261019T223056211636Z-model-14614c"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61001,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:1c1feaa9903b7a6a3858040a84cf10d83537dfae45e3e8f27310da7b87f5a84c",
+      "rtl_costs": {
+        "A": 49,
+        "B": 80
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223056268286Z-rtl-67f0ab",
+        "B": "20261019T223056328657Z-rtl-053748"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056340674Z-model-f2c8c4",
+          "B": "20261019T223056346299Z-model-923d1e"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056340674Z-model-f2c8c4",
+          "B": "20261019T223056352469Z-model-f77188"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61002,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:7d311a97b15d8fc0473a69ae9b89f4d1524b7d4dc3439fb359c0f37e928f76a0",
+      "rtl_costs": {
+        "A": 49,
+        "B": 58
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223056409672Z-rtl-a5e0a9",
+        "B": "20261019T223056469658Z-rtl-195b0f"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056480746Z-model-5dac80",
+          "B": "20261019T223056486720Z-model-bdcecd"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056480746Z-model-5dac80",
+          "B": "20261019T223056492810Z-model-3eebe1"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61003,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:cfc5df7fe73aafe2043c05d3274fc498c273c7eed1a1a09579ad549d2fdaaf25",
+      "rtl_costs": {
+        "A": 49,
+        "B": 25
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223056550585Z-rtl-427b6f",
+        "B": "20261019T223056611055Z-rtl-84d9b8"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 49,
+          "B": 25
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056621743Z-model-d7bfe8",
+          "B": "20261019T223056627840Z-model-c962d0"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 49,
+          "B": 25
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056621743Z-model-d7bfe8",
+          "B": "20261019T223056633541Z-model-87ceae"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61004,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:d057d5b17b98746b0faaab84a7bedd965c74139d176ba82f3e789952379cddc7",
+      "rtl_costs": {
+        "A": 49,
+        "B": 73
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223056691432Z-rtl-2cdd81",
+        "B": "20261019T223056751306Z-rtl-5f1695"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056761844Z-model-c7482e",
+          "B": "20261019T223056767810Z-model-9ac501"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056761844Z-model-c7482e",
+          "B": "20261019T223056773682Z-model-32fee7"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61005,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:fe08a4f7724aa90e982c149d2c0fcb9909dedd7859940092aa2c9fb76b826a40",
+      "rtl_costs": {
+        "A": 73,
+        "B": 58
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223056830322Z-rtl-40885d",
+        "B": "20261019T223056890892Z-rtl-3c227d"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 73,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056901455Z-model-927b03",
+          "B": "20261019T223056907813Z-model-e4f6b0"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 73,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223056901455Z-model-927b03",
+          "B": "20261019T223056913293Z-model-be9941"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61006,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:aeb16ceb1c4f1a09508cd38b4978691849f38ba844aa15d4791e7fa3cbd5c331",
+      "rtl_costs": {
+        "A": 73,
+        "B": 73
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223056970232Z-rtl-e0cbe7",
+        "B": "20261019T223057030159Z-rtl-d72889"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 73,
+          "B": 73
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057042442Z-model-fd2bec",
+          "B": "20261019T223057048049Z-model-fae5de"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 73,
+          "B": 73
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057042442Z-model-fd2bec",
+          "B": "20261019T223057053975Z-model-bbb834"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61007,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:9eaa288c4ccc89773e6f05b5fd8ef0df8a0a46aed351af98a5e0d6a7157ff6e1",
+      "rtl_costs": {
+        "A": 49,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223057111337Z-rtl-8e1c3f",
+        "B": "20261019T223057172060Z-rtl-24df72"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057182799Z-model-5e7203",
+          "B": "20261019T223057188346Z-model-9ea22a"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057182799Z-model-5e7203",
+          "B": "20261019T223057198305Z-model-8cba3b"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61008,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:d4efdd67b2b9328da27109ec0be0140dd56104b8620626a0794472ae780b6f80",
+      "rtl_costs": {
+        "A": 49,
+        "B": 59
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223057258537Z-rtl-5be141",
+        "B": "20261019T223057319350Z-rtl-49071d"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057330857Z-model-201b5b",
+          "B": "20261019T223057336935Z-model-c04a10"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057330857Z-model-201b5b",
+          "B": "20261019T223057343080Z-model-91daf1"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61009,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:24b1256b5d331a1ec532ef2e44046fba0eb30797ac01419cce375cfbf22d8a90",
+      "rtl_costs": {
+        "A": 73,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223057400267Z-rtl-c2ff88",
+        "B": "20261019T223057460453Z-rtl-1f791c"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 73,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057471311Z-model-7abeb2",
+          "B": "20261019T223057477253Z-model-9d2ee3"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 73,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057471311Z-model-7abeb2",
+          "B": "20261019T223057483162Z-model-b13d91"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61010,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:c64d4544ed35346c132d3b17a5c1691cf5b78734db66069fd38d0dcb81d69bf0",
+      "rtl_costs": {
+        "A": 49,
+        "B": 58
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223057543567Z-rtl-46c359",
+        "B": "20261019T223057604497Z-rtl-0d57bd"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057614943Z-model-79b945",
+          "B": "20261019T223057620915Z-model-70c7e9"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057614943Z-model-79b945",
+          "B": "20261019T223057626669Z-model-8dff2c"
+        }
+      }
+    },
+    {
+      "family_id": "H1_word_permutations",
+      "seed": 61011,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:722fee8e176aded3b250b90c77f462d7aca45b0bbbff51cad9e10d1403f630ac",
+      "rtl_costs": {
+        "A": 49,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223057683871Z-rtl-5fc7dc",
+        "B": "20261019T223057751740Z-rtl-432c47"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057762916Z-model-c7e181",
+          "B": "20261019T223057769195Z-model-740b38"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223057762916Z-model-c7e181",
+          "B": "20261019T223057775072Z-model-c0abdb"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62000,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:f25a51fe64dae4fa9d6ef7736fc960797dc5d78972ace941d41fc018f7bfe9d1",
+      "rtl_costs": {
+        "A": 54,
+        "B": 55
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223057831397Z-rtl-a2ff40",
+        "B": "20261019T223057891263Z-rtl-cd5e54"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 54,
+          "B": 50
+        },
+        "regret": {
+          "numerator": 1,
+          "denominator": 54,
+          "decimal": 0.018518518518518517
+        },
+        "model_run_ids": {
+          "A": "20261019T223057900024Z-model-83255c",
+          "B": "20261019T223057903854Z-model-4c5c52"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 54,
+          "B": 50
+        },
+        "regret": {
+          "numerator": 1,
+          "denominator": 54,
+          "decimal": 0.018518518518518517
+        },
+        "model_run_ids": {
+          "A": "20261019T223057900024Z-model-83255c",
+          "B": "20261019T223057908100Z-model-c5e51f"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62001,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:164f8ca85760bc77612779ba399373b1bbd85323f3e94ed7070de4d8e0fffc2d",
+      "rtl_costs": {
+        "A": 42,
+        "B": 42
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223057964523Z-rtl-1cab90",
+        "B": "20261019T223058025841Z-rtl-d34497"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 42,
+          "B": 41
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058034282Z-model-148c26",
+          "B": "20261019T223058037565Z-model-16856a"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 42,
+          "B": 41
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058034282Z-model-148c26",
+          "B": "20261019T223058040880Z-model-a1601c"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62002,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:867325bb8b177f8cded164ba4b0c76c6d818aaf2f2352a8ebe611c63b51b545a",
+      "rtl_costs": {
+        "A": 42,
+        "B": 42
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223058096251Z-rtl-ad4782",
+        "B": "20261019T223058154679Z-rtl-da73f2"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 42,
+          "B": 42
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058162944Z-model-3329ff",
+          "B": "20261019T223058166472Z-model-81d402"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 42,
+          "B": 42
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058162944Z-model-3329ff",
+          "B": "20261019T223058169521Z-model-2e2277"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62003,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:5bc7eaa877e6b1c6278b95f447dc9fbcce12a1c4aeb05f958faf13724fc5ae45",
+      "rtl_costs": {
+        "A": 47,
+        "B": 42
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223058223083Z-rtl-92e22e",
+        "B": "20261019T223058281264Z-rtl-4bd1ef"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 47,
+          "B": 44
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058289817Z-model-d382c4",
+          "B": "20261019T223058293111Z-model-18834d"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 47,
+          "B": 44
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058289817Z-model-d382c4",
+          "B": "20261019T223058295996Z-model-25c3b3"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62004,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:654c6283b7a7540b68209fd1353e707595e1a6d673853e933411dadcfe7f1fa3",
+      "rtl_costs": {
+        "A": 48,
+        "B": 47
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223058349678Z-rtl-5f7305",
+        "B": "20261019T223058409394Z-rtl-fc7367"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 48,
+          "B": 48
+        },
+        "regret": {
+          "numerator": 1,
+          "denominator": 47,
+          "decimal": 0.02127659574468085
+        },
+        "model_run_ids": {
+          "A": "20261019T223058418457Z-model-8e2c67",
+          "B": "20261019T223058422355Z-model-0cd768"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 48,
+          "B": 48
+        },
+        "regret": {
+          "numerator": 1,
+          "denominator": 47,
+          "decimal": 0.02127659574468085
+        },
+        "model_run_ids": {
+          "A": "20261019T223058418457Z-model-8e2c67",
+          "B": "20261019T223058426750Z-model-8dd26a"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62005,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:cd8d347b6f7522a57c104e102a04305a624444d3a45c3107070de55be16201d1",
+      "rtl_costs": {
+        "A": 50,
+        "B": 48
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223058480783Z-rtl-ef37d0",
+        "B": "20261019T223058540616Z-rtl-a64839"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 50,
+          "B": 47
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058548902Z-model-b01b6e",
+          "B": "20261019T223058552257Z-model-2b00b7"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 50,
+          "B": 47
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058548902Z-model-b01b6e",
+          "B": "20261019T223058556016Z-model-afe217"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62006,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:e67ae4b410091cc74029bb998c987016ca46971d9ba311bfed2158b9c250dbe8",
+      "rtl_costs": {
+        "A": 41,
+        "B": 41
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223058611100Z-rtl-7735f9",
+        "B": "20261019T223058669029Z-rtl-04d027"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 41,
+          "B": 41
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058677897Z-model-113e30",
+          "B": "20261019T223058681427Z-model-b8e322"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 41,
+          "B": 41
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058677897Z-model-113e30",
+          "B": "20261019T223058685097Z-model-006974"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62007,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:23e4d1d8535ff8f4c82109128c8635853dab24cff7d236b7952c2687b92de8f9",
+      "rtl_costs": {
+        "A": 40,
+        "B": 38
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223058739353Z-rtl-f6b4b2",
+        "B": "20261019T223058796854Z-rtl-9224f1"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 40,
+          "B": 36
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058805161Z-model-862d86",
+          "B": "20261019T223058808356Z-model-16eb56"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 40,
+          "B": 36
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223058805161Z-model-862d86",
+          "B": "20261019T223058811110Z-model-3e8529"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62008,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:1663ab1e228835152070082677382d7bf5c1aa11460a2b880acf50c45ed9eef6",
+      "rtl_costs": {
+        "A": 55,
+        "B": 56
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223058864563Z-rtl-4c49d2",
+        "B": "20261019T223058925216Z-rtl-54776f"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 55,
+          "B": 53
+        },
+        "regret": {
+          "numerator": 1,
+          "denominator": 55,
+          "decimal": 0.01818181818181818
+        },
+        "model_run_ids": {
+          "A": "20261019T223058934469Z-model-b05178",
+          "B": "20261019T223058938874Z-model-220fa8"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 55,
+          "B": 53
+        },
+        "regret": {
+          "numerator": 1,
+          "denominator": 55,
+          "decimal": 0.01818181818181818
+        },
+        "model_run_ids": {
+          "A": "20261019T223058934469Z-model-b05178",
+          "B": "20261019T223058943150Z-model-e1639b"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62009,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:2d881de7862d9ac776cd829b93c113f1c94a02cd2ee02c778e0d8d91823ca260",
+      "rtl_costs": {
+        "A": 31,
+        "B": 32
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223058997455Z-rtl-f495d1",
+        "B": "20261019T223059056099Z-rtl-8eb3ed"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 31,
+          "B": 32
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059064231Z-model-0b54bd",
+          "B": "20261019T223059067407Z-model-080afe"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 31,
+          "B": 32
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059064231Z-model-0b54bd",
+          "B": "20261019T223059070619Z-model-ae26d0"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62010,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:4eb301655163a095fd0c5de63426c10c5ec22f4d4a85df3d87d1f24020450187",
+      "rtl_costs": {
+        "A": 34,
+        "B": 31
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223059125921Z-rtl-09495f",
+        "B": "20261019T223059184026Z-rtl-6cecbc"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 34,
+          "B": 32
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059193143Z-model-bde19a",
+          "B": "20261019T223059196146Z-model-00c8f8"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 34,
+          "B": 32
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059193143Z-model-bde19a",
+          "B": "20261019T223059199259Z-model-47c48d"
+        }
+      }
+    },
+    {
+      "family_id": "H2_dependency_prefix",
+      "seed": 62011,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:0a993cbf1d0c87f0f72f5102f2493f6034ea53c61edc11342d1467b6e24d6e27",
+      "rtl_costs": {
+        "A": 52,
+        "B": 45
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223059252681Z-rtl-5ecb3e",
+        "B": "20261019T223059316226Z-rtl-78d5cd"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 52,
+          "B": 45
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059335517Z-model-ca5fe0",
+          "B": "20261019T223059340056Z-model-3bb3e0"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 52,
+          "B": 45
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059335517Z-model-ca5fe0",
+          "B": "20261019T223059343924Z-model-9275d7"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63000,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:c3ca2d9d95b309e70a3c3df13aa75de9fd12fca2f6fc394983d80ea704d0015b",
+      "rtl_costs": {
+        "A": 49,
+        "B": 63
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223059399748Z-rtl-ec64ef",
+        "B": "20261019T223059460999Z-rtl-d22eaf"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059471714Z-model-71b696",
+          "B": "20261019T223059477681Z-model-068a55"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059471714Z-model-71b696",
+          "B": "20261019T223059483337Z-model-558d4e"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63001,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:fa814e729ab64352f3daad1386d73f81bdaa2f5881d3f9adb777b2a54f4dc6b2",
+      "rtl_costs": {
+        "A": 49,
+        "B": 57
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223059540464Z-rtl-ac19cc",
+        "B": "20261019T223059608417Z-rtl-7b5390"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059619188Z-model-a47350",
+          "B": "20261019T223059625830Z-model-7ae19f"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059619188Z-model-a47350",
+          "B": "20261019T223059631170Z-model-e01414"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63002,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:0d0b94c6c0aac79b14fe9ec7f89dcd588a19b5d1c48166d335032115265ca22f",
+      "rtl_costs": {
+        "A": 73,
+        "B": 73
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223059687952Z-rtl-ff34b8",
+        "B": "20261019T223059748032Z-rtl-21257a"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 73,
+          "B": 73
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059758862Z-model-dbcc70",
+          "B": "20261019T223059764508Z-model-50fbb9"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 73,
+          "B": 73
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059758862Z-model-dbcc70",
+          "B": "20261019T223059770323Z-model-145141"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63003,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:cdb5f19b6a4057e1da43513223d045bb5f3dcdeb1fdbdd3697f0985b5dcb4ac9",
+      "rtl_costs": {
+        "A": 49,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223059828078Z-rtl-0557d8",
+        "B": "20261019T223059889476Z-rtl-d02551"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059900189Z-model-0b02f3",
+          "B": "20261019T223059905899Z-model-772795"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223059900189Z-model-0b02f3",
+          "B": "20261019T223059911717Z-model-e37c8f"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63004,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:15718fbd1e025ada3f912fc559ac96fa64a81d0e5ab414baf347c4d85cc0c961",
+      "rtl_costs": {
+        "A": 73,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223059969485Z-rtl-f8b512",
+        "B": "20261019T223100043179Z-rtl-4ca22c"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 73,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100054548Z-model-907adc",
+          "B": "20261019T223100062532Z-model-9009c9"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 73,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100054548Z-model-907adc",
+          "B": "20261019T223100068768Z-model-01af2d"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63005,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:9895b0325bc73899e99ab89a43b9e9e2b144d2ea1939150d16e7aacef16740e3",
+      "rtl_costs": {
+        "A": 49,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223100126619Z-rtl-ba0632",
+        "B": "20261019T223100188123Z-rtl-15ffff"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100198799Z-model-42fcff",
+          "B": "20261019T223100205023Z-model-802dcd"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100198799Z-model-42fcff",
+          "B": "20261019T223100211039Z-model-f353ec"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63006,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:82aad4e5394d7aeb3b940c5b1515859e5d2f2b976e99a28e16a40ffda87ef462",
+      "rtl_costs": {
+        "A": 49,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223100267873Z-rtl-8c96f3",
+        "B": "20261019T223100328549Z-rtl-0f92ea"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100339452Z-model-9233a1",
+          "B": "20261019T223100345237Z-model-dcd61f"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100339452Z-model-9233a1",
+          "B": "20261019T223100351141Z-model-f21e49"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63007,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:3c2234548c3b03cf06194a1c55cfdf8a644909230603bbadea4bd9448d24a131",
+      "rtl_costs": {
+        "A": 49,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223100408894Z-rtl-bb8709",
+        "B": "20261019T223100472282Z-rtl-866cf9"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 25
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100483735Z-model-b04577",
+          "B": "20261019T223100489444Z-model-243d7a"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 25
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100483735Z-model-b04577",
+          "B": "20261019T223100495168Z-model-6f0e0a"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63008,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:371ca813181a7629ea5c8cd69968fdd67ed3739a99af72241bd7ba025d59e4dc",
+      "rtl_costs": {
+        "A": 49,
+        "B": 49
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223100552468Z-rtl-09bd30",
+        "B": "20261019T223100612075Z-rtl-4a9a40"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 25
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100623295Z-model-1da45e",
+          "B": "20261019T223100628906Z-model-c36f8b"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 25
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100623295Z-model-1da45e",
+          "B": "20261019T223100634874Z-model-cc3adc"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63009,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:700777ec8201a9e09575b63d398fa303867d3c4f1097432422b08cff7ffc4bbd",
+      "rtl_costs": {
+        "A": 49,
+        "B": 54
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223100696500Z-rtl-79d172",
+        "B": "20261019T223100757183Z-rtl-23a824"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100767772Z-model-d47bd8",
+          "B": "20261019T223100773442Z-model-0e5160"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100767772Z-model-d47bd8",
+          "B": "20261019T223100778943Z-model-f20e1e"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63010,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:d470f9fb4a6806a5e356b9f700bd860d7a742e09ad5cc7ef924088e3b240f1ee",
+      "rtl_costs": {
+        "A": 49,
+        "B": 73
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223100835791Z-rtl-0559b6",
+        "B": "20261019T223100896735Z-rtl-b75ccf"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100907978Z-model-37f1de",
+          "B": "20261019T223100913466Z-model-1b7e62"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223100907978Z-model-37f1de",
+          "B": "20261019T223100919322Z-model-e6d73e"
+        }
+      }
+    },
+    {
+      "family_id": "H3_heldout_architecture",
+      "seed": 63011,
+      "config_B": "bfly2_8x16",
+      "workload_digest": "sha256:65ae223953189a76ac524c7ac5f485ed10615b8e5b2a2f691e44d51fdd720b8a",
+      "rtl_costs": {
+        "A": 49,
+        "B": 59
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223100977102Z-rtl-d0d610",
+        "B": "20261019T223101037338Z-rtl-a67abb"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101047906Z-model-1b7a9b",
+          "B": "20261019T223101053797Z-model-13c636"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 49,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101047906Z-model-1b7a9b",
+          "B": "20261019T223101059762Z-model-5e445e"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64000,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:761f0cafb69c36dac0cd71a0f9728b0391c991284213f92a77cb3e39a9d2beec",
+      "rtl_costs": {
+        "A": 44,
+        "B": 41
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223101116901Z-rtl-845633",
+        "B": "20261019T223101180455Z-rtl-2e99c2"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 44,
+          "B": 39
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101190568Z-model-46b241",
+          "B": "20261019T223101194885Z-model-6f5c94"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 44,
+          "B": 39
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101190568Z-model-46b241",
+          "B": "20261019T223101198984Z-model-cc3a5a"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64001,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:8a94d86d480cb76eb95bab291665f2b1e6ab9a20654eb015b94c210484924ca9",
+      "rtl_costs": {
+        "A": 35,
+        "B": 35
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223101253417Z-rtl-02496a",
+        "B": "20261019T223101311760Z-rtl-1c5355"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 35,
+          "B": 34
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101320435Z-model-d7a990",
+          "B": "20261019T223101323868Z-model-cb7d02"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 35,
+          "B": 34
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101320435Z-model-d7a990",
+          "B": "20261019T223101327099Z-model-71b3ca"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64002,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:ac12b6f695bce9b14dfd9a7ca0b0089e9205c67f077250ca38ea3c3701c2c3be",
+      "rtl_costs": {
+        "A": 42,
+        "B": 42
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223101381184Z-rtl-a1023f",
+        "B": "20261019T223101440145Z-rtl-4dc32e"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 42,
+          "B": 42
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101449039Z-model-7eda8d",
+          "B": "20261019T223101452828Z-model-8ec6b5"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 42,
+          "B": 42
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101449039Z-model-7eda8d",
+          "B": "20261019T223101456367Z-model-d7d938"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64003,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:80f2f369c77902ed2f48e42004129ae328a8f443377e6fb64f84d090442a6433",
+      "rtl_costs": {
+        "A": 43,
+        "B": 43
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223101510036Z-rtl-70e5ca",
+        "B": "20261019T223101568836Z-rtl-92c3af"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 43,
+          "B": 42
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101578119Z-model-d8fffa",
+          "B": "20261019T223101581865Z-model-a09caf"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 43,
+          "B": 42
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101578119Z-model-d8fffa",
+          "B": "20261019T223101585907Z-model-45c173"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64004,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:4f10255604461b4ceda02efe4c1a9b395c8a168221692ba6111b2118bc05a342",
+      "rtl_costs": {
+        "A": 52,
+        "B": 52
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223101640112Z-rtl-d8b04e",
+        "B": "20261019T223101701522Z-rtl-52634b"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 52,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101711286Z-model-5e65da",
+          "B": "20261019T223101715706Z-model-ad9a32"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 52,
+          "B": 49
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101711286Z-model-5e65da",
+          "B": "20261019T223101720081Z-model-e9015e"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64005,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:ed29a1e3e6f5b8af4ff0ab7a180a485e3b9f4c8027c384a1dee89b936a65dd05",
+      "rtl_costs": {
+        "A": 44,
+        "B": 43
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223101775815Z-rtl-0dced8",
+        "B": "20261019T223101834553Z-rtl-ee99e1"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 44,
+          "B": 42
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101844258Z-model-d54921",
+          "B": "20261019T223101848958Z-model-f9d359"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 44,
+          "B": 42
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101844258Z-model-d54921",
+          "B": "20261019T223101853347Z-model-b1fc22"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64006,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:f9d31c5a3c4f64ba7e21725c4604cedb21b3307473c910439046a04acc9f3484",
+      "rtl_costs": {
+        "A": 42,
+        "B": 47
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223101909412Z-rtl-568123",
+        "B": "20261019T223101974068Z-rtl-1c6be8"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 42,
+          "B": 43
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101982906Z-model-bcc801",
+          "B": "20261019T223101986852Z-model-87e330"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 42,
+          "B": 43
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223101982906Z-model-bcc801",
+          "B": "20261019T223101990622Z-model-d01dae"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64007,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:e3be0d52caa1f58c1ed9390e1777e98685e3ed61f9f498d8978533230231a1d6",
+      "rtl_costs": {
+        "A": 45,
+        "B": 43
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223102045190Z-rtl-476bba",
+        "B": "20261019T223102105028Z-rtl-a99ba6"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 45,
+          "B": 45
+        },
+        "regret": {
+          "numerator": 2,
+          "denominator": 43,
+          "decimal": 0.046511627906976744
+        },
+        "model_run_ids": {
+          "A": "20261019T223102114223Z-model-55a2b6",
+          "B": "20261019T223102118394Z-model-500789"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 45,
+          "B": 45
+        },
+        "regret": {
+          "numerator": 2,
+          "denominator": 43,
+          "decimal": 0.046511627906976744
+        },
+        "model_run_ids": {
+          "A": "20261019T223102114223Z-model-55a2b6",
+          "B": "20261019T223102122514Z-model-73aed3"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64008,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:60511e384b17b807ba2b95380b2c893cb2c793cbf0e52947ae6fb296815ada13",
+      "rtl_costs": {
+        "A": 49,
+        "B": 52
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223102179136Z-rtl-9ebe50",
+        "B": "20261019T223102238394Z-rtl-46e7fb"
+      },
+      "parent": {
+        "verdict": "VALID_COUNTEREXAMPLE",
+        "costs": {
+          "A": 49,
+          "B": 47
+        },
+        "regret": {
+          "numerator": 3,
+          "denominator": 49,
+          "decimal": 0.061224489795918366
+        },
+        "model_run_ids": {
+          "A": "20261019T223102247581Z-model-7da12f",
+          "B": "20261019T223102251878Z-model-97ec6d"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_COUNTEREXAMPLE",
+        "costs": {
+          "A": 49,
+          "B": 47
+        },
+        "regret": {
+          "numerator": 3,
+          "denominator": 49,
+          "decimal": 0.061224489795918366
+        },
+        "model_run_ids": {
+          "A": "20261019T223102247581Z-model-7da12f",
+          "B": "20261019T223102255706Z-model-92f206"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64009,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:34cc248b88b803b59ca14cd4a2655a3f2831f2794ac9902eb4f963d0e65d0a4f",
+      "rtl_costs": {
+        "A": 46,
+        "B": 45
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223102311153Z-rtl-3518c5",
+        "B": "20261019T223102370041Z-rtl-c2bdf3"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 46,
+          "B": 43
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223102379525Z-model-e818b5",
+          "B": "20261019T223102383924Z-model-0b7e30"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 46,
+          "B": 43
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223102379525Z-model-e818b5",
+          "B": "20261019T223102387666Z-model-17bd93"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64010,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:91b047d717ff104bbd34a2da638d404e4e91156a7242cd3ececbf4b0fbe03737",
+      "rtl_costs": {
+        "A": 37,
+        "B": 37
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223102442486Z-rtl-19babf",
+        "B": "20261019T223102501403Z-rtl-4fe87d"
+      },
+      "parent": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 37,
+          "B": 37
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223102510325Z-model-1baf0f",
+          "B": "20261019T223102513845Z-model-40d4f8"
+        }
+      },
+      "candidate": {
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "costs": {
+          "A": 37,
+          "B": 37
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223102510325Z-model-1baf0f",
+          "B": "20261019T223102517621Z-model-731182"
+        }
+      }
+    },
+    {
+      "family_id": "H4_representative",
+      "seed": 64011,
+      "config_B": "bfly4_8x16",
+      "workload_digest": "sha256:e0541f82580eee6ed9a9bf880079c7ad0a3faf09dd43cc7284b86592d1da2b10",
+      "rtl_costs": {
+        "A": 48,
+        "B": 45
+      },
+      "rtl_run_ids": {
+        "A": "20261019T223102571521Z-rtl-fb6fe1",
+        "B": "20261019T223102631170Z-rtl-d757e5"
+      },
+      "parent": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 48,
+          "B": 46
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223102641227Z-model-e2bf69",
+          "B": "20261019T223102645551Z-model-f21d51"
+        }
+      },
+      "candidate": {
+        "verdict": "VALID_NO_REVERSAL",
+        "costs": {
+          "A": 48,
+          "B": 46
+        },
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        },
+        "model_run_ids": {
+          "A": "20261019T223102641227Z-model-e2bf69",
+          "B": "20261019T223102649978Z-model-adfeb3"
+        }
+      }
+    }
+  ],
+  "development_replay": [
+    {
+      "workload_digest": "sha256:9d9955e51c87a5f7426a581377fe9c4dcfe3e1291394e2f5d6aae34e808a686f",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223054562415Z-rtl-899559",
+        "B": "20261019T223054625222Z-rtl-e7102a"
+      },
+      "rtl_costs": {
+        "A": 41,
+        "B": 65
+      },
+      "candidate_costs": {
+        "A": 41,
+        "B": 33
+      }
+    },
+    {
+      "workload_digest": "sha256:84364601a7d9be0dd3014626ab33895eef0c2a4e2fa5797f967ad4aa7ae9e422",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223054687766Z-rtl-560449",
+        "B": "20261019T223054747713Z-rtl-2adbb3"
+      },
+      "rtl_costs": {
+        "A": 33,
+        "B": 35
+      },
+      "candidate_costs": {
+        "A": 33,
+        "B": 31
+      }
+    },
+    {
+      "workload_digest": "sha256:38c203c021c0200b0511523dd4fedf78dcebbc0599748abc8111043071b028ab",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223054806720Z-rtl-d9e266",
+        "B": "20261019T223054865072Z-rtl-a05d36"
+      },
+      "rtl_costs": {
+        "A": 31,
+        "B": 33
+      },
+      "candidate_costs": {
+        "A": 31,
+        "B": 17
+      }
+    },
+    {
+      "workload_digest": "sha256:60b6d04e1bfb1dc89028a668e813ceb37c6ae5e59d33830afe98c42c75ebf2a7",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223054932127Z-rtl-adcba6",
+        "B": "20261019T223054991738Z-rtl-169cc9"
+      },
+      "rtl_costs": {
+        "A": 31,
+        "B": 33
+      },
+      "candidate_costs": {
+        "A": 31,
+        "B": 17
+      }
+    },
+    {
+      "workload_digest": "sha256:dbc43d790915e849c5feba36b287f3bd083d615aad115d37807d4111bed6fccb",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223055051671Z-rtl-a53282",
+        "B": "20261019T223055110315Z-rtl-4fe942"
+      },
+      "rtl_costs": {
+        "A": 45,
+        "B": 47
+      },
+      "candidate_costs": {
+        "A": 45,
+        "B": 43
+      }
+    },
+    {
+      "workload_digest": "sha256:c4fc9f4564f7ccf3d9d8dca0016080cd05d23c596b7905df30811a515c2128fc",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223055169909Z-rtl-8cf6ea",
+        "B": "20261019T223055228470Z-rtl-9d3e15"
+      },
+      "rtl_costs": {
+        "A": 45,
+        "B": 47
+      },
+      "candidate_costs": {
+        "A": 45,
+        "B": 43
+      }
+    },
+    {
+      "workload_digest": "sha256:4d6fe46c664a5e036ebe62ddff025ee6d38e6ba058d07944079ad545b520a5a5",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223055287525Z-rtl-85c4e9",
+        "B": "20261019T223055346019Z-rtl-973b3a"
+      },
+      "rtl_costs": {
+        "A": 46,
+        "B": 48
+      },
+      "candidate_costs": {
+        "A": 46,
+        "B": 43
+      }
+    },
+    {
+      "workload_digest": "sha256:8efa0b620723c2d2520a7d5065ee9caf15c0c273fc78ba71dcec1281ca45eb71",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223055406448Z-rtl-d540d4",
+        "B": "20261019T223055467376Z-rtl-8e5151"
+      },
+      "rtl_costs": {
+        "A": 45,
+        "B": 49
+      },
+      "candidate_costs": {
+        "A": 45,
+        "B": 43
+      }
+    },
+    {
+      "workload_digest": "sha256:841d56d90b80dd20cad01eeedbdcf13246214f79aa6d46df2f6a0f6991cba71e",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223055532018Z-rtl-230bff",
+        "B": "20261019T223055592457Z-rtl-a87693"
+      },
+      "rtl_costs": {
+        "A": 46,
+        "B": 48
+      },
+      "candidate_costs": {
+        "A": 46,
+        "B": 43
+      }
+    },
+    {
+      "workload_digest": "sha256:1ea9cbd4ce4122e054ea24b3862ff802046f2e0cdf15108078b295a74d0c055f",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223055651097Z-rtl-d58b2e",
+        "B": "20261019T223055709192Z-rtl-b2ff98"
+      },
+      "rtl_costs": {
+        "A": 46,
+        "B": 48
+      },
+      "candidate_costs": {
+        "A": 46,
+        "B": 44
+      }
+    },
+    {
+      "workload_digest": "sha256:5a28c766c881b6f7a665f8d655d5660e9a5744c55712f04f16768f706b43370d",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223055768640Z-rtl-f6ba22",
+        "B": "20261019T223055827001Z-rtl-820435"
+      },
+      "rtl_costs": {
+        "A": 46,
+        "B": 48
+      },
+      "candidate_costs": {
+        "A": 46,
+        "B": 44
+      }
+    },
+    {
+      "workload_digest": "sha256:6b7e847a406baf5ca53baa8c8279d6edab56c6f474416be8e920b923ead53aa4",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223055888712Z-rtl-67ac92",
+        "B": "20261019T223055946864Z-rtl-a0bed3"
+      },
+      "rtl_costs": {
+        "A": 47,
+        "B": 51
+      },
+      "candidate_costs": {
+        "A": 47,
+        "B": 45
+      }
+    },
+    {
+      "workload_digest": "sha256:1592559c3798182dd5b991a6aa2709cca4132675e6f68f4eb27a8c8245c5f95b",
+      "verdict_with_candidate": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223056007546Z-rtl-8df723",
+        "B": "20261019T223056065677Z-rtl-ffd936"
+      },
+      "rtl_costs": {
+        "A": 45,
+        "B": 49
+      },
+      "candidate_costs": {
+        "A": 45,
+        "B": 43
+      }
+    }
+  ],
+  "runtime": {
+    "parent_seconds": 0.01987595797982067,
+    "candidate_seconds": 0.035387500014621764
+  },
+  "notes": [],
+  "elapsed_seconds": 8.56,
+  "scope": "Acceptance under contract repair-acceptance-v1 on basket heldout-v1 (4 families x 12 workloads). Not a full research-study result."
+}

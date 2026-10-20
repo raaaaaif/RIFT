@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "evaluator": "rift.evaluate.compare/v1",
+  "admitted_order": [
+    "A",
+    "B"
+  ],
+  "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "direction": "lower_is_better",
+  "model_status": {
+    "A": "COMPLETED",
+    "B": "COMPLETED"
+  },
+  "rtl_status": {
+    "A": "COMPLETED",
+    "B": "COMPLETED"
+  },
+  "verdict": "TIE_OR_SMALL_MARGIN",
+  "model_costs": {
+    "A": 129,
+    "B": 129
+  },
+  "rtl_costs": {
+    "A": 129,
+    "B": 65
+  },
+  "dM": 0,
+  "dR": 64,
+  "sign_product": 0,
+  "model_margin": {
+    "absolute_cycles": 2,
+    "relative": "0.02",
+    "min_cost": 129,
+    "relative_term": "129/50",
+    "threshold": "129/50",
+    "threshold_decimal": 2.58,
+    "met": false
+  },
+  "rtl_margin": {
+    "absolute_cycles": 2,
+    "relative": "0.02",
+    "min_cost": 65,
+    "relative_term": "13/10",
+    "threshold": "2/1",
+    "threshold_decimal": 2.0,
+    "met": true
+  },
+  "model_choice": "A",
+  "rtl_best": "B",
+  "selection": {
+    "chosen": "A",
+    "reference_best": "B",
+    "extra_cycles": 64,
+    "denominator_cycles": 65,
+    "regret": {
+      "numerator": 64,
+      "denominator": 65,
+      "decimal": 0.9846153846153847
+    }
+  },
+  "workload_digest": "sha256:d14ef9c51764aadc2c22e8bcab35404eb5abe3aa7a2ff930b456d9f098007b6b",
+  "workload_label": "C4 decision-directed proposal (screen step 21)",
+  "designs": {
+    "A": {
+      "config_id": "lic8x8",
+      "config_digest": "sha256:5af28f83b13a6ece14bcdb6e338fa7f57160607737ce5f8d684534da9ffc3773",
+      "descriptive_name": "Full crossbar \u00b7 8 banks"
+    },
+    "B": {
+      "config_id": "bfly4_8x16",
+      "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+      "descriptive_name": "Radix-4 butterfly \u00b7 16 banks"
+    }
+  },
+  "models": {
+    "A": {
+      "model_id": "lic_exact_v1",
+      "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765",
+      "contract": {
+        "promise": "EXACT_TIMING",
+        "scope": "LIC configurations, read-only per-initiator release programs, always-grant or declared bank stalls",
+        "declared_omissions": []
+      }
+    },
+    "B": {
+      "model_id": "defect_bfly_bank_mod8_v1",
+      "model_digest": "sha256:fcc3bc4f80e00c3bd35d9908e2a2b26e6779153a0ba976f40b9c3d5c0a2cd217",
+      "contract": {
+        "promise": "BOUNDED_ERROR",
+        "scope": "authored defect: bank mapping width uses q mod 8 instead of q mod 16",
+        "declared_omissions": []
+      }
+    }
+  },
+  "rtl_run_ids": {
+    "A": "20261019T223115947727Z-rtl-59e168",
+    "B": "20261019T223116006991Z-rtl-7c1f7b"
+  },
+  "model_run_ids": {
+    "A": "20261019T223115955970Z-model-6806b8",
+    "B": "20261019T223116015084Z-model-5ebb95"
+  },
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "provenance": "AUTHORED_DEFECT",
+  "scope": "STRESS_WITNESS",
+  "discovery_credit": 0,
+  "rtl_wall_seconds": {
+    "A": 0.004445,
+    "B": 0.004378
+  },
+  "model_elapsed_seconds": {
+    "A": 0.0008090420160442591,
+    "B": 0.001668666023761034
+  },
+  "workload_id": "C4"
+}

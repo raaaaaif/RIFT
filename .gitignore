@@ -1,0 +1,44 @@
+# Pinned toolchain bundle and downloads (retrieval + checksum recorded in locks/toolchain.lock.json)
+/.tools/
+# Pinned upstream sources (retrieval recorded in locks/sources.lock.json; fetch with `python3.12 -m rift fetch`)
+/vendor/
+# Extracted copy of RIFT_RESEARCH_PACKET.zip (the zip itself is the authoritative input)
+/packet/
+# Verilator build products (rebuilt deterministically by `rift build`)
+/build/
+# Bulky diagnostic traces are never committed; their digests live in run manifests
+*.fst
+*.vcd
+# Scratch run store; curated evidence is exported to evidence/
+/artifacts/scratch/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+/ui/dist/
+/ui/test-results/
+/ui/playwright-report/
+/ui/browser-test-results/
+/ui/lab-test-results/
+/output/
+.DS_Store
+/artifacts/
+# Large evidence copies stay on disk; their digests are committed in bundle_manifest.json
+/evidence/05-phase0-screen/runs/
+/evidence/05-phase0-screen/primary/*/work/
+/evidence/09-verify-*/runs/
+/evidence/10-decision-map/runs/
+# Local planning, outreach, and media production
+/work/
+/RIFT-Resume-and-Outreach-Brief.md
+/RIFT_RESEARCH_PACKET.zip
+/RIFT_START_HERE.txt
+/RIFT_IMPLEMENTATION_HANDOFF.txt
+/RIFT_INTERFACE_PREVIEW.html
+/RIFT_EXPERIENCE_SPEC.pdf
+/RIFT_RESEARCH_AND_ARCHITECTURE.pdf
+/docs/browser-release.md
+# Local credentials are never part of the public release
+.env
+.env.*
+!.env.example

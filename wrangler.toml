@@ -1,0 +1,6 @@
+# Cloudflare Pages: static deployment of the RIFT viewer (no backend required).
+# Build: python3.12 -m rift publish && (cd ui && npm ci && npm run build)
+# Deploy: npx wrangler pages deploy ui/dist --project-name rift
+name = "rift"
+pages_build_output_dir = "ui/dist"
+compatibility_date = "2026-10-01"

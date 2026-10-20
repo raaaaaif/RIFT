@@ -1,0 +1,25 @@
+[options]
+mode bmc
+depth 16
+
+[engines]
+smtbmc yices
+
+[script]
+plugin -i slang
+read_slang -D RIFT_FORMAL_NEGATIVE -I . --top rift_lic2x2_formal cf_math_pkg.sv lzc.sv rr_arb_tree.sv lfsr.sv tcdm_interconnect_pkg.sv addr_dec_resp_mux.sv xbar.sv clos_net.sv bfly_net.sv tcdm_interconnect.sv rift_tcdm_top.sv rift_lic2x2_formal.sv
+prep -top rift_lic2x2_formal
+
+[files]
+/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/cf_math_pkg.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/lzc.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/rr_arb_tree.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/lfsr.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect_pkg.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/addr_dec_resp_mux.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/xbar.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/clos_net.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/bfly_net.sv
+/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect.sv
+/Users/raaifbokhari/Desktop/RIFT/rtl_wrapper/rift_tcdm_top.sv
+/Users/raaifbokhari/Desktop/RIFT/formal/rift_lic2x2_formal.sv

@@ -1,0 +1,13 @@
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/data/*
+  Cache-Control: public, max-age=300
+  X-Content-Type-Options: nosniff
+/browser/:generation/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+/browser/manifest.json
+  Cache-Control: no-cache
+/*
+  X-Frame-Options: DENY
+  Referrer-Policy: same-origin

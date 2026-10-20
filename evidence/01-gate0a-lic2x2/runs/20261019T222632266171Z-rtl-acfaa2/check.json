@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "checker": "rift.evaluate.checker/v1",
+  "status": "HARNESS_INVALID",
+  "functional_valid": false,
+  "workload_digest": "sha256:6749691787623f176217b62b4ae96ca72f6dbd83aee29184cb6882fea69c4851",
+  "expected_operations": 7,
+  "makespan": null,
+  "makespan_from_events_unvalidated": 5,
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "first_release_cycle": 4,
+  "last_response_cycle": 8,
+  "accepted": 7,
+  "completed": 7,
+  "offered": 7,
+  "acceptance_cycles_distinct": 4,
+  "acceptance_window": 4,
+  "monitor_failures": 7,
+  "violation_counts": {
+    "MONITOR_FAILURE": 7
+  },
+  "violations": [
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C3_RESPONSE_DATA at cycle 5: read data differs from oracle f(q)",
+      "cycle": 5
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C3_RESPONSE_DATA at cycle 5: read data differs from oracle f(q)",
+      "cycle": 5
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C3_RESPONSE_DATA at cycle 6: read data differs from oracle f(q)",
+      "cycle": 6
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C3_RESPONSE_DATA at cycle 6: read data differs from oracle f(q)",
+      "cycle": 6
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C3_RESPONSE_DATA at cycle 7: read data differs from oracle f(q)",
+      "cycle": 7
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C3_RESPONSE_DATA at cycle 7: read data differs from oracle f(q)",
+      "cycle": 7
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C3_RESPONSE_DATA at cycle 8: read data differs from oracle f(q)",
+      "cycle": 8
+    }
+  ],
+  "summary_agreement": {
+    "makespan": true,
+    "accepted": true,
+    "completed": true,
+    "runner_exit_status": "FUNCTIONAL_MISMATCH"
+  }
+}

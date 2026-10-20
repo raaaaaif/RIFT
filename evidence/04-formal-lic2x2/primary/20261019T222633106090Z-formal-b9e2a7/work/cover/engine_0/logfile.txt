@@ -1,0 +1,34 @@
+##   0:00:00  Solver: yices
+##   0:00:00  Checking cover reachability in step 0..
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Reached cover statement in step 1 at rift_lic2x2_formal: rift_lic2x2_formal.sv:157.7-157.29 (_witness_.check_780)
+##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Reached cover statement in step 1 at rift_lic2x2_formal: rift_lic2x2_formal.sv:159.7-159.83 (_witness_.check_786)
+##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Reached cover statement in step 1 at rift_lic2x2_formal: rift_lic2x2_formal.sv:158.7-158.32 (_witness_.check_783)
+##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Reached cover statement in step 2 at rift_lic2x2_formal: rift_lic2x2_formal.sv:161.7-161.36 (_witness_.check_805)
+##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Reached cover statement in step 2 at rift_lic2x2_formal: rift_lic2x2_formal.sv:160.7-160.65 (_witness_.check_793)
+##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+##   0:00:00  Status: passed

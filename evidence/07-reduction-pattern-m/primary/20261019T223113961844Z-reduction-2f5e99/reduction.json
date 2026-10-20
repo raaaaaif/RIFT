@@ -1,0 +1,1502 @@
+{
+  "schema_version": 1,
+  "status": "REDUCED",
+  "mode": "surrogate_complete",
+  "case_id": "pattern_M",
+  "provenance": "SUPPLIED_CALIBRATION",
+  "designs": [
+    {
+      "design": "A",
+      "config": "lic8x8"
+    },
+    {
+      "design": "B",
+      "config": "bfly4_8x16"
+    }
+  ],
+  "models": {
+    "A": "lic_exact_v1",
+    "B": "bank_only_v1"
+  },
+  "orientation": {
+    "model_choice": "B",
+    "rtl_best": "A"
+  },
+  "original": {
+    "workload": {
+      "schema_version": 1,
+      "capacity_words": 4096,
+      "word_bytes": 4,
+      "masters": 8,
+      "arrival_policy": "per_operation_release",
+      "program": {
+        "kind": "read_sequences",
+        "per_master": [
+          {
+            "master": 0,
+            "ops": [
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              }
+            ]
+          },
+          {
+            "master": 1,
+            "ops": [
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              },
+              {
+                "byte_address": 4
+              }
+            ]
+          },
+          {
+            "master": 2,
+            "ops": [
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              },
+              {
+                "byte_address": 8
+              }
+            ]
+          },
+          {
+            "master": 3,
+            "ops": [
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              },
+              {
+                "byte_address": 12
+              }
+            ]
+          },
+          {
+            "master": 4,
+            "ops": [
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              },
+              {
+                "byte_address": 16
+              }
+            ]
+          },
+          {
+            "master": 5,
+            "ops": [
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              },
+              {
+                "byte_address": 20
+              }
+            ]
+          },
+          {
+            "master": 6,
+            "ops": [
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              }
+            ]
+          },
+          {
+            "master": 7,
+            "ops": [
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              }
+            ]
+          }
+        ]
+      },
+      "label": "reduction start"
+    },
+    "workload_digest": "sha256:e9c7202d30fa6c3f29de3da9abda7a665a3a9629e84651427042b2f209ee6ce9",
+    "operations": 256,
+    "verdict": {
+      "verdict": "VALID_COUNTEREXAMPLE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "rtl_costs": {
+        "A": 41,
+        "B": 65
+      },
+      "selection": {
+        "chosen": "B",
+        "reference_best": "A",
+        "extra_cycles": 24,
+        "denominator_cycles": 41,
+        "regret": {
+          "numerator": 24,
+          "denominator": 41,
+          "decimal": 0.5853658536585366
+        }
+      }
+    }
+  },
+  "reduced": {
+    "workload": {
+      "schema_version": 1,
+      "capacity_words": 4096,
+      "word_bytes": 4,
+      "masters": 8,
+      "arrival_policy": "per_operation_release",
+      "program": {
+        "kind": "read_sequences",
+        "per_master": [
+          {
+            "master": 0,
+            "ops": [
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              }
+            ]
+          },
+          {
+            "master": 1,
+            "ops": []
+          },
+          {
+            "master": 2,
+            "ops": []
+          },
+          {
+            "master": 3,
+            "ops": []
+          },
+          {
+            "master": 4,
+            "ops": []
+          },
+          {
+            "master": 5,
+            "ops": []
+          },
+          {
+            "master": 6,
+            "ops": [
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              },
+              {
+                "byte_address": 24
+              }
+            ]
+          },
+          {
+            "master": 7,
+            "ops": [
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              },
+              {
+                "byte_address": 28
+              }
+            ]
+          }
+        ]
+      },
+      "label": "reduction candidate"
+    },
+    "workload_digest": "sha256:8ee8dd315c65fbe8480ffe747f85e982839a60b05328dc0c18e06485cd1c44ba",
+    "operations": 14,
+    "verdict": {
+      "verdict": "VALID_COUNTEREXAMPLE",
+      "model_costs": {
+        "A": 9,
+        "B": 7
+      },
+      "rtl_costs": {
+        "A": 9,
+        "B": 11
+      },
+      "dM": 2,
+      "dR": -2,
+      "model_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 7,
+        "relative_term": "7/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "rtl_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 9,
+        "relative_term": "9/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "selection": {
+        "chosen": "B",
+        "reference_best": "A",
+        "extra_cycles": 2,
+        "denominator_cycles": 9,
+        "regret": {
+          "numerator": 2,
+          "denominator": 9,
+          "decimal": 0.2222222222222222
+        }
+      }
+    },
+    "final_rtl_run_ids": {
+      "A": "20261019T223114304028Z-rtl-e31ccb",
+      "B": "20261019T223114357633Z-rtl-ff7cfd"
+    },
+    "final_model_run_ids": {
+      "A": "20261019T223114363729Z-model-e28cb0",
+      "B": "20261019T223114365202Z-model-d5dbe1"
+    },
+    "reference_epoch": "epoch-dfa3739b2a85"
+  },
+  "reduction_ratio_operations": "14/256",
+  "edit_set": [
+    "drop_initiator: remove one initiator's whole program",
+    "halve_program: keep the first or second half of one initiator's operations",
+    "drop_chunk: remove a contiguous chunk (size n/2, n/4, ..., 1) from one initiator",
+    "shorten_burst: halve one run of identical addresses",
+    "canonicalize_address: replace word w by w mod 16 (preserves LIC and BFLY bank)",
+    "clear_gap: set one operation's release gap to 0",
+    "accept_release: change one after_response dependency to after_accept"
+  ],
+  "attempts": 121,
+  "invalid_candidates": 0,
+  "surrogate_rejected": 31,
+  "rtl_rejected": 14,
+  "rtl_executions_used": 32,
+  "rtl_budget": 32,
+  "surrogate_models": {
+    "A": "lic_exact_v1",
+    "B": "bfly_lfsr_transliteration_v1"
+  },
+  "neighbours": {
+    "total": 31,
+    "surrogate_rejected": 31,
+    "rtl_rechecked": 14,
+    "rtl_rechecked_rejected": 14,
+    "rtl_contradictions": [],
+    "rtl_checks": [
+      {
+        "edit": "drop_initiator m0",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 7,
+          "B": 11
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223114433440Z-rtl-5564da",
+          "B": "20261019T223114487335Z-rtl-826be9"
+        }
+      },
+      {
+        "edit": "drop_initiator m6",
+        "verdict": "VALID_NO_REVERSAL",
+        "rtl_costs": {
+          "A": 9,
+          "B": 7
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223114544234Z-rtl-d1526e",
+          "B": "20261019T223114597399Z-rtl-1b00b4"
+        }
+      },
+      {
+        "edit": "drop_initiator m7",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 7,
+          "B": 7
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223114650533Z-rtl-4cb49a",
+          "B": "20261019T223114704375Z-rtl-c0419a"
+        }
+      },
+      {
+        "edit": "halve_program m0 keep first",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 8,
+          "B": 11
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223114760020Z-rtl-f775fc",
+          "B": "20261019T223114813721Z-rtl-2a9172"
+        }
+      },
+      {
+        "edit": "halve_program m0 keep second",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 8,
+          "B": 11
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223114866993Z-rtl-b73bae",
+          "B": "20261019T223114920289Z-rtl-549d93"
+        }
+      },
+      {
+        "edit": "halve_program m6 keep first",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 9,
+          "B": 8
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223114974604Z-rtl-34deae",
+          "B": "20261019T223115028126Z-rtl-9dbcea"
+        }
+      },
+      {
+        "edit": "halve_program m6 keep second",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 9,
+          "B": 8
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223115082096Z-rtl-60524c",
+          "B": "20261019T223115135492Z-rtl-1be005"
+        }
+      },
+      {
+        "edit": "halve_program m7 keep first",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 7,
+          "B": 8
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223115189957Z-rtl-382d2c",
+          "B": "20261019T223115243746Z-rtl-a4165b"
+        }
+      },
+      {
+        "edit": "halve_program m7 keep second",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 7,
+          "B": 10
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223115297552Z-rtl-fa9bae",
+          "B": "20261019T223115350713Z-rtl-ce2d84"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [0:1]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 8,
+          "B": 11
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223115404289Z-rtl-c136c0",
+          "B": "20261019T223115458501Z-rtl-b08e8d"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [1:2]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 8,
+          "B": 11
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223115511873Z-rtl-3726c6",
+          "B": "20261019T223115565125Z-rtl-d93e39"
+        }
+      },
+      {
+        "edit": "drop_chunk m6 [0:3]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 9,
+          "B": 8
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223115619760Z-rtl-47c709",
+          "B": "20261019T223115674196Z-rtl-210ac4"
+        }
+      },
+      {
+        "edit": "drop_chunk m6 [3:6]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 9,
+          "B": 8
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223115727918Z-rtl-c15a85",
+          "B": "20261019T223115781829Z-rtl-d8044b"
+        }
+      },
+      {
+        "edit": "drop_chunk m6 [0:1]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 9,
+          "B": 10
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223115834701Z-rtl-08d19f",
+          "B": "20261019T223115888495Z-rtl-0ea223"
+        }
+      }
+    ]
+  },
+  "history": "every candidate replayed from the 4-cycle reset; no checkpoints",
+  "minimality": "1-minimal under the edit set: all 31 single-edit neighbours break the reversal under the event-exact surrogate; 14 of them re-checked on the RTL, all broken; final witness confirmed on the RTL",
+  "minimality_established": true,
+  "elapsed_seconds": 1.93,
+  "log": [
+    {
+      "attempt": 0,
+      "edit": "original witness replay (RTL)",
+      "verdict": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223114012226Z-rtl-665b36",
+        "B": "20261019T223114070225Z-rtl-9b68d7"
+      }
+    },
+    {
+      "attempt": 2,
+      "edit": "drop_initiator m1",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 41,
+        "B": 65
+      }
+    },
+    {
+      "attempt": 4,
+      "edit": "drop_initiator m2",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 41,
+        "B": 65
+      }
+    },
+    {
+      "attempt": 6,
+      "edit": "drop_initiator m3",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 41,
+        "B": 65
+      }
+    },
+    {
+      "attempt": 8,
+      "edit": "drop_initiator m4",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 41,
+        "B": 57
+      }
+    },
+    {
+      "attempt": 10,
+      "edit": "drop_initiator m5",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 41,
+        "B": 57
+      }
+    },
+    {
+      "attempt": 14,
+      "edit": "halve_program m0 keep first",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 41,
+        "B": 57
+      }
+    },
+    {
+      "attempt": 17,
+      "edit": "halve_program m0 keep first",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 41,
+        "B": 57
+      }
+    },
+    {
+      "attempt": 20,
+      "edit": "halve_program m0 keep first",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 37,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 37,
+        "B": 57
+      }
+    },
+    {
+      "attempt": 23,
+      "edit": "halve_program m0 keep first",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 35,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 35,
+        "B": 57
+      }
+    },
+    {
+      "attempt": 27,
+      "edit": "halve_program m6 keep first",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 35,
+        "B": 33
+      },
+      "surrogate_costs": {
+        "A": 35,
+        "B": 41
+      }
+    },
+    {
+      "attempt": 32,
+      "edit": "halve_program m7 keep first",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 19,
+        "B": 17
+      },
+      "surrogate_costs": {
+        "A": 19,
+        "B": 25
+      }
+    },
+    {
+      "attempt": 39,
+      "edit": "drop_chunk m6 [0:4]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 19,
+        "B": 17
+      },
+      "surrogate_costs": {
+        "A": 19,
+        "B": 21
+      }
+    },
+    {
+      "attempt": 48,
+      "edit": "drop_chunk m7 [0:4]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 15,
+        "B": 13
+      },
+      "surrogate_costs": {
+        "A": 15,
+        "B": 21
+      }
+    },
+    {
+      "attempt": 55,
+      "edit": "drop_chunk m6 [0:3]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 15,
+        "B": 13
+      },
+      "surrogate_costs": {
+        "A": 15,
+        "B": 18
+      }
+    },
+    {
+      "attempt": 63,
+      "edit": "drop_chunk m6 [8:12]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 15,
+        "B": 13
+      },
+      "surrogate_costs": {
+        "A": 15,
+        "B": 17
+      }
+    },
+    {
+      "attempt": 71,
+      "edit": "drop_chunk m7 [3:6]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 12,
+        "B": 10
+      },
+      "surrogate_costs": {
+        "A": 12,
+        "B": 15
+      }
+    },
+    {
+      "attempt": 79,
+      "edit": "drop_chunk m6 [0:1]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 12,
+        "B": 10
+      },
+      "surrogate_costs": {
+        "A": 12,
+        "B": 14
+      }
+    },
+    {
+      "attempt": 87,
+      "edit": "drop_chunk m7 [8:12]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 11,
+        "B": 9
+      },
+      "surrogate_costs": {
+        "A": 11,
+        "B": 13
+      }
+    },
+    {
+      "attempt": 98,
+      "edit": "drop_chunk m7 [0:1]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 10,
+        "B": 8
+      },
+      "surrogate_costs": {
+        "A": 10,
+        "B": 13
+      }
+    },
+    {
+      "attempt": 105,
+      "edit": "drop_chunk m6 [6:9]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 10,
+        "B": 8
+      },
+      "surrogate_costs": {
+        "A": 10,
+        "B": 12
+      }
+    },
+    {
+      "attempt": 113,
+      "edit": "drop_chunk m7 [6:9]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 9,
+        "B": 7
+      },
+      "surrogate_costs": {
+        "A": 9,
+        "B": 11
+      }
+    }
+  ]
+}

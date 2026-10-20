@@ -1,0 +1,13 @@
+import { chromium } from "@playwright/test";
+const [kase = "pattern-m", width = "1440", cyc = "14", view = "rtl"] = process.argv.slice(2);
+const b = await chromium.launch({ channel: "chrome" });
+const p = await b.newPage({ viewport: { width: Number(width), height: 1000 } });
+const errs = []; p.on("pageerror", (e) => errs.push(e.message));
+await p.goto(`http://127.0.0.1:8770/#/case/${kase}/decision`);
+await p.waitForSelector(".race-grid", { timeout: 15000 });
+if (view === "model") await p.click('.seg button:has-text("Model prediction")');
+await p.locator(".scrub").fill(cyc);
+await p.waitForTimeout(300);
+await p.screenshot({ path: `/tmp/rift-shots/v2-${kase}-decision-${width}-${view}.png`, fullPage: true });
+console.log("errors:", errs);
+await b.close();

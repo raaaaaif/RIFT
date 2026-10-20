@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "basket_id": "heldout-v2",
+  "sealed": true,
+  "frozen_on": "2026-10-19",
+  "preregistration_note": "Defined after heldout-v1 results were known and after the C1 candidate was frozen; the candidate is NOT changed. v2 adds mechanism-stressing families built from public architecture facts (initiator pairs per stage-1 router, bank-group bits) with fresh seeds. Reported in addition to v1, never replacing it.",
+  "access_rule": "Read only by rift.evaluate.verify. rift.repair refuses to open experiments/heldout/.",
+  "families": [
+    {"family_id": "H5_pair_structured", "mechanism": "each initiator pair either shares or splits a bank group with probability 1/2; one word per initiator",
+     "generator": "pair_structured", "params": {"reads": 24, "p_share": 0.5}, "seeds": [65000, 65011], "designs": [{"design": "A", "config": "lic8x8"}, {"design": "B", "config": "bfly4_8x16"}]},
+    {"family_id": "H6_two_phase", "mechanism": "two phases per initiator with different words (burst then switch), pair-structured",
+     "generator": "pair_two_phase", "params": {"reads": 32, "p_share": 0.5}, "seeds": [66000, 66011], "designs": [{"design": "A", "config": "lic8x8"}, {"design": "B", "config": "bfly4_8x16"}]},
+    {"family_id": "H7_pair_structured_bfly2", "mechanism": "pair-structured streams against the held-out radix-2 butterfly",
+     "generator": "pair_structured", "params": {"reads": 24, "p_share": 0.5}, "seeds": [67000, 67011], "designs": [{"design": "A", "config": "lic8x8"}, {"design": "B", "config": "bfly2_8x16"}]},
+    {"family_id": "H8_dependent_pairs", "mechanism": "pair-structured streams with response-dependent releases",
+     "generator": "pair_structured", "params": {"reads": 20, "p_share": 0.5, "after_response": true}, "seeds": [68000, 68011], "designs": [{"design": "A", "config": "lic8x8"}, {"design": "B", "config": "bfly4_8x16"}]}
+  ],
+  "acceptance_contract": {
+    "contract_id": "repair-acceptance-v1",
+    "rules": [
+      "R1 no MODEL_ERROR or TIMEOUT for the candidate on any held-out workload",
+      "R2 strict ranking reversals across the basket: candidate < parent",
+      "R3 no regression: no held-out workload on which the parent's choice is correct (zero regret) and the candidate's choice incurs regret beyond the margin",
+      "R4 candidate warm cost-only runtime <= 3x the parent's on the basket",
+      "R5 every development discovery witness is resolved (no longer a strict reversal)",
+      "R6 patch boundary: only the editable design's model specification changes; no workload digests, address literals or benchmark identities in the specification"
+    ],
+    "reference_failure_rule": "if any held-out reference run is not COMPLETED, the affected workloads are excluded for both parent and candidate and the disposition is INCONCLUSIVE when more than 10% are affected",
+    "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+    "margin": "|d| >= max(2 cycles, 0.02*min(cost_A, cost_B))"
+  }
+}

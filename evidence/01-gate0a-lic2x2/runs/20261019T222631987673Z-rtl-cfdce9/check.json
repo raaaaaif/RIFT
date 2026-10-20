@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "checker": "rift.evaluate.checker/v1",
+  "status": "HARNESS_INVALID",
+  "functional_valid": false,
+  "workload_digest": "sha256:6749691787623f176217b62b4ae96ca72f6dbd83aee29184cb6882fea69c4851",
+  "expected_operations": 7,
+  "makespan": null,
+  "makespan_from_events_unvalidated": 5,
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "first_release_cycle": 4,
+  "last_response_cycle": 8,
+  "accepted": 7,
+  "completed": 7,
+  "offered": 7,
+  "acceptance_cycles_distinct": 4,
+  "acceptance_window": 4,
+  "monitor_failures": 4,
+  "violation_counts": {
+    "MONITOR_FAILURE": 4
+  },
+  "violations": [
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 4: wrapper monitor asserted",
+      "cycle": 4
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 5: wrapper monitor asserted",
+      "cycle": 5
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 6: wrapper monitor asserted",
+      "cycle": 6
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 7: wrapper monitor asserted",
+      "cycle": 7
+    }
+  ],
+  "summary_agreement": {
+    "makespan": true,
+    "accepted": true,
+    "completed": true,
+    "runner_exit_status": "HARNESS_INVALID"
+  }
+}

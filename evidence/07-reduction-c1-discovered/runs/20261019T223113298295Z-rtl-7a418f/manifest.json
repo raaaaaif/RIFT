@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "kind": "rtl",
+  "runner": "verilator_rtl",
+  "observation_role": "RTL_REFERENCE_OBSERVATION",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "status": "COMPLETED",
+  "makespan": 17,
+  "config_id": "bfly4_8x16",
+  "config": {
+    "schema_version": 1,
+    "addr_width": 32,
+    "data_width": 32,
+    "byte_off_width": 2,
+    "be_width": 4,
+    "resp_lat": 1,
+    "write_resp_on": 1,
+    "num_par": 1,
+    "capacity_words": 4096,
+    "config_id": "bfly4_8x16",
+    "role": "architecture",
+    "role_label": "Architecture B",
+    "descriptive_name": "Radix-4 butterfly \u00b7 16 banks",
+    "topology": "BFLY4",
+    "num_in": 8,
+    "num_out": 16,
+    "addr_mem_width": 8
+  },
+  "workload_digest": "sha256:d760be9ca0c8f8c569a4e5754dcb66ab221f26b973651bcab2cd42f25d38b1b7",
+  "workload_label": "reduction candidate",
+  "reference": {
+    "rtl_commit": "2967d8d17be0a6139229ca8d3d4956e182aec3de",
+    "dependency_commit": "015917ff33e5f944e866814f72f2074fb0f4220f",
+    "wrapper_digest": "sha256:03c1fc2c4ea7d7c79a093594419125eb1f7b416dd3a9c710328d2b326b7f70cc",
+    "driver_digest": "sha256:46d8698719410821979c0795fc494ee08fd6eb960fd448cfdc4f2af53b322d89",
+    "memory_oracle_digest": "sha256:5b1e7b337487ea421b7c709df2b03c6cc94cc13917f7a6142b1fccd5c085cd57",
+    "sampling_convention": "pre_rise_v1",
+    "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+    "build_key_digest": "sha256:e747b504a154032da716222e19e0c56a51bb72acd723a04d0d1fa7e1c6b9522d",
+    "binary_sha256": "sha256:a2d0f30be4e964c7f75e0d478ac9ccfbffdfadfe9e70f9400bd6f8359ded8ea3",
+    "toolchain_lock_digest": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+    "assertion_register_digest": "sha256:e2f241afc63e2182eed9a650bb343a5ce2b55e67ad5c52316b64f1b5fd98b04d"
+  },
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "reset_cycles": 4,
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "timeout_cycles": 4096,
+  "stalls": [],
+  "cpp_inject": null,
+  "sv_inject_mask": 0,
+  "fst_dumped": false,
+  "command": [
+    "build/bfly4_8x16-e747b504a154/obj_dir/rift_sim",
+    "--workload",
+    "artifacts/runs/20261019T223113298295Z-rtl-7a418f/compiled_workload.txt",
+    "--events",
+    "artifacts/runs/20261019T223113298295Z-rtl-7a418f/events.jsonl",
+    "--summary",
+    "artifacts/runs/20261019T223113298295Z-rtl-7a418f/runner_summary.json",
+    "--run-id",
+    "20261019T223113298295Z-rtl-7a418f",
+    "--timeout",
+    "4096"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.003843,
+  "build": {
+    "cache_hit": true,
+    "build_key_digest": "sha256:e747b504a154032da716222e19e0c56a51bb72acd723a04d0d1fa7e1c6b9522d",
+    "warnings": [
+      "%Warning-WIDTHEXPAND: /Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/lfsr.sv:298:17: Operator GT expects 64 bits on the RHS, but RHS's UNSIGNED generates 32 bits."
+    ]
+  },
+  "tags": [
+    "reduction",
+    "C1_bank_only_omission",
+    "neighbour_check"
+  ],
+  "run_id": "20261019T223113298295Z-rtl-7a418f",
+  "artifacts": {
+    "check.json": {
+      "sha256": "sha256:47c5ec4388d0040ff6d889246fc8b480463d8fc3c4b75d5f975f0d9774873da3",
+      "bytes": 731
+    },
+    "compiled_workload.txt": {
+      "sha256": "sha256:952e9ac822a6f9acb332a266617265019e863a439a603faf8e870a357c7095cc",
+      "bytes": 325
+    },
+    "events.jsonl.gz": {
+      "sha256": "sha256:becaa6dfb1829c52d22fb7ef42e4017ec4e8a84064021e2cba1d666f47f91a50",
+      "bytes": 646
+    },
+    "runner_summary.json": {
+      "sha256": "sha256:e4222692ec7558f6a7251e05c7ebc9096a91dc84139ad63a8648f37ef75e249f",
+      "bytes": 3357
+    },
+    "workload.json": {
+      "sha256": "sha256:df6609a5c5230afd46a3d9a04b1af5c50ffaebbad0c54bad04e9511b8c1433fc",
+      "bytes": 1668
+    }
+  },
+  "manifest_digest": "sha256:b140d285500e3e92ba21ec28a76e6113164dbb1c03429bcf92a01ce870830384"
+}

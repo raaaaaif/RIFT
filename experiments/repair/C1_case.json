@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "case_id": "C1_bank_only_omission",
+  "designs": [
+    {
+      "design": "A",
+      "config": "lic8x8"
+    },
+    {
+      "design": "B",
+      "config": "bfly4_8x16"
+    }
+  ],
+  "parent_models": {
+    "A": "lic_exact_v1",
+    "B": "bank_only_v1"
+  },
+  "editable_design": "B",
+  "screen_run_id": "20261019T222726639417Z-screen-e245c0",
+  "fitted_model": "fitted_penalty_bfly4_8x16_v1",
+  "runtime_envelope_factor": 3,
+  "note": "Development evidence = every evaluated workload of this case in the recorded discovery screen (all arms). The sealed held-out basket is not readable by the repairer."
+}

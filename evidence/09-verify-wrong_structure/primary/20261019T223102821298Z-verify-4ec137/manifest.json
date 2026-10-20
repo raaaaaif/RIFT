@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "kind": "verification",
+  "status": "REJECTED",
+  "case_id": "C1_bank_only_omission",
+  "candidate_model_id": "control_wrong_structure_C1",
+  "observation_role": "INDEPENDENT_EVALUATOR_RESULT",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "tags": [
+    "verify",
+    "C1_bank_only_omission"
+  ],
+  "run_id": "20261019T223102821298Z-verify-4ec137",
+  "artifacts": {
+    "verification.json": {
+      "sha256": "sha256:def0e818791228229e19afd54d8243c004d4ec4adf473bfdc2f0dd5604cd0ff1",
+      "bytes": 65677
+    }
+  },
+  "manifest_digest": "sha256:381fe05d403ab05e5ca57a98ba05795b3dcbe621585cf501ea3f41b01a710acb"
+}

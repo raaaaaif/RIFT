@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "addr_width": 32,
+  "data_width": 32,
+  "byte_off_width": 2,
+  "be_width": 4,
+  "resp_lat": 1,
+  "write_resp_on": 1,
+  "num_par": 1,
+  "capacity_words": 4096,
+  "config_id": "lic2x2",
+  "role": "harness_gate",
+  "role_label": "Harness gate",
+  "descriptive_name": "LIC 2\u00d72 (harness gate)",
+  "topology": "LIC",
+  "num_in": 2,
+  "num_out": 2,
+  "addr_mem_width": 11
+}

@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "kind": "runtime_benchmark",
+  "target_speedup": 5.0,
+  "host": {
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.5"
+  },
+  "basket": {
+    "size": 400,
+    "composition": "L, B, M + 397 random_legal (seeds 9000-9396, alternating hot-set 8 words)"
+  },
+  "repetitions": 3,
+  "fst_dumping": false,
+  "results": [
+    {
+      "config_id": "lic8x8",
+      "model_id": "lic_exact_v1",
+      "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765",
+      "binary_sha256": "sha256:214378252fcc962a3357aeb6780c89088e5d6569605bd3f380836c2c2400fce9",
+      "cold_build_seconds": null,
+      "total_operations": 40676,
+      "median_seconds": {
+        "rtl_per_invocation": 2.2210184579598717,
+        "rtl_batched": 0.5673471670015715,
+        "rtl_batched_summary_only": 0.16121883399318904,
+        "model_in_memory": 0.19237512501422316,
+        "model_with_io": 0.9601260000490583,
+        "model_cost_only": 0.12509929202497005,
+        "compiled_model_summary_only": 0.06941549998009577,
+        "compiled_model_with_io": 0.46676054201088846
+      },
+      "all_seconds": {
+        "rtl_per_invocation": [
+          2.2210184579598717,
+          1.97773004201008,
+          2.402457832999062
+        ],
+        "rtl_batched": [
+          0.5945757920271717,
+          0.5673471670015715,
+          0.5557217079913244
+        ],
+        "rtl_batched_summary_only": [
+          0.1522840409888886,
+          0.16121883399318904,
+          0.1658295409870334
+        ],
+        "model_in_memory": [
+          0.1899569170200266,
+          0.2686984579777345,
+          0.19237512501422316
+        ],
+        "model_with_io": [
+          0.9085150000173599,
+          1.006359875027556,
+          0.9601260000490583
+        ],
+        "model_cost_only": [
+          0.12489158305106685,
+          0.12509929202497005,
+          0.12526300002355129
+        ],
+        "compiled_model_summary_only": [
+          0.08662629197351635,
+          0.0677898750291206,
+          0.06941549998009577
+        ],
+        "compiled_model_with_io": [
+          0.46676054201088846,
+          0.4610431249602698,
+          0.4779867079923861
+        ]
+      },
+      "speedup_per_invocation": 2.313257278572174,
+      "speedup_batched": 0.5909090754469544,
+      "speedup_batched_vs_model_in_memory": 2.9491711413293427,
+      "speedup_summary_only_vs_cost_only": 1.2887269894461868,
+      "kernel_seconds": {
+        "rtl": 0.044193174,
+        "compiled_model": 0.005829795
+      },
+      "kernel_speedup": 7.580570843400155,
+      "compiled_speedup_summary_only": 2.3225192361852467,
+      "compiled_speedup_with_io": 1.2154994176614367,
+      "primary_comparison": "v1 (declared before measuring): batched RTL vs Python model, both emitting and parsing full event streams",
+      "target_met": false,
+      "useful_loop_comparison": "v2: batched, summary-only on both sides (what the search loop consumes), compiled model vs Verilator",
+      "useful_loop_target_met": false
+    },
+    {
+      "config_id": "bfly4_8x16",
+      "model_id": "bank_only_v1",
+      "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282",
+      "binary_sha256": "sha256:a2d0f30be4e964c7f75e0d478ac9ccfbffdfadfe9e70f9400bd6f8359ded8ea3",
+      "cold_build_seconds": null,
+      "total_operations": 40676,
+      "median_seconds": {
+        "rtl_per_invocation": 2.206897250027396,
+        "rtl_batched": 0.5920559159712866,
+        "rtl_batched_summary_only": 0.14865854097297415,
+        "model_in_memory": 0.1894437080482021,
+        "model_with_io": 0.9021502909599803,
+        "model_cost_only": 0.12587370799155906,
+        "compiled_model_summary_only": 0.0728480420075357,
+        "compiled_model_with_io": 0.48344499996164814
+      },
+      "all_seconds": {
+        "rtl_per_invocation": [
+          2.206897250027396,
+          2.0319466670043766,
+          2.2779364589951
+        ],
+        "rtl_batched": [
+          0.5920559159712866,
+          0.5573294169735163,
+          0.6704638340161182
+        ],
+        "rtl_batched_summary_only": [
+          0.14865854097297415,
+          0.14818166702752933,
+          0.15153804200235754
+        ],
+        "model_in_memory": [
+          0.19053187500685453,
+          0.18895666697062552,
+          0.1894437080482021
+        ],
+        "model_with_io": [
+          1.048345707997214,
+          0.8986471249954775,
+          0.9021502909599803
+        ],
+        "model_cost_only": [
+          0.12802129099145532,
+          0.12497433298267424,
+          0.12587370799155906
+        ],
+        "compiled_model_summary_only": [
+          0.07548350002616644,
+          0.06649512500735,
+          0.0728480420075357
+        ],
+        "compiled_model_with_io": [
+          0.44522875000257045,
+          0.5602481249952689,
+          0.48344499996164814
+        ]
+      },
+      "speedup_per_invocation": 2.4462634132490617,
+      "speedup_batched": 0.6562719337387548,
+      "speedup_batched_vs_model_in_memory": 3.1252339920449814,
+      "speedup_summary_only_vs_cost_only": 1.1810134407333341,
+      "kernel_seconds": {
+        "rtl": 0.047204414,
+        "compiled_model": 0.005857414
+      },
+      "kernel_speedup": 8.058917126226692,
+      "compiled_speedup_summary_only": 2.040666253701044,
+      "compiled_speedup_with_io": 1.224660335753301,
+      "primary_comparison": "v1 (declared before measuring): batched RTL vs Python model, both emitting and parsing full event streams",
+      "target_met": false,
+      "useful_loop_comparison": "v2: batched, summary-only on both sides (what the search loop consumes), compiled model vs Verilator",
+      "useful_loop_target_met": false
+    },
+    {
+      "config_id": "bfly4_8x16",
+      "model_id": "bfly_topology_rr_v1",
+      "model_digest": "sha256:7eb41eff6d274849e3391b797b6dc64a0b086bd30ed4e44dafbe50be9496ef4b",
+      "binary_sha256": "sha256:a2d0f30be4e964c7f75e0d478ac9ccfbffdfadfe9e70f9400bd6f8359ded8ea3",
+      "cold_build_seconds": null,
+      "total_operations": 40676,
+      "median_seconds": {
+        "rtl_per_invocation": 2.2157144999946468,
+        "rtl_batched": 0.5821028749924153,
+        "rtl_batched_summary_only": 0.1528969579958357,
+        "model_in_memory": 0.26996512501500547,
+        "model_with_io": 1.029615040984936,
+        "model_cost_only": 0.20254866703180596,
+        "compiled_model_summary_only": 0.09197091701207682,
+        "compiled_model_with_io": 0.4851735410047695
+      },
+      "all_seconds": {
+        "rtl_per_invocation": [
+          2.2157144999946468,
+          2.671438625024166,
+          2.137248999963049
+        ],
+        "rtl_batched": [
+          0.5750154580455273,
+          0.7024670829996467,
+          0.5821028749924153
+        ],
+        "rtl_batched_summary_only": [
+          0.1473757920321077,
+          0.16801012499490753,
+          0.1528969579958357
+        ],
+        "model_in_memory": [
+          0.2670087919686921,
+          0.2723554589902051,
+          0.26996512501500547
+        ],
+        "model_with_io": [
+          1.029615040984936,
+          0.970015584025532,
+          1.1969530830392614
+        ],
+        "model_cost_only": [
+          0.20188279199646786,
+          0.20254866703180596,
+          0.20534354099072516
+        ],
+        "compiled_model_summary_only": [
+          0.09197091701207682,
+          0.08549637498799711,
+          0.10154954198515043
+        ],
+        "compiled_model_with_io": [
+          0.4851735410047695,
+          0.4559222499956377,
+          0.6546871670288965
+        ]
+      },
+      "speedup_per_invocation": 2.151983422731549,
+      "speedup_batched": 0.5653597236065745,
+      "speedup_batched_vs_model_in_memory": 2.1562150850413,
+      "speedup_summary_only_vs_cost_only": 0.7548652886065474,
+      "kernel_seconds": {
+        "rtl": 0.046997745,
+        "compiled_model": 0.019986753
+      },
+      "kernel_speedup": 2.3514447294165293,
+      "compiled_speedup_summary_only": 1.6624489889098157,
+      "compiled_speedup_with_io": 1.1997828112945115,
+      "primary_comparison": "v1 (declared before measuring): batched RTL vs Python model, both emitting and parsing full event streams",
+      "target_met": false,
+      "useful_loop_comparison": "v2: batched, summary-only on both sides (what the search loop consumes), compiled model vs Verilator",
+      "useful_loop_target_met": false
+    }
+  ],
+  "primary_v1_target_met": false,
+  "useful_loop_target_met": false
+}

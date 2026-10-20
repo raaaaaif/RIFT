@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-19T18:26:38" hostname="MacBook-Pro.local" package="neg" id="0" name="default" tests="24" errors="0" failures="2" time="0" skipped="23">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:105.35-105.66" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:105.35-105.66" id="_witness_.check_643">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:105.35-105.66" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:105.35-105.66" id="_witness_.check_647">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:107.35-107.110" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:107.35-107.110" id="_witness_.check_651">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:107.35-107.110" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:107.35-107.110" id="_witness_.check_659">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:109.7-109.36" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:109.7-109.36" id="_witness_.check_667">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:113.11-114.78" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:113.11-114.78" id="_witness_.check_671">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:113.11-114.78" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:113.11-114.78" id="_witness_.check_683">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:116.35-116.65" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:116.35-116.65" id="_witness_.check_694">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:116.35-116.65" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:116.35-116.65" id="_witness_.check_697">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:118.49-118.91" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:118.49-118.91" id="_witness_.check_700">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:118.49-118.91" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:118.49-118.91" id="_witness_.check_708">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:122.11-122.87" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:122.11-122.87" id="_witness_.check_722">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:122.11-122.87" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:122.11-122.87" id="_witness_.check_735">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:124.7-124.29" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:124.7-124.29" id="_witness_.check_742">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:127.7-127.26" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:127.7-127.26" id="_witness_.check_745" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:127.7-127.26 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:131.35-131.54" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:131.35-131.54" id="_witness_.check_748">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:131.35-131.54" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:131.35-131.54" id="_witness_.check_751">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:149.7-149.51" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:149.7-149.51" id="_witness_.check_768">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:150.7-150.51" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:150.7-150.51" id="_witness_.check_775">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:157.7-157.29" time="0" type="COVER" location="rift_lic2x2_formal.sv:157.7-157.29" id="_witness_.check_783">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:158.7-158.32" time="0" type="COVER" location="rift_lic2x2_formal.sv:158.7-158.32" id="_witness_.check_786">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:159.7-159.83" time="0" type="COVER" location="rift_lic2x2_formal.sv:159.7-159.83" id="_witness_.check_789">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:160.7-160.65" time="0" type="COVER" location="rift_lic2x2_formal.sv:160.7-160.65" id="_witness_.check_796">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:161.7-161.36" time="0" type="COVER" location="rift_lic2x2_formal.sv:161.7-161.36" id="_witness_.check_808">
+<skipped />
+</testcase>
+<system-out>SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Removing directory '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/cf_math_pkg.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/cf_math_pkg.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/lzc.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/lzc.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/rr_arb_tree.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/rr_arb_tree.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/lfsr.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/lfsr.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect_pkg.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/tcdm_interconnect_pkg.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/addr_dec_resp_mux.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/addr_dec_resp_mux.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/xbar.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/xbar.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/clos_net.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/clos_net.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/bfly_net.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/bfly_net.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/tcdm_interconnect.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/rtl_wrapper/rift_tcdm_top.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/rift_tcdm_top.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] Copy '/Users/raaifbokhari/Desktop/RIFT/formal/rift_lic2x2_formal.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src/rift_lic2x2_formal.sv'.
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: smtbmc yices
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] base: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] base: finished (returncode=0)
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] prep: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] prep: finished (returncode=0)
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] smt2: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] smt2: finished (returncode=0)
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg; yosys-smtbmc -s yices --presat --unroll --noprogress -t 16  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Solver: yices
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  BMC failed!
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Assert failed in rift_lic2x2_formal: rift_lic2x2_formal.sv:127.7-127.26 (_witness_.check_745)
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: ##   0:00:00  Status: failed
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: finished (returncode=1)
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] engine_0: Status returned by engine: FAIL
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] summary: counterexample trace: /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/engine_0/trace.vcd
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] summary:   failed assertion rift_lic2x2_formal._witness_.check_745 at rift_lic2x2_formal.sv:127.7-127.26 step 1
+SBY 18:26:38 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,926 @@
+{
+  "schema_version": 1,
+  "study_id": "phase0-screen-v2",
+  "study_digest": "sha256:0770d24e3d3bf6add09b080d71bde7a5f02aef98d61563c45b9942f0fdc74144",
+  "screen_run_id": "20261019T222726639417Z-screen-e245c0",
+  "budget": {
+    "accepted_proposals_per_case_per_arm": 32,
+    "rtl_executions_per_case_per_arm": 64,
+    "max_total_proposals_per_case_per_arm": 64,
+    "wall_seconds_per_case_per_arm": 600,
+    "reserve_reduction_rtl_executions": 32,
+    "reserve_repair_rtl_executions": 32,
+    "model_token_cap": 0,
+    "note": "Unused reserves never increase discovery credit. Cache hits are charged."
+  },
+  "cases": {
+    "C1_bank_only_omission": {
+      "provenance": "AUTHORED_DEFECT",
+      "models": {
+        "A": {
+          "model_id": "lic_exact_v1",
+          "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765"
+        },
+        "B": {
+          "model_id": "bank_only_v1",
+          "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282"
+        }
+      },
+      "expectation": "positive: handoff-specified omission of internal route contention",
+      "arms": {
+        "B1_public_sweeps": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 0,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 25,
+            "VALID_NO_REVERSAL": 6,
+            "VALID_COUNTEREXAMPLE": 1
+          },
+          "max_regret": 0.5853658536585366,
+          "mean_regret_over_valid": 0.018292682926829267,
+          "wall_seconds": 4.997,
+          "controller_cpu_seconds": 1.112,
+          "child_cpu_seconds": 2.465,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C1_bank_only_omission__B1_public_sweeps.jsonl"
+        },
+        "B2_legal_random": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 0,
+          "credited_counterexamples": 1,
+          "first_credited_discovery_at_rtl_execution": 34,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 18,
+            "VALID_NO_REVERSAL": 13,
+            "VALID_COUNTEREXAMPLE": 1
+          },
+          "max_regret": 0.07142857142857142,
+          "mean_regret_over_valid": 0.008976144774662295,
+          "wall_seconds": 4.1,
+          "controller_cpu_seconds": 1.074,
+          "child_cpu_seconds": 2.352,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C1_bank_only_omission__B2_legal_random.jsonl"
+        },
+        "B2_evolutionary": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 12,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 25,
+            "VALID_NO_REVERSAL": 7
+          },
+          "max_regret": 0.0425531914893617,
+          "mean_regret_over_valid": 0.011289339539007091,
+          "wall_seconds": 3.431,
+          "controller_cpu_seconds": 0.893,
+          "child_cpu_seconds": 1.984,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C1_bank_only_omission__B2_evolutionary.jsonl"
+        },
+        "B3_bounded_smt": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 32,
+          "solver_seconds": 54.43,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 0,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 30,
+            "VALID_NO_REVERSAL": 2
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 59.296,
+          "controller_cpu_seconds": 1.838,
+          "child_cpu_seconds": 58.046,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C1_bank_only_omission__B3_bounded_smt.jsonl"
+        },
+        "B5_error_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 20,
+          "credited_counterexamples": 2,
+          "first_credited_discovery_at_rtl_execution": 14,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 29,
+            "VALID_COUNTEREXAMPLE": 2,
+            "VALID_NO_REVERSAL": 1
+          },
+          "max_regret": 0.06451612903225806,
+          "mean_regret_over_valid": 0.01672757056451613,
+          "wall_seconds": 7.71,
+          "controller_cpu_seconds": 5.406,
+          "child_cpu_seconds": 1.639,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C1_bank_only_omission__B5_error_directed.jsonl"
+        },
+        "RIFT_decision_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 2,
+          "credited_counterexamples": 9,
+          "first_credited_discovery_at_rtl_execution": 36,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 23,
+            "VALID_COUNTEREXAMPLE": 9
+          },
+          "max_regret": 0.16666666666666666,
+          "mean_regret_over_valid": 0.03980724296986724,
+          "wall_seconds": 8.235,
+          "controller_cpu_seconds": 5.33,
+          "child_cpu_seconds": 2.284,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C1_bank_only_omission__RIFT_decision_directed.jsonl"
+        }
+      }
+    },
+    "C2_topology_rr_control": {
+      "provenance": "PERMITTED_APPROXIMATION",
+      "models": {
+        "A": {
+          "model_id": "lic_exact_v1",
+          "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765"
+        },
+        "B": {
+          "model_id": "bfly_topology_rr_v1",
+          "model_digest": "sha256:7eb41eff6d274849e3391b797b6dc64a0b086bd30ed4e44dafbe50be9496ef4b"
+        }
+      },
+      "expectation": "control: only the declared arbitration-winner approximation differs",
+      "arms": {
+        "B1_public_sweeps": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "VALID_NO_REVERSAL": 18,
+            "TIE_OR_SMALL_MARGIN": 14
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 0.182,
+          "controller_cpu_seconds": 0.18,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C2_topology_rr_control__B1_public_sweeps.jsonl"
+        },
+        "B2_legal_random": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 17,
+            "VALID_NO_REVERSAL": 15
+          },
+          "max_regret": 0.07692307692307693,
+          "mean_regret_over_valid": 0.00794022517625002,
+          "wall_seconds": 0.18,
+          "controller_cpu_seconds": 0.164,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C2_topology_rr_control__B2_legal_random.jsonl"
+        },
+        "B2_evolutionary": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 20,
+          "credited_counterexamples": 1,
+          "first_credited_discovery_at_rtl_execution": 60,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 21,
+            "VALID_NO_REVERSAL": 10,
+            "VALID_COUNTEREXAMPLE": 1
+          },
+          "max_regret": 0.047619047619047616,
+          "mean_regret_over_valid": 0.010850878666760988,
+          "wall_seconds": 2.776,
+          "controller_cpu_seconds": 0.784,
+          "child_cpu_seconds": 1.598,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C2_topology_rr_control__B2_evolutionary.jsonl"
+        },
+        "B3_bounded_smt": {
+          "status": "NOT_APPLICABLE",
+          "reason": "a formal encoding exists only for the bank-only model's acceptance predicate"
+        },
+        "B5_error_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 18,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 4,
+            "VALID_NO_REVERSAL": 28
+          },
+          "max_regret": 0.09523809523809523,
+          "mean_regret_over_valid": 0.002976190476190476,
+          "wall_seconds": 8.026,
+          "controller_cpu_seconds": 5.836,
+          "child_cpu_seconds": 1.702,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C2_topology_rr_control__B5_error_directed.jsonl"
+        },
+        "RIFT_decision_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 18,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 30,
+            "VALID_NO_REVERSAL": 2
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 7.937,
+          "controller_cpu_seconds": 5.784,
+          "child_cpu_seconds": 1.723,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C2_topology_rr_control__RIFT_decision_directed.jsonl"
+        }
+      }
+    },
+    "C3_lfsr_every_cycle": {
+      "provenance": "AUTHORED_DEFECT",
+      "models": {
+        "A": {
+          "model_id": "lic_exact_v1",
+          "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765"
+        },
+        "B": {
+          "model_id": "defect_bfly_lfsr_every_cycle_v1",
+          "model_digest": "sha256:836787d654e20ac34741a27348a9280cb8e278bb1a2c16ba3129ee0170a5fa1b"
+        }
+      },
+      "expectation": "subtle: wrong priority-state advance; may be decision-irrelevant",
+      "arms": {
+        "B1_public_sweeps": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "VALID_NO_REVERSAL": 18,
+            "TIE_OR_SMALL_MARGIN": 14
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 0.232,
+          "controller_cpu_seconds": 0.227,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C3_lfsr_every_cycle__B1_public_sweeps.jsonl"
+        },
+        "B2_legal_random": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 13,
+            "VALID_NO_REVERSAL": 19
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 0.203,
+          "controller_cpu_seconds": 0.201,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C3_lfsr_every_cycle__B2_legal_random.jsonl"
+        },
+        "B2_evolutionary": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 18,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 11,
+            "VALID_NO_REVERSAL": 21
+          },
+          "max_regret": 0.0196078431372549,
+          "mean_regret_over_valid": 0.0006127450980392157,
+          "wall_seconds": 3.039,
+          "controller_cpu_seconds": 0.897,
+          "child_cpu_seconds": 1.737,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C3_lfsr_every_cycle__B2_evolutionary.jsonl"
+        },
+        "B3_bounded_smt": {
+          "status": "NOT_APPLICABLE",
+          "reason": "a formal encoding exists only for the bank-only model's acceptance predicate"
+        },
+        "B5_error_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 16,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "VALID_NO_REVERSAL": 26,
+            "TIE_OR_SMALL_MARGIN": 6
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 10.063,
+          "controller_cpu_seconds": 7.707,
+          "child_cpu_seconds": 1.817,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C3_lfsr_every_cycle__B5_error_directed.jsonl"
+        },
+        "RIFT_decision_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 34,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 30,
+            "VALID_NO_REVERSAL": 2
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 8.741,
+          "controller_cpu_seconds": 7.291,
+          "child_cpu_seconds": 1.098,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C3_lfsr_every_cycle__RIFT_decision_directed.jsonl"
+        }
+      }
+    },
+    "C4_bank_mapping_width": {
+      "provenance": "AUTHORED_DEFECT",
+      "models": {
+        "A": {
+          "model_id": "lic_exact_v1",
+          "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765"
+        },
+        "B": {
+          "model_id": "defect_bfly_bank_mod8_v1",
+          "model_digest": "sha256:fcc3bc4f80e00c3bd35d9908e2a2b26e6779153a0ba976f40b9c3d5c0a2cd217"
+        }
+      },
+      "expectation": "positive: wrong mapping width invents bank conflicts",
+      "arms": {
+        "B1_public_sweeps": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "VALID_NO_REVERSAL": 12,
+            "TIE_OR_SMALL_MARGIN": 20
+          },
+          "max_regret": 0.9846153846153847,
+          "mean_regret_over_valid": 0.1818593171534348,
+          "wall_seconds": 0.202,
+          "controller_cpu_seconds": 0.187,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C4_bank_mapping_width__B1_public_sweeps.jsonl"
+        },
+        "B2_legal_random": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 8,
+          "first_credited_discovery_at_rtl_execution": 8,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 20,
+            "VALID_COUNTEREXAMPLE": 8,
+            "VALID_NO_REVERSAL": 4
+          },
+          "max_regret": 0.1694915254237288,
+          "mean_regret_over_valid": 0.037618527883645926,
+          "wall_seconds": 0.191,
+          "controller_cpu_seconds": 0.177,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C4_bank_mapping_width__B2_legal_random.jsonl"
+        },
+        "B2_evolutionary": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 34,
+          "credited_counterexamples": 18,
+          "first_credited_discovery_at_rtl_execution": 6,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 11,
+            "VALID_NO_REVERSAL": 3,
+            "VALID_COUNTEREXAMPLE": 18
+          },
+          "max_regret": 0.425531914893617,
+          "mean_regret_over_valid": 0.06969641858626122,
+          "wall_seconds": 2.038,
+          "controller_cpu_seconds": 0.632,
+          "child_cpu_seconds": 1.137,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C4_bank_mapping_width__B2_evolutionary.jsonl"
+        },
+        "B3_bounded_smt": {
+          "status": "NOT_APPLICABLE",
+          "reason": "a formal encoding exists only for the bank-only model's acceptance predicate"
+        },
+        "B5_error_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 20,
+          "credited_counterexamples": 1,
+          "first_credited_discovery_at_rtl_execution": 2,
+          "verdict_counts": {
+            "VALID_COUNTEREXAMPLE": 1,
+            "VALID_NO_REVERSAL": 2,
+            "TIE_OR_SMALL_MARGIN": 29
+          },
+          "max_regret": 1.0615384615384615,
+          "mean_regret_over_valid": 0.8758107656582882,
+          "wall_seconds": 9.715,
+          "controller_cpu_seconds": 7.591,
+          "child_cpu_seconds": 1.69,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C4_bank_mapping_width__B5_error_directed.jsonl"
+        },
+        "RIFT_decision_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 8,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 32
+          },
+          "max_regret": 0.9846153846153847,
+          "mean_regret_over_valid": 0.9482647488334651,
+          "wall_seconds": 10.019,
+          "controller_cpu_seconds": 7.286,
+          "child_cpu_seconds": 2.105,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C4_bank_mapping_width__RIFT_decision_directed.jsonl"
+        }
+      }
+    },
+    "C5_lic_unfair_arbitration": {
+      "provenance": "AUTHORED_DEFECT",
+      "models": {
+        "A": {
+          "model_id": "defect_lic_unfair_arb_v1",
+          "model_digest": "sha256:620c62d3eeae9d9c6dfde2c58088c2303cbd502e852765d136c9a3c307be0d80"
+        },
+        "B": {
+          "model_id": "bfly_topology_rr_v1",
+          "model_digest": "sha256:7eb41eff6d274849e3391b797b6dc64a0b086bd30ed4e44dafbe50be9496ef4b"
+        }
+      },
+      "expectation": "subtle: FairArb=0 priority advance on the crossbar side",
+      "arms": {
+        "B1_public_sweeps": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "VALID_NO_REVERSAL": 18,
+            "TIE_OR_SMALL_MARGIN": 14
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 0.18,
+          "controller_cpu_seconds": 0.177,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C5_lic_unfair_arbitration__B1_public_sweeps.jsonl"
+        },
+        "B2_legal_random": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 1,
+          "first_credited_discovery_at_rtl_execution": 30,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 20,
+            "VALID_NO_REVERSAL": 11,
+            "VALID_COUNTEREXAMPLE": 1
+          },
+          "max_regret": 0.1694915254237288,
+          "mean_regret_over_valid": 0.017757525757212688,
+          "wall_seconds": 0.162,
+          "controller_cpu_seconds": 0.16,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C5_lic_unfair_arbitration__B2_legal_random.jsonl"
+        },
+        "B2_evolutionary": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 36,
+          "credited_counterexamples": 1,
+          "first_credited_discovery_at_rtl_execution": 64,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 23,
+            "VALID_NO_REVERSAL": 8,
+            "VALID_COUNTEREXAMPLE": 1
+          },
+          "max_regret": 0.11538461538461539,
+          "mean_regret_over_valid": 0.013445082552387452,
+          "wall_seconds": 1.918,
+          "controller_cpu_seconds": 0.58,
+          "child_cpu_seconds": 1.066,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C5_lic_unfair_arbitration__B2_evolutionary.jsonl"
+        },
+        "B3_bounded_smt": {
+          "status": "NOT_APPLICABLE",
+          "reason": "a formal encoding exists only for the bank-only model's acceptance predicate"
+        },
+        "B5_error_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 34,
+          "credited_counterexamples": 1,
+          "first_credited_discovery_at_rtl_execution": 60,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 2,
+            "VALID_NO_REVERSAL": 29,
+            "VALID_COUNTEREXAMPLE": 1
+          },
+          "max_regret": 0.07142857142857142,
+          "mean_regret_over_valid": 0.002232142857142857,
+          "wall_seconds": 6.879,
+          "controller_cpu_seconds": 5.481,
+          "child_cpu_seconds": 1.09,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C5_lic_unfair_arbitration__B5_error_directed.jsonl"
+        },
+        "RIFT_decision_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 38,
+          "credited_counterexamples": 2,
+          "first_credited_discovery_at_rtl_execution": 54,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 27,
+            "VALID_NO_REVERSAL": 3,
+            "VALID_COUNTEREXAMPLE": 2
+          },
+          "max_regret": 0.13636363636363635,
+          "mean_regret_over_valid": 0.006694281247852676,
+          "wall_seconds": 6.93,
+          "controller_cpu_seconds": 5.667,
+          "child_cpu_seconds": 0.952,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C5_lic_unfair_arbitration__RIFT_decision_directed.jsonl"
+        }
+      }
+    },
+    "C6_response_latency_offset": {
+      "provenance": "AUTHORED_DEFECT",
+      "models": {
+        "A": {
+          "model_id": "lic_exact_v1",
+          "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765"
+        },
+        "B": {
+          "model_id": "defect_bfly_resp_lat2_v1",
+          "model_digest": "sha256:6ea625e3f0b91e403d87ba5e8b66fba2ef1c4a89fe59449638480556320b402f"
+        }
+      },
+      "expectation": "decision-irrelevant control: a +1 cycle offset on B can never create a strict reversal under the 2-cycle margin",
+      "arms": {
+        "B1_public_sweeps": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "VALID_NO_REVERSAL": 18,
+            "TIE_OR_SMALL_MARGIN": 14
+          },
+          "max_regret": 0.0,
+          "mean_regret_over_valid": 0.0,
+          "wall_seconds": 0.192,
+          "controller_cpu_seconds": 0.19,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C6_response_latency_offset__B1_public_sweeps.jsonl"
+        },
+        "B2_legal_random": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 64,
+          "credited_counterexamples": 11,
+          "first_credited_discovery_at_rtl_execution": 8,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 16,
+            "VALID_COUNTEREXAMPLE": 11,
+            "VALID_NO_REVERSAL": 5
+          },
+          "max_regret": 0.1694915254237288,
+          "mean_regret_over_valid": 0.045926836191954236,
+          "wall_seconds": 0.168,
+          "controller_cpu_seconds": 0.167,
+          "child_cpu_seconds": 0.0,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C6_response_latency_offset__B2_legal_random.jsonl"
+        },
+        "B2_evolutionary": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 48,
+          "credited_counterexamples": 19,
+          "first_credited_discovery_at_rtl_execution": 6,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 7,
+            "VALID_NO_REVERSAL": 6,
+            "VALID_COUNTEREXAMPLE": 19
+          },
+          "max_regret": 0.11904761904761904,
+          "mean_regret_over_valid": 0.04919188056932668,
+          "wall_seconds": 1.196,
+          "controller_cpu_seconds": 0.423,
+          "child_cpu_seconds": 0.613,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 0,
+          "ledger": "ledger__C6_response_latency_offset__B2_evolutionary.jsonl"
+        },
+        "B3_bounded_smt": {
+          "status": "NOT_APPLICABLE",
+          "reason": "a formal encoding exists only for the bank-only model's acceptance predicate"
+        },
+        "B5_error_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 56,
+          "credited_counterexamples": 0,
+          "first_credited_discovery_at_rtl_execution": null,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 8,
+            "VALID_NO_REVERSAL": 24
+          },
+          "max_regret": 0.030303030303030304,
+          "mean_regret_over_valid": 0.0036031042128603103,
+          "wall_seconds": 5.728,
+          "controller_cpu_seconds": 5.328,
+          "child_cpu_seconds": 0.297,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C6_response_latency_offset__B5_error_directed.jsonl"
+        },
+        "RIFT_decision_directed": {
+          "status": "COMPLETED",
+          "stop_reason": "budget",
+          "solver_calls": 0,
+          "solver_seconds": 0,
+          "accepted_proposals": 32,
+          "rejected_proposals": 0,
+          "rtl_executions_charged": 64,
+          "rtl_cache_hits": 32,
+          "credited_counterexamples": 3,
+          "first_credited_discovery_at_rtl_execution": 20,
+          "verdict_counts": {
+            "TIE_OR_SMALL_MARGIN": 28,
+            "VALID_COUNTEREXAMPLE": 3,
+            "VALID_NO_REVERSAL": 1
+          },
+          "max_regret": 0.09523809523809523,
+          "mean_regret_over_valid": 0.014857278138528138,
+          "wall_seconds": 7.117,
+          "controller_cpu_seconds": 5.58,
+          "child_cpu_seconds": 1.16,
+          "model_tokens": 0,
+          "monetary_charges": 0,
+          "unselected_candidates": 736,
+          "ledger": "ledger__C6_response_latency_offset__RIFT_decision_directed.jsonl"
+        }
+      }
+    }
+  },
+  "executor": {
+    "distinct_rtl_executions": 880,
+    "rtl_cache_hits": 1104
+  }
+}

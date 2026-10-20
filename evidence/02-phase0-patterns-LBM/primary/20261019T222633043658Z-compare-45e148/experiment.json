@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "experiment_id": "phase0-patterns-v1",
+  "kind": "comparison",
+  "description": "Gate 0C: public calibration programs L, B and M on LIC 8x8 (A) and BFLY4 8x16 (B). The model under audit pairs the reviewed exact LIC model with the handoff's explicitly lower-fidelity bank-only butterfly model.",
+  "admitted_designs": [
+    {
+      "design": "A",
+      "config": "lic8x8"
+    },
+    {
+      "design": "B",
+      "config": "bfly4_8x16"
+    }
+  ],
+  "models": {
+    "A": "lic_exact_v1",
+    "B": "bank_only_v1"
+  },
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "reset_cycles": 4,
+  "sampling_convention": "pre_rise_v1",
+  "timeout_cycles": 4096,
+  "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+  "seed": null,
+  "arm_id": "supplied_calibration",
+  "budget": {
+    "rtl_executions": 6,
+    "note": "calibration replay; not part of any discovery budget"
+  },
+  "workloads": [
+    {
+      "id": "L",
+      "path": "experiments/workloads/L.json",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "INSTRUMENT_TEST",
+      "discovery_credit": 0,
+      "source_hypothesis": "A has eight distinct banks; B's paired inputs collide on first-stage outputs; bank-only model may tie"
+    },
+    {
+      "id": "B",
+      "path": "experiments/workloads/B.json",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "INSTRUMENT_TEST",
+      "discovery_credit": 0,
+      "source_hypothesis": "A has four bank conflicts; B has eight usable routes"
+    },
+    {
+      "id": "M",
+      "path": "experiments/workloads/M.json",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "STRESS_WITNESS",
+      "discovery_credit": 0,
+      "source_hypothesis": "active acceptance windows: LIC 40, bank-only BFLY 32, BFLY RTL 64 (unmeasured predictions)"
+    }
+  ],
+  "tags": [
+    "gate0c",
+    "phase0"
+  ]
+}

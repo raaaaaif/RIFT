@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "capacity_words": 4096,
+  "word_bytes": 4,
+  "masters": 8,
+  "arrival_policy": "per_operation_release",
+  "program": {
+    "kind": "read_sequences",
+    "per_master": [
+      {
+        "master": 0,
+        "ops": [
+          {
+            "byte_address": 10472
+          },
+          {
+            "byte_address": 4456
+          },
+          {
+            "byte_address": 7264
+          },
+          {
+            "byte_address": 7896,
+            "release": "after_response",
+            "gap": 1
+          },
+          {
+            "byte_address": 6780
+          },
+          {
+            "byte_address": 6780
+          },
+          {
+            "byte_address": 4032
+          },
+          {
+            "byte_address": 4032,
+            "gap": 3
+          },
+          {
+            "byte_address": 7264,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 7264
+          },
+          {
+            "byte_address": 14884
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          },
+          {
+            "byte_address": 12096
+          }
+        ]
+      },
+      {
+        "master": 1,
+        "ops": [
+          {
+            "byte_address": 14308,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 6508
+          },
+          {
+            "byte_address": 14184
+          },
+          {
+            "byte_address": 14884,
+            "gap": 3
+          },
+          {
+            "byte_address": 14308
+          },
+          {
+            "byte_address": 112,
+            "gap": 3
+          },
+          {
+            "byte_address": 12232,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 12232,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 7896
+          },
+          {
+            "byte_address": 11180
+          },
+          {
+            "byte_address": 12232,
+            "gap": 2
+          },
+          {
+            "byte_address": 7264,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 14184
+          },
+          {
+            "byte_address": 10472
+          },
+          {
+            "byte_address": 7264,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 14884
+          },
+          {
+            "byte_address": 14184
+          },
+          {
+            "byte_address": 7264,
+            "gap": 2
+          },
+          {
+            "byte_address": 1788,
+            "gap": 3
+          },
+          {
+            "byte_address": 112,
+            "gap": 3
+          },
+          {
+            "byte_address": 11180
+          }
+        ]
+      },
+      {
+        "master": 2,
+        "ops": [
+          {
+            "byte_address": 11348,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 11348
+          },
+          {
+            "byte_address": 7264
+          },
+          {
+            "byte_address": 14884,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 1788,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 1788,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 1788
+          },
+          {
+            "byte_address": 7264,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 6508
+          },
+          {
+            "byte_address": 7896
+          },
+          {
+            "byte_address": 4032,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 10472
+          },
+          {
+            "byte_address": 11180,
+            "gap": 1
+          },
+          {
+            "byte_address": 11348,
+            "release": "after_response",
+            "gap": 3
+          },
+          {
+            "byte_address": 11348
+          },
+          {
+            "byte_address": 7264,
+            "gap": 2
+          },
+          {
+            "byte_address": 14884,
+            "gap": 1
+          },
+          {
+            "byte_address": 10472
+          },
+          {
+            "byte_address": 3132
+          },
+          {
+            "byte_address": 4032
+          },
+          {
+            "byte_address": 7896
+          },
+          {
+            "byte_address": 10472
+          },
+          {
+            "byte_address": 14184,
+            "release": "after_response",
+            "gap": 3
+          }
+        ]
+      },
+      {
+        "master": 3,
+        "ops": [
+          {
+            "byte_address": 10472,
+            "gap": 2
+          },
+          {
+            "byte_address": 416
+          },
+          {
+            "byte_address": 112
+          }
+        ]
+      },
+      {
+        "master": 4,
+        "ops": [
+          {
+            "byte_address": 416
+          },
+          {
+            "byte_address": 416
+          },
+          {
+            "byte_address": 7896,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 14184
+          }
+        ]
+      },
+      {
+        "master": 5,
+        "ops": [
+          {
+            "byte_address": 10472
+          },
+          {
+            "byte_address": 4456
+          },
+          {
+            "byte_address": 11348,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 416,
+            "gap": 1
+          },
+          {
+            "byte_address": 14884
+          },
+          {
+            "byte_address": 7896,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 14308,
+            "gap": 1
+          },
+          {
+            "byte_address": 4032
+          }
+        ]
+      },
+      {
+        "master": 6,
+        "ops": [
+          {
+            "byte_address": 11180,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 11180,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 6780
+          },
+          {
+            "byte_address": 7264
+          },
+          {
+            "byte_address": 14884,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 4032,
+            "release": "after_response"
+          }
+        ]
+      },
+      {
+        "master": 7,
+        "ops": [
+          {
+            "byte_address": 10480,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 6516
+          },
+          {
+            "byte_address": 7272
+          },
+          {
+            "byte_address": 14192
+          },
+          {
+            "byte_address": 14316
+          },
+          {
+            "byte_address": 14192
+          },
+          {
+            "byte_address": 6516
+          },
+          {
+            "byte_address": 14192,
+            "release": "after_response",
+            "gap": 1
+          }
+        ]
+      }
+    ]
+  },
+  "label": "reduction start"
+}

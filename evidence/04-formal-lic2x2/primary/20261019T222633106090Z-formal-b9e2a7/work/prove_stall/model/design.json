@@ -1,0 +1,4493 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.70+145 (git sha1 a31d95ea0, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "rift_lic2x2_formal",
+        "cell_sorts": [
+          {
+            "type": "$check",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "ARGS",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "TRG",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.check_586",
+                  "attributes": {
+                    "hdlname": "_witness_ check_586",
+                    "src": "rift_lic2x2_formal.sv:84.79-84.97"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_590",
+                  "attributes": {
+                    "hdlname": "_witness_ check_590",
+                    "src": "rift_lic2x2_formal.sv:84.79-84.97"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_593",
+                  "attributes": {
+                    "hdlname": "_witness_ check_593",
+                    "src": "rift_lic2x2_formal.sv:88.15-88.32"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_598",
+                  "attributes": {
+                    "hdlname": "_witness_ check_598",
+                    "src": "rift_lic2x2_formal.sv:89.25-89.41"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_600",
+                  "attributes": {
+                    "hdlname": "_witness_ check_600",
+                    "src": "rift_lic2x2_formal.sv:91.7-91.63"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111101",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_605",
+                  "attributes": {
+                    "hdlname": "_witness_ check_605",
+                    "src": "rift_lic2x2_formal.sv:92.7-92.52"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111100",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_611",
+                  "attributes": {
+                    "hdlname": "_witness_ check_611",
+                    "src": "rift_lic2x2_formal.sv:93.20-93.39"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111011",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_623",
+                  "attributes": {
+                    "hdlname": "_witness_ check_623",
+                    "src": "rift_lic2x2_formal.sv:94.52-94.94"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111010",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_629",
+                  "attributes": {
+                    "hdlname": "_witness_ check_629",
+                    "src": "rift_lic2x2_formal.sv:91.7-91.63"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111001",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_634",
+                  "attributes": {
+                    "hdlname": "_witness_ check_634",
+                    "src": "rift_lic2x2_formal.sv:92.7-92.52"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111000",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_640",
+                  "attributes": {
+                    "hdlname": "_witness_ check_640",
+                    "src": "rift_lic2x2_formal.sv:93.20-93.39"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110111",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_652",
+                  "attributes": {
+                    "hdlname": "_witness_ check_652",
+                    "src": "rift_lic2x2_formal.sv:94.52-94.94"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110110",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_663",
+                  "attributes": {
+                    "hdlname": "_witness_ check_663",
+                    "src": "rift_lic2x2_formal.sv:105.35-105.66"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_667",
+                  "attributes": {
+                    "hdlname": "_witness_ check_667",
+                    "src": "rift_lic2x2_formal.sv:105.35-105.66"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_671",
+                  "attributes": {
+                    "hdlname": "_witness_ check_671",
+                    "src": "rift_lic2x2_formal.sv:107.35-107.110"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111101",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_679",
+                  "attributes": {
+                    "hdlname": "_witness_ check_679",
+                    "src": "rift_lic2x2_formal.sv:107.35-107.110"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111100",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_687",
+                  "attributes": {
+                    "hdlname": "_witness_ check_687",
+                    "src": "rift_lic2x2_formal.sv:109.7-109.36"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111011",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_691",
+                  "attributes": {
+                    "hdlname": "_witness_ check_691",
+                    "src": "rift_lic2x2_formal.sv:113.11-114.78"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111010",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_703",
+                  "attributes": {
+                    "hdlname": "_witness_ check_703",
+                    "src": "rift_lic2x2_formal.sv:113.11-114.78"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111001",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_714",
+                  "attributes": {
+                    "hdlname": "_witness_ check_714",
+                    "src": "rift_lic2x2_formal.sv:116.35-116.65"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111000",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_717",
+                  "attributes": {
+                    "hdlname": "_witness_ check_717",
+                    "src": "rift_lic2x2_formal.sv:116.35-116.65"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110111",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_720",
+                  "attributes": {
+                    "hdlname": "_witness_ check_720",
+                    "src": "rift_lic2x2_formal.sv:118.49-118.91"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110110",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_728",
+                  "attributes": {
+                    "hdlname": "_witness_ check_728",
+                    "src": "rift_lic2x2_formal.sv:118.49-118.91"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110101",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_742",
+                  "attributes": {
+                    "hdlname": "_witness_ check_742",
+                    "src": "rift_lic2x2_formal.sv:122.11-122.87"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110100",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_755",
+                  "attributes": {
+                    "hdlname": "_witness_ check_755",
+                    "src": "rift_lic2x2_formal.sv:122.11-122.87"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110011",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_762",
+                  "attributes": {
+                    "hdlname": "_witness_ check_762",
+                    "src": "rift_lic2x2_formal.sv:124.7-124.29"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110010",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_765",
+                  "attributes": {
+                    "hdlname": "_witness_ check_765",
+                    "src": "rift_lic2x2_formal.sv:131.35-131.54"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110001",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_768",
+                  "attributes": {
+                    "hdlname": "_witness_ check_768",
+                    "src": "rift_lic2x2_formal.sv:131.35-131.54"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111110000",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_785",
+                  "attributes": {
+                    "hdlname": "_witness_ check_785",
+                    "src": "rift_lic2x2_formal.sv:149.7-149.51"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_792",
+                  "attributes": {
+                    "hdlname": "_witness_ check_792",
+                    "src": "rift_lic2x2_formal.sv:150.7-150.51"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_800",
+                  "attributes": {
+                    "hdlname": "_witness_ check_800",
+                    "src": "rift_lic2x2_formal.sv:157.7-157.29"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_803",
+                  "attributes": {
+                    "hdlname": "_witness_ check_803",
+                    "src": "rift_lic2x2_formal.sv:158.7-158.32"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_806",
+                  "attributes": {
+                    "hdlname": "_witness_ check_806",
+                    "src": "rift_lic2x2_formal.sv:159.7-159.83"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111101",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_813",
+                  "attributes": {
+                    "hdlname": "_witness_ check_813",
+                    "src": "rift_lic2x2_formal.sv:160.7-160.65"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111100",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_825",
+                  "attributes": {
+                    "hdlname": "_witness_ check_825",
+                    "src": "rift_lic2x2_formal.sv:161.7-161.36"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111011",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$driver$init",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:45.3"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$rst_q",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:45.3"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$aldff",
+            "ports": [
+                {
+                  "name": "AD",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "ALOAD",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$driver$acc_q[0]",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:55.3"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$acc_q[1]",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:55.3"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$bank_q[0]",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:55.3"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$bank_q[1]",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:55.3"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$dut.acc_q",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:145.3"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_inputs[0].i_addr_dec_resp_mux.gen_several_outputs.gen_no_broadcast.bank_sel_q[0]",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:159.5"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_inputs[0].i_addr_dec_resp_mux.vld_q",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:159.5"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_inputs[1].i_addr_dec_resp_mux.gen_several_outputs.gen_no_broadcast.bank_sel_q[0]",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:159.5"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_inputs[1].i_addr_dec_resp_mux.vld_q",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:159.5"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_q",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:159.9"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.req_q",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:188.9"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.rr_q",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:239.7"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_q",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:159.9"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.req_q",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:188.9"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.rr_q",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:239.7"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$driver$stall_cnt[0]",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:80.3"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$driver$stall_cnt[1]",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:80.3"
+                  },
+                  "parameters": {
+                    "ALOAD_POLARITY": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$ge",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$723",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000001",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000001",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$731",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000001",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000001",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$666",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:105.43-105.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$670",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:105.43-105.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$701",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:113.19-114.76"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$713",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:113.19-114.76"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$740",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:121.26-121.96"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$748",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:122.19-122.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$753",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:121.26-121.96"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$761",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:122.19-122.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$791",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:149.15-149.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$798",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:150.15-150.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$lt",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [15, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$602",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:91.15-91.35"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001111",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$631",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:91.15-91.35"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001111",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mem_v2",
+            "ports": [
+                {
+                  "name": "RD_ADDR",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "RD_ARST",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "RD_CLK",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "RD_DATA",
+                  "direction": "",
+                  "range": [64, 0]
+                },
+                {
+                  "name": "RD_EN",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "RD_SRST",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "WR_ADDR",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "WR_CLK",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "WR_DATA",
+                  "direction": "io",
+                  "range": [64, 0]
+                },
+                {
+                  "name": "WR_EN",
+                  "direction": "io",
+                  "range": [64, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "add_q",
+                  "attributes": {
+                    "hdlname": "add_q",
+                    "src": "rift_lic2x2_formal.sv:41.16"
+                  },
+                  "parameters": {
+                    "ABITS": "00000000000000000000000000000001",
+                    "INIT": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "MEMID": "\\add_q",
+                    "OFFSET": "00000000000000000000000000000000",
+                    "RD_ARST_VALUE": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "RD_CE_OVER_SRST": "00",
+                    "RD_CLK_ENABLE": "00",
+                    "RD_CLK_POLARITY": "00",
+                    "RD_COLLISION_X_MASK": "0000",
+                    "RD_INIT_VALUE": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "RD_PORTS": "00000000000000000000000000000010",
+                    "RD_SRST_VALUE": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "RD_TRANSPARENCY_MASK": "0000",
+                    "RD_WIDE_CONTINUATION": "00",
+                    "SIZE": "00000000000000000000000000000010",
+                    "WIDTH": "00000000000000000000000000100000",
+                    "WR_CLK_ENABLE": "11",
+                    "WR_CLK_POLARITY": "11",
+                    "WR_PORTS": "00000000000000000000000000000010",
+                    "WR_PRIORITY_MASK": "0100",
+                    "WR_WIDE_CONTINUATION": "00"
+                  }
+                },
+                {
+                  "name": "gnt_q",
+                  "attributes": {
+                    "hdlname": "gnt_q",
+                    "src": "rift_lic2x2_formal.sv:40.15"
+                  },
+                  "parameters": {
+                    "ABITS": "00000000000000000000000000000001",
+                    "INIT": "xx",
+                    "MEMID": "\\gnt_q",
+                    "OFFSET": "00000000000000000000000000000000",
+                    "RD_ARST_VALUE": "xx",
+                    "RD_CE_OVER_SRST": "00",
+                    "RD_CLK_ENABLE": "00",
+                    "RD_CLK_POLARITY": "00",
+                    "RD_COLLISION_X_MASK": "0000",
+                    "RD_INIT_VALUE": "xx",
+                    "RD_PORTS": "00000000000000000000000000000010",
+                    "RD_SRST_VALUE": "xx",
+                    "RD_TRANSPARENCY_MASK": "0000",
+                    "RD_WIDE_CONTINUATION": "00",
+                    "SIZE": "00000000000000000000000000000010",
+                    "WIDTH": "00000000000000000000000000000001",
+                    "WR_CLK_ENABLE": "11",
+                    "WR_CLK_POLARITY": "11",
+                    "WR_PORTS": "00000000000000000000000000000010",
+                    "WR_PRIORITY_MASK": "0100",
+                    "WR_WIDE_CONTINUATION": "00"
+                  }
+                },
+                {
+                  "name": "req_q",
+                  "attributes": {
+                    "hdlname": "req_q",
+                    "src": "rift_lic2x2_formal.sv:39.15"
+                  },
+                  "parameters": {
+                    "ABITS": "00000000000000000000000000000001",
+                    "INIT": "xx",
+                    "MEMID": "\\req_q",
+                    "OFFSET": "00000000000000000000000000000000",
+                    "RD_ARST_VALUE": "xx",
+                    "RD_CE_OVER_SRST": "00",
+                    "RD_CLK_ENABLE": "00",
+                    "RD_CLK_POLARITY": "00",
+                    "RD_COLLISION_X_MASK": "0000",
+                    "RD_INIT_VALUE": "xx",
+                    "RD_PORTS": "00000000000000000000000000000010",
+                    "RD_SRST_VALUE": "xx",
+                    "RD_TRANSPARENCY_MASK": "0000",
+                    "RD_WIDE_CONTINUATION": "00",
+                    "SIZE": "00000000000000000000000000000010",
+                    "WIDTH": "00000000000000000000000000000001",
+                    "WR_CLK_ENABLE": "11",
+                    "WR_CLK_POLARITY": "11",
+                    "WR_PORTS": "00000000000000000000000000000010",
+                    "WR_PRIORITY_MASK": "0100",
+                    "WR_WIDE_CONTINUATION": "00"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$add",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$386",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:167.19-167.29"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$414",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:178.55-178.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$424",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.87-180.96"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$429",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.67-181.76"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$477",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:178.55-178.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$487",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.87-180.96"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$492",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.67-181.76"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$503",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:186.36-186.48"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$575",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:82.103-82.122"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$579",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:82.103-82.122"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$659",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:101.13-101.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$662",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:102.18-102.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$114",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:157.29-157.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$127",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:209.34-209.63"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$156",
+                  "attributes": {
+                    "src": "lzc.sv:81.54-83.37"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$165",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:231.27-231.67"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$168",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:232.27-232.62"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$182",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:273.40-273.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000110000"
+                  }
+                },
+                {
+                  "name": "$209",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:157.29-157.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$222",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:209.34-209.63"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$251",
+                  "attributes": {
+                    "src": "lzc.sv:81.54-83.37"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$260",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:231.27-231.67"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$263",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:232.27-232.62"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$277",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:273.40-273.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000110000"
+                  }
+                },
+                {
+                  "name": "$42",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:149.22-149.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$520",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:195.23-196.37"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000111"
+                  }
+                },
+                {
+                  "name": "$577",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:82.73-82.122"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$578",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:82.54-82.123"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$581",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:82.73-82.122"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$582",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:82.54-82.123"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$724",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$725",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$726",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$732",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$733",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$734",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$79",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:149.22-149.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$1",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:84.79-84.97|rift_lic2x2_formal.sv:84.43-84.97"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$101",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:189.68-189.82|rift_tcdm_top.sv:189.7-189.82"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$104",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:188.39-188.53|rift_tcdm_top.sv:188.7-188.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$107",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:187.51-187.68|rift_tcdm_top.sv:187.7-187.68"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$110",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:186.36-186.49|rift_tcdm_top.sv:186.7-186.49"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$113",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:185.24-185.40|rift_tcdm_top.sv:185.7-185.40"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$119",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:182.54-182.71|rift_tcdm_top.sv:182.9-182.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$122",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.67-181.77|rift_tcdm_top.sv:181.9-181.77"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$125",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.87-180.97|rift_tcdm_top.sv:179.9-180.97"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$128",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:178.55-178.65|rift_tcdm_top.sv:178.9-178.65"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$134",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:182.54-182.71|rift_tcdm_top.sv:182.9-182.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$137",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.67-181.77|rift_tcdm_top.sv:181.9-181.77"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$140",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.87-180.97|rift_tcdm_top.sv:179.9-180.97"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$143",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:178.55-178.65|rift_tcdm_top.sv:178.9-178.65"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$146",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:189.68-189.82|rift_tcdm_top.sv:189.7-189.82"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$149",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:188.39-188.53|rift_tcdm_top.sv:188.7-188.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$152",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:187.51-187.68|rift_tcdm_top.sv:187.7-187.68"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$155",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:186.36-186.49|rift_tcdm_top.sv:186.7-186.49"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$158",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:185.24-185.40|rift_tcdm_top.sv:185.7-185.40"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$164",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:182.54-182.71|rift_tcdm_top.sv:182.9-182.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$167",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.67-181.77|rift_tcdm_top.sv:181.9-181.77"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$170",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.87-180.97|rift_tcdm_top.sv:179.9-180.97"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$173",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:178.55-178.65|rift_tcdm_top.sv:178.9-178.65"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$176",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:183.55-183.75|rift_tcdm_top.sv:183.9-183.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$182",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.67-181.77|rift_tcdm_top.sv:181.9-181.77"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$185",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.87-180.97|rift_tcdm_top.sv:179.9-180.97"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$188",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:178.55-178.65|rift_tcdm_top.sv:178.9-178.65"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$191",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:168.34-168.48|rift_tcdm_top.sv:168.7-168.48"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$194",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:167.19-167.30|rift_tcdm_top.sv:167.7-167.30"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$197",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:166.35-166.52|rift_tcdm_top.sv:166.7-166.52"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$200",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:168.34-168.48|rift_tcdm_top.sv:168.7-168.48"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$203",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:167.19-167.30|rift_tcdm_top.sv:167.7-167.30"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$205",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:166.35-166.52|rift_tcdm_top.sv:166.7-166.52"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$211",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.52-94.94|rift_lic2x2_formal.sv:94.7-94.94"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$215",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.52-94.94|rift_lic2x2_formal.sv:94.7-94.94"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$219",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:89.25-89.41|rift_lic2x2_formal.sv:89.5-89.41"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$221",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:88.15-88.32|rift_lic2x2_formal.sv:88.5-88.32"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$3",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:84.79-84.97|rift_lic2x2_formal.sv:84.43-84.97"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$32",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "rift_lic2x2_formal.sv:103.17-129.8|rift_lic2x2_formal.sv:103.5-132.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$39",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:122.11-122.87|rift_lic2x2_formal.sv:121.9-122.87"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$41",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "rift_lic2x2_formal.sv:103.17-129.8|rift_lic2x2_formal.sv:103.5-132.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$44",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:122.11-122.87|rift_lic2x2_formal.sv:121.9-122.87"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$46",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "rift_lic2x2_formal.sv:103.17-129.8|rift_lic2x2_formal.sv:103.5-132.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$49",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.49-118.91|rift_lic2x2_formal.sv:118.35-118.91"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$51",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "rift_lic2x2_formal.sv:103.17-129.8|rift_lic2x2_formal.sv:103.5-132.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$54",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.49-118.91|rift_lic2x2_formal.sv:118.35-118.91"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$56",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "rift_lic2x2_formal.sv:103.17-129.8|rift_lic2x2_formal.sv:103.5-132.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$60",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "rift_lic2x2_formal.sv:103.17-129.8|rift_lic2x2_formal.sv:103.5-132.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$67",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:113.11-114.78|rift_lic2x2_formal.sv:112.9-114.78"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$69",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "rift_lic2x2_formal.sv:103.17-129.8|rift_lic2x2_formal.sv:103.5-132.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$74",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "rift_lic2x2_formal.sv:103.17-129.8|rift_lic2x2_formal.sv:103.5-132.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$98",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:192.33-192.51|rift_tcdm_top.sv:192.5-192.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$ne",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$381",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:168.11-168.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$388",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:168.11-168.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$442",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:187.37-187.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$506",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:187.37-187.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$517",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:192.9-192.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$377",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:166.24-166.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$383",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:166.24-166.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$445",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:188.24-188.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$450",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:189.54-189.66"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$509",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:188.24-188.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$514",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:189.54-189.66"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$595",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:88.23-88.30"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$603",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:91.39-91.61"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$632",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:91.39-91.61"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$650",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.41-94.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$665",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:105.43-105.52"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$669",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:105.43-105.52"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$678",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:107.43-107.108"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$686",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:107.43-107.108"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$764",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:124.15-124.27"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$767",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:131.43-131.52"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$770",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:131.43-131.52"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$776",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:145.30-145.42"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$778",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:145.56-145.68"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$787",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:149.15-149.21"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$790",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:149.25-149.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$794",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:150.15-150.21"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$797",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:150.25-150.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$815",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:160.14-160.19"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$822",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:160.44-160.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [11, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [11, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$395",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.13-180.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$397",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.41-180.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$399",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.66-180.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$418",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.13-180.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$420",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.41-180.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$422",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.66-180.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$458",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.13-180.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$460",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.41-180.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$462",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.66-180.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$483",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.41-180.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$485",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:180.66-180.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$584",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:84.57-84.77"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$588",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:84.57-84.77"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$608",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:92.35-92.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$627",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.72-94.92"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$637",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:92.35-92.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$656",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.72-94.92"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$689",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:109.15-109.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$711",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:114.53-114.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000001011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$716",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:116.43-116.63"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$719",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:116.43-116.63"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$727",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.57-118.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$735",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.57-118.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$809",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:159.38-159.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$811",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:159.68-159.81"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$262",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:232.28-232.42"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$378",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:166.11-166.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$384",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:166.11-166.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$394",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-179.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$398",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$400",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$404",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.13-181.65"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$421",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$423",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$426",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.13-181.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$428",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.13-181.65"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$441",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:187.11-187.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$443",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:187.11-187.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$446",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:188.11-188.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$449",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:189.11-189.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$451",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:189.11-189.66"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$457",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-179.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$459",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$461",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$463",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$465",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.13-181.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$467",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.13-181.65"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$473",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:183.13-183.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$484",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.62"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$486",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:179.13-180.85"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$491",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:181.13-181.65"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$495",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:182.13-182.52"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$507",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:187.11-187.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$510",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:188.11-188.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$513",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:189.11-189.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$515",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:189.11-189.66"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$585",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:84.47-84.77"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$589",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:84.47-84.77"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$604",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:91.15-91.61"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$609",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:92.15-92.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$628",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.60-94.92"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$633",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:91.15-91.61"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$638",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:92.15-92.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$647",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.11-94.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$651",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.11-94.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$657",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:94.60-94.92"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$675",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:107.45-107.84"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$677",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:107.45-107.107"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$683",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:107.45-107.84"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$685",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:107.45-107.107"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$696",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:113.20-113.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$700",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:114.20-114.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$712",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:114.20-114.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$737",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:121.27-121.58"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$739",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:121.64-121.95"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$741",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:121.13-121.97"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$747",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:122.55-122.84"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$754",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:121.13-121.97"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$760",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:122.55-122.84"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$777",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:145.18-145.42"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$779",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:145.44-145.68"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$805",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:158.14-158.30"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$808",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:159.14-159.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$810",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:159.14-159.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$812",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:159.14-159.81"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$816",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:160.14-160.28"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$819",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:160.14-160.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$823",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:160.14-160.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$824",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:160.14-160.63"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$827",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:161.14-161.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$gt",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$126",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:209.35-209.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$221",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:209.35-209.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$437",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:185.11-185.22"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$500",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:185.11-185.22"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$reduce_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$39",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:90.18-90.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$76",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:90.18-90.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$175",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:267.40-267.65"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$179",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:270.27-270.79"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$270",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:267.40-267.65"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$274",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:270.27-270.79"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$demux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$35",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:82.7-82.27"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$72",
+                  "attributes": {
+                    "src": "addr_dec_resp_mux.sv:82.7-82.27"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$112",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:156.29-156.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$178",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:270.41-270.79"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$185",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:274.40-274.82"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$187",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:274.40-274.91"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$190",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:275.40-275.84"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$191",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:275.40-275.90"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$207",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:156.29-156.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$273",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:270.41-270.79"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$280",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:274.40-274.82"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$282",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:274.40-274.91"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$285",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:275.40-275.84"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$286",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:275.40-275.90"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$331",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:133.29-133.48"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$346",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:133.29-133.48"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$375",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:147.27-147.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$564",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:60.22-60.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$567",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:60.22-60.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$660",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:102.25-102.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$661",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:102.55-102.74"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$789",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:149.26-149.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$796",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:150.26-150.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$auto$opt_expr.cc:771:replace_const_cells$226",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$auto$opt_expr.cc:771:replace_const_cells$228",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$111",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:156.37-156.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$177",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:270.27-270.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$186",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:274.87-274.91"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$206",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:156.37-156.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$272",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:270.27-270.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$281",
+                  "attributes": {
+                    "src": "rr_arb_tree.sv:274.87-274.91"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$374",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:147.33-147.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$409",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:183.26-183.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$434",
+                  "attributes": {
+                    "src": "rift_tcdm_top.sv:183.26-183.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$607",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:92.15-92.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$636",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:92.15-92.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$722",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$730",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:118.71-118.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$788",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:149.34-149.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$795",
+                  "attributes": {
+                    "src": "rift_lic2x2_formal.sv:150.34-150.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "top": "00000000000000000000000000000001",
+            "src": "rift_lic2x2_formal.sv:10.8"
+        }
+      }
+  ]
+}

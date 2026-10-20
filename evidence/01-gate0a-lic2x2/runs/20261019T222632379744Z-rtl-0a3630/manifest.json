@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "kind": "rtl",
+  "runner": "verilator_rtl",
+  "observation_role": "RTL_REFERENCE_OBSERVATION",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "status": "COMPLETED",
+  "makespan": 3,
+  "config_id": "lic2x2",
+  "config": {
+    "schema_version": 1,
+    "addr_width": 32,
+    "data_width": 32,
+    "byte_off_width": 2,
+    "be_width": 4,
+    "resp_lat": 1,
+    "write_resp_on": 1,
+    "num_par": 1,
+    "capacity_words": 4096,
+    "config_id": "lic2x2",
+    "role": "harness_gate",
+    "role_label": "Harness gate",
+    "descriptive_name": "LIC 2\u00d72 (harness gate)",
+    "topology": "LIC",
+    "num_in": 2,
+    "num_out": 2,
+    "addr_mem_width": 11
+  },
+  "workload_digest": "sha256:98f644fcdc8b0c5ab0ad327bf82db04267d66494da97b4be700c85f9c0c50434",
+  "workload_label": null,
+  "reference": {
+    "rtl_commit": "2967d8d17be0a6139229ca8d3d4956e182aec3de",
+    "dependency_commit": "015917ff33e5f944e866814f72f2074fb0f4220f",
+    "wrapper_digest": "sha256:03c1fc2c4ea7d7c79a093594419125eb1f7b416dd3a9c710328d2b326b7f70cc",
+    "driver_digest": "sha256:46d8698719410821979c0795fc494ee08fd6eb960fd448cfdc4f2af53b322d89",
+    "memory_oracle_digest": "sha256:5b1e7b337487ea421b7c709df2b03c6cc94cc13917f7a6142b1fccd5c085cd57",
+    "sampling_convention": "pre_rise_v1",
+    "config_digest": "sha256:7bfbc336c89c3752e6b6a0d21299a9cd3ac09e17a63e7b061e0fb417cbcb4aa6",
+    "build_key_digest": "sha256:695446f8ef7ef275cca9d5dc7f2fd56609894121e84a96ce01b446fa27151fad",
+    "binary_sha256": "sha256:cd3b7e59ea329ad6b673af22a40abc5b377f44e4b7d4ee4398752425d88ed966",
+    "toolchain_lock_digest": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+    "assertion_register_digest": "sha256:e2f241afc63e2182eed9a650bb343a5ce2b55e67ad5c52316b64f1b5fd98b04d"
+  },
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "reset_cycles": 4,
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "timeout_cycles": 4096,
+  "stalls": [],
+  "cpp_inject": null,
+  "sv_inject_mask": 0,
+  "fst_dumped": false,
+  "command": [
+    "build/lic2x2-695446f8ef7e/obj_dir/rift_sim",
+    "--workload",
+    "artifacts/runs/20261019T222632379744Z-rtl-0a3630/compiled_workload.txt",
+    "--events",
+    "artifacts/runs/20261019T222632379744Z-rtl-0a3630/events.jsonl",
+    "--summary",
+    "artifacts/runs/20261019T222632379744Z-rtl-0a3630/runner_summary.json",
+    "--run-id",
+    "20261019T222632379744Z-rtl-0a3630",
+    "--timeout",
+    "4096"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.003866,
+  "build": {
+    "cache_hit": true,
+    "build_key_digest": "sha256:695446f8ef7ef275cca9d5dc7f2fd56609894121e84a96ce01b446fa27151fad",
+    "warnings": [
+      "%Warning-UNSIGNED: /Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/rr_arb_tree.sv:209:37: Comparison is constant due to unsigned arithmetic",
+      "%Warning-UNSIGNED: /Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/rr_arb_tree.sv:210:37: Comparison is constant due to unsigned arithmetic"
+    ]
+  },
+  "tags": [
+    "gate0a"
+  ],
+  "run_id": "20261019T222632379744Z-rtl-0a3630",
+  "artifacts": {
+    "check.json": {
+      "sha256": "sha256:46d5eb004681474cdca4bc37a478f9dd0034a184a5bae4e5309b896c59b0a576",
+      "bytes": 722
+    },
+    "compiled_workload.txt": {
+      "sha256": "sha256:71132eb7b3124c4f2c9de33cc143e174597b2faf3e0fa08999cbdfd3d99d2df2",
+      "bytes": 157
+    },
+    "events.jsonl": {
+      "sha256": "sha256:87b5c4fa85a1f1ca09f5da93421f36634366cedd79833e2c6689c717d177bbaf",
+      "bytes": 2492
+    },
+    "runner_summary.json": {
+      "sha256": "sha256:1b60e1d6fc8982e9e5f082ea6e79ce364babc48f758e9aea37b8f045e653e58d",
+      "bytes": 3543
+    },
+    "workload.json": {
+      "sha256": "sha256:f08b4128d4a695e13b9723e203187f13924cef18c55075a7a1ef8107ebf8957f",
+      "bytes": 500
+    }
+  },
+  "manifest_digest": "sha256:3f31a883d8cf926d576e579977efcce13c641036575b79b7890ce970cc9fc9e1"
+}

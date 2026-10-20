@@ -1,0 +1,17 @@
+RIFT evidence bundle - scope and limitations
+
+* Reference: pinned pulp-platform tcdm_interconnect (2967d8d) + common_cells
+  (015917f) simulated with Verilator 5.053 through the RIFT wrapper and C++
+  driver. RTL is a reference implementation, not silicon. Cycle makespan at a
+  common abstract clock; no physical time, area, power or frequency claim.
+* Vendor concurrent assertions are excluded under VERILATOR (see
+  locks/assertion_exclusions.json); acceptance relies on RIFT's counted
+  monitors and the independent event checker.
+* Audit cases were authored by the implementer (authored defects, a permitted
+  approximation control). None is independently authored or naturally
+  occurring. Public patterns L/B/M carry zero discovery credit.
+* Reductions claim at most local 1-minimality under the recorded edit set.
+* Repair acceptance is under contract repair-acceptance-v1 on the sealed
+  held-out baskets heldout-v1 and heldout-v2; it is not a research-study result.
+* Executions are native darwin-arm64; the Linux reproducibility target was not
+  exercised.

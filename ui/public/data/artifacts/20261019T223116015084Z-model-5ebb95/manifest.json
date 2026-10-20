@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "model",
+  "runner": "fast_model",
+  "observation_role": "MODEL_PREDICTION",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "status": "COMPLETED",
+  "makespan": 129,
+  "config_id": "bfly4_8x16",
+  "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+  "workload_digest": "sha256:d14ef9c51764aadc2c22e8bcab35404eb5abe3aa7a2ff930b456d9f098007b6b",
+  "workload_label": "C4 decision-directed proposal (screen step 21)",
+  "model_id": "defect_bfly_bank_mod8_v1",
+  "model_digest": "sha256:fcc3bc4f80e00c3bd35d9908e2a2b26e6779153a0ba976f40b9c3d5c0a2cd217",
+  "model_spec": {
+    "family": "butterfly",
+    "params": {
+      "prio_mode": "rr",
+      "bank_modulus": 8
+    },
+    "applies_to": [
+      "BFLY4"
+    ],
+    "contract": {
+      "promise": "BOUNDED_ERROR",
+      "scope": "authored defect: bank mapping width uses q mod 8 instead of q mod 16",
+      "declared_omissions": []
+    },
+    "provenance": "AUTHORED_DEFECT (wrong mapping width)",
+    "admissible_fast_model": true,
+    "model_id": "defect_bfly_bank_mod8_v1"
+  },
+  "approximation_contract": {
+    "promise": "BOUNDED_ERROR",
+    "scope": "authored defect: bank mapping width uses q mod 8 instead of q mod 16",
+    "declared_omissions": []
+  },
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "timeout_cycles": 4096,
+  "elapsed_seconds": 0.001668666023761034,
+  "tags": [
+    "publish",
+    "C4-tie"
+  ],
+  "run_id": "20261019T223116015084Z-model-5ebb95",
+  "artifacts": {
+    "check.json": {
+      "sha256": "sha256:8cb17de9e021e1159442827d495782f5a88cc180547d83670fe3ea91a21fa53d",
+      "bytes": 740
+    },
+    "events.jsonl": {
+      "sha256": "sha256:d721875c378d3677dc016b1f139af0d2a4ce0d95468b55140ebee78e7370d931",
+      "bytes": 78266
+    },
+    "model_summary.json": {
+      "sha256": "sha256:81671adf3ca1872cedf54a3afcb6e3583f55d5fe9a5587d6b868737793dfc014",
+      "bytes": 306
+    },
+    "workload.json": {
+      "sha256": "sha256:7e5aa747b1836843f29aa9082a83269e3055444f7d4f8235182e8b53b78e137a",
+      "bytes": 8012
+    }
+  },
+  "manifest_digest": "sha256:3538be6c69abd0388145638d7b660ef88d405a2b9c9e1140c785bb7879d54de5"
+}

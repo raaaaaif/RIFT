@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "bundle": "09-verify-overfit_lookup",
+  "primary": "20261019T223054181185Z-verify-4cbed7",
+  "primary_kind": "verification",
+  "primary_manifest_digest": "sha256:aed6d7c870fa00605f88d4b083fb029b511a6a62f2df31aea73e2df00eb834ee",
+  "runs_included": [],
+  "runs_policy": "all referenced runs",
+  "created": "2026-10-19T22:32:15Z",
+  "files": {
+    "LIMITATIONS.txt": "sha256:64b03cc266f8a1fa80e517fb0fca3a48a60baf3ad6ac70299143f48830b802a6",
+    "configs/bfly2_8x16.json": "sha256:cb45fe7adf09b64c1e3b2ed85e791cff40b73c6ee331c19c26f998ec3c0d4e7a",
+    "configs/bfly4_8x16.json": "sha256:65a93cb0e16ccdf2653bf264bd099847eef8585fe216fa204142a1061ffddd75",
+    "configs/lic2x2.json": "sha256:d984fe5a3121651f52957ad813e2c6919282de8a3d689937f1099420e010072a",
+    "configs/lic8x8.json": "sha256:228f025153023549816bec99e222b0f51128bfa2f638e7d10841ed3ac98bd201",
+    "locks/assertion_exclusions.json": "sha256:e2f241afc63e2182eed9a650bb343a5ce2b55e67ad5c52316b64f1b5fd98b04d",
+    "locks/preprocessing.json": "sha256:58ad3786b1e97bef019c5cc6142e2764aa55179c72e161da5d83f8ec0d6a0708",
+    "locks/sources.lock.json": "sha256:636d912b7bc1e1a7e10fdc1d34fcd14cc433db3a3fc6597ad3f5f106d021f709",
+    "locks/toolchain.lock.json": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+    "primary/20261019T223054181185Z-verify-4cbed7/manifest.json": "sha256:8a3d978eb08c8f384b8a7bca5d1a59ae31d049ece00ad256d631a75290d1bd2a",
+    "primary/20261019T223054181185Z-verify-4cbed7/verification.json": "sha256:5be3e4bb215ca7037d1adb786d74b946cbc51e0fa7dbdb4850fdc4ef30881234"
+  },
+  "bundle_digest": "sha256:c31aac6c023a134b93782f97e3d8053d5b05b577fabe0efe476b6ba71b5f0549"
+}

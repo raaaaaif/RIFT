@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "runtime_benchmark",
+  "status": "TARGET_UNMET",
+  "tags": [
+    "runtime"
+  ],
+  "run_id": "20261019T222726131162Z-benchmark-634be8",
+  "artifacts": {
+    "benchmark.json": {
+      "sha256": "sha256:9055a309624fd8e03411378c55a05723096e8214ec5bf4c1d2aaa689778a5e80",
+      "bytes": 8525
+    }
+  },
+  "manifest_digest": "sha256:90bb92eaf31eb1b3af3712d0ff20397c504e559a1cbdaff225c0ce15ea593116"
+}

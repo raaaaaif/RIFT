@@ -1,0 +1,164 @@
+{
+  "family": "fitted_penalty",
+  "params": {
+    "init_milli": [
+      0,
+      100,
+      0,
+      100,
+      200,
+      0,
+      0,
+      0
+    ],
+    "bank_milli": [
+      0,
+      100,
+      300,
+      200,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -400,
+      0,
+      0
+    ]
+  },
+  "applies_to": [
+    "BFLY4"
+  ],
+  "contract": {
+    "promise": "BOUNDED_ERROR",
+    "scope": "training distribution only: random legal programs, 40 workloads",
+    "declared_omissions": [
+      "no structural model of internal routes; contention represented by fitted per-path penalties"
+    ],
+    "training_mae_cycles": "1.5500"
+  },
+  "provenance": "conventional black-box calibration baseline (bank-only arbitration + fitted per-path penalties)",
+  "admissible_fast_model": true,
+  "training_evidence": {
+    "config_id": "bfly4_8x16",
+    "seeds": [
+      7000,
+      7039
+    ],
+    "workload_digests": [
+      "sha256:e16f410102574a8fed9fc48ece107920a43ac8c80cd7f486394d9837cea31d4e",
+      "sha256:6a789bc45adc08aee119a1ccc1a01e98c66d35c376617c64dfe47f0e1fcee0ee",
+      "sha256:3f9a8a7c897124821536a05554a32ca0b2202d76db43c4004bfecc9e0ec91ae7",
+      "sha256:b8591292c7245e6bd0fb2fd4cf300eda47a7b58f5a09844dee59458f230eaef8",
+      "sha256:27c2d3b4e41ee9e530db196834c51d7aea7f9812534a55b20d3daee218589e65",
+      "sha256:4bd53e31756b8a5afa833eb30b71134153202106b58ef98892fbc028bdd720a5",
+      "sha256:6676b13040558e39cc03b93a71d81f3b3e4380771c01df927471c6b898b764c2",
+      "sha256:06c395355a29305b0d8c5ac19487bb2cc486dd58f7d1bc5073872691b04142cf",
+      "sha256:f37f312d8e249690607c086eaef074c847fb314619acb71e88173dbb210fb096",
+      "sha256:8f682258fdb52a1b3ec1a535f3b10707dff841fbdb987d8e046689a570317250",
+      "sha256:7d57dc702d8b4955e3db262fde260045b0b343d1411d5ed28b2f44031b33f4a9",
+      "sha256:43fd5c1b06bd8cc9a730acc8ed1f0cd6e34d4fee91e7bb9b64f984baf79fe651",
+      "sha256:4e069c45bcd7de26ce1d4cdc3a36840c051d677e4504b8b73138ac99051ccaa6",
+      "sha256:5218435615d2e5466dff056e57c96e15a3722245ceedb5b1dd7c636563a13a1f",
+      "sha256:744f9a3a0db8cb37cf7b34f23ee4168c801ed65b5dae4797eb4e824222cf0489",
+      "sha256:44100369815d6dccefecc41d2a8a6022631bbefcf35c8f9f19d67fffe6262bb8",
+      "sha256:2a7210b0b86680066b009a9b9f6862f887902844e2dba0ed300b72330e31bace",
+      "sha256:72c137a8d17e9a49f157c90be8358a28922df547622b9aa99d6072aef3206531",
+      "sha256:8241f807f3782d32b9968d7c9d07fc09afeb0ece5775d817c6a656dffed9172e",
+      "sha256:e42af21aaf716199adfc640b53bb3197185947bdaab3fd8d9cf031b341656b92",
+      "sha256:dbaa5dd53c2406d86b219020c44ef41e6f7e6338e261f77f727de9e666e9a043",
+      "sha256:16122ad2c2e7ed8fcbe971b131251bc62b7d908f5015b4807bbaf4c797cff551",
+      "sha256:9187deb63f52038f783b44583c60edade8277b451b80d2146146df3c9e030a7c",
+      "sha256:068992341a2586d93206ed6f5ef6386f6841a04aa117916d2fe5c38d3ac2a747",
+      "sha256:781c7b68e3fbb50bb3a9c309dff12bbe1a22a3b65dc4e3d08325ba45de7b889b",
+      "sha256:87d191d9493375eafc9fb23b0394b8977d99a7041a565afce50077c67ebec8f7",
+      "sha256:903842d79ef0d87ed8db046328e3a028c29db3bb76f9f3a9f48c5df7fa33bb99",
+      "sha256:5abdb7e1bca94df391b358b88639bf15de6ae008f69dbc49a4a7d3aff4a5e5d1",
+      "sha256:c9f65a75349d0e38972b6cf1256abeebd9958200dbb4bbead8ba0562df1f4f5c",
+      "sha256:d03378b208c604f9195e14ce15b87f2c740900896553ae5a45ce667e59c568b2",
+      "sha256:629cad515f7c9199d8f8a2b58912c5df8220934208933fd9f2ffb0e2eff1aa18",
+      "sha256:a4bd5198f8457ead15d26d59876c55a1a36dc77b09145f057e3d1744d397fc3e",
+      "sha256:9ac05665e1fc4f6642727c3b18f974756aa6cec941e154ffcb4f3a3f9fefcb54",
+      "sha256:a65f9ad6185f34d3edfd29204c40ac851ffc93e9ee31bf95ceafac81f27bcddb",
+      "sha256:b9af71c0311212ab9b06dc6f349cbcec9e63aa63e20f0599589c9bce0a6c4c10",
+      "sha256:0e41cef6d11c0f2b6286cce9bf1e5bb32152f9de969e63dc32624116ecb0e288",
+      "sha256:082ebb2c38c75a69cacc041129150832ea5eb0aa4c8129a937ca40a0076f196d",
+      "sha256:4c062043c14e39b35eb88e82594cb9732fe4429ae52dd42e50c1dd6633153fe2",
+      "sha256:e87b9f394b4212e7c539c8c5ba2afccc98dd66e6764a6559535549fb443ceae2",
+      "sha256:1be9b4e20c51b1ad5938ad0052e392e157258b33153e440b7b386e18aa32a9c5"
+    ],
+    "rtl_run_ids": [
+      "20261019T043342537704Z-rtl-05d034",
+      "20261019T043342597346Z-rtl-1ad6e3",
+      "20261019T043342654256Z-rtl-8c4ea9",
+      "20261019T043342711853Z-rtl-206a66",
+      "20261019T043342779851Z-rtl-57bdf8",
+      "20261019T043342848383Z-rtl-a5d6bf",
+      "20261019T043342926104Z-rtl-0ee4b2",
+      "20261019T043342983677Z-rtl-110781",
+      "20261019T043343042624Z-rtl-d57aaf",
+      "20261019T043343102571Z-rtl-52b3ed",
+      "20261019T043343163926Z-rtl-a0d2b1",
+      "20261019T043343220501Z-rtl-1514ac",
+      "20261019T043343280610Z-rtl-5303af",
+      "20261019T043343337786Z-rtl-1c9cad",
+      "20261019T043343394127Z-rtl-8e0436",
+      "20261019T043343454886Z-rtl-cf198c",
+      "20261019T043343519871Z-rtl-7e7e1f",
+      "20261019T043343580435Z-rtl-c8b6e1",
+      "20261019T043343642067Z-rtl-b6c2f0",
+      "20261019T043343699640Z-rtl-2948fc",
+      "20261019T043343760152Z-rtl-c762ca",
+      "20261019T043343818947Z-rtl-f4210f",
+      "20261019T043343879643Z-rtl-3d1295",
+      "20261019T043343937144Z-rtl-d4eea9",
+      "20261019T043343993816Z-rtl-157031",
+      "20261019T043344050007Z-rtl-53f46b",
+      "20261019T043344140286Z-rtl-1626b9",
+      "20261019T043344213310Z-rtl-26a0af",
+      "20261019T043344268851Z-rtl-abcd31",
+      "20261019T043344327087Z-rtl-d3800f",
+      "20261019T043344383970Z-rtl-17a0d9",
+      "20261019T043344446784Z-rtl-f5bf0b",
+      "20261019T043344511257Z-rtl-217bfc",
+      "20261019T043344573299Z-rtl-e628a7",
+      "20261019T043344632179Z-rtl-857bdf",
+      "20261019T043344690373Z-rtl-230ce3",
+      "20261019T043344748901Z-rtl-bd1eea",
+      "20261019T043344817691Z-rtl-61f4c2",
+      "20261019T043344876762Z-rtl-c12c74",
+      "20261019T043344932227Z-rtl-c44ae2"
+    ],
+    "excluded_invalid_runs": [],
+    "objective": "mean absolute makespan error (cycles)",
+    "grid_milli": [
+      -400,
+      1600,
+      100
+    ],
+    "history": [
+      {
+        "sweep": 0,
+        "mae": "2.1000"
+      },
+      {
+        "sweep": 1,
+        "mae": "1.5500"
+      },
+      {
+        "sweep": 2,
+        "mae": "1.5500"
+      },
+      {
+        "sweep": 3,
+        "mae": "1.5500"
+      }
+    ],
+    "fit_seconds": 25.44
+  },
+  "spec_digest": "sha256:46ac2474b8701e24a0c773189ce3eef4d3a12a72021bb4621b48d804891dd420"
+}

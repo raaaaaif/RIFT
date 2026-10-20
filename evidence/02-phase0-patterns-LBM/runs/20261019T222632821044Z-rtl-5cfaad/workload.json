@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "capacity_words": 4096,
+  "word_bytes": 4,
+  "masters": 8,
+  "arrival_policy": "saturated_after_accept",
+  "program": {
+    "kind": "repeat_read",
+    "byte_addresses": [
+      0,
+      32,
+      4,
+      36,
+      8,
+      40,
+      12,
+      44
+    ],
+    "reads_per_master": 32
+  },
+  "label": "Pattern B (supplied calibration)"
+}

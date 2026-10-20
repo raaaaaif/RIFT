@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "kind": "formal_local",
+  "harness": "formal/rift_lic2x2_formal.sv",
+  "harness_digest": "sha256:4efd62ebbc58d8cf5bb44a64a60d833cdb436f145aa92f57c4b77e7063686cab",
+  "top": "rift_lic2x2_formal",
+  "configuration": "LIC 2x2, AddrMemWidth=11, RespLat=1, NumPar=1",
+  "frontend": "yosys-slang (plugin slang.so) via SBY; VERILATOR undefined; vendor assertions: 0 $check cells elaborated",
+  "properties": [
+    {
+      "id": "P1",
+      "statement": "grant implies request (per initiator)"
+    },
+    {
+      "id": "P2",
+      "statement": "at most one accepted initiator per bank per cycle"
+    },
+    {
+      "id": "P3",
+      "statement": "initiator acceptances equal bank acceptances"
+    },
+    {
+      "id": "P4",
+      "statement": "each bank acceptance carries an accepted initiator's row"
+    },
+    {
+      "id": "P5",
+      "statement": "RespLat=1: vld_o[i] at t+1 iff a read of initiator i was accepted at t"
+    },
+    {
+      "id": "P6",
+      "statement": "response data is routed from the accepted bank"
+    },
+    {
+      "id": "P7",
+      "statement": "no responses while reset is asserted"
+    },
+    {
+      "id": "P8",
+      "statement": "LIC work conservation: a requested, granting bank accepts someone"
+    },
+    {
+      "id": "P9",
+      "statement": "RIFT wrapper monitors never fire under the environment assumptions"
+    },
+    {
+      "id": "P10",
+      "statement": "a locked bank arbiter only holds requests that are still being made (strengthening invariant)"
+    }
+  ],
+  "covers": [
+    {
+      "id": "K1",
+      "statement": "single transfer"
+    },
+    {
+      "id": "K2",
+      "statement": "parallel transfer"
+    },
+    {
+      "id": "K3",
+      "statement": "same-bank contention"
+    },
+    {
+      "id": "K4",
+      "statement": "stalled request later accepted"
+    },
+    {
+      "id": "K5",
+      "statement": "simultaneous responses"
+    }
+  ],
+  "assumptions": [
+    "reset asserted in the first cycle only, then deasserted permanently",
+    "aligned addresses below 16384 bytes (4096 words)",
+    "read-only: wen_i=0, be_i=4'hf",
+    "no requests while reset is asserted",
+    "an unaccepted request keeps req_i and add_i stable in the next cycle",
+    "bank grants gnt_i and bank read data rdata_i are unconstrained (symbolic)"
+  ],
+  "inventory": {
+    "ok": true,
+    "asserts": 18,
+    "assumes": 10,
+    "covers": 5,
+    "other_checks": 0,
+    "blackboxes": 0
+  },
+  "inventory_negative_control": {
+    "ok": true,
+    "asserts": 19,
+    "assumes": 10,
+    "covers": 5,
+    "other_checks": 0,
+    "blackboxes": 0
+  },
+  "expected_inventory": {
+    "asserts": 18,
+    "assumes": 10,
+    "covers": 5
+  },
+  "tasks": {
+    "bmc": {
+      "outcome": "BOUNDED_NO_COUNTEREXAMPLE",
+      "sby_status": "PASS",
+      "rc": 0,
+      "elapsed_seconds": 1.62,
+      "depth": 16,
+      "mode": "bmc",
+      "engine": "smtbmc yices",
+      "reached_covers": [],
+      "unreached_covers": [],
+      "log": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/bmc.log",
+      "workdir": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/bmc"
+    },
+    "prove": {
+      "outcome": "PROVED",
+      "sby_status": "PASS",
+      "rc": 0,
+      "elapsed_seconds": 1.35,
+      "depth": 16,
+      "mode": "prove",
+      "engine": "smtbmc yices",
+      "reached_covers": [],
+      "unreached_covers": [],
+      "log": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove.log",
+      "workdir": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove"
+    },
+    "prove_stall_le3": {
+      "outcome": "PROVED",
+      "sby_status": "PASS",
+      "rc": 0,
+      "elapsed_seconds": 1.41,
+      "depth": 16,
+      "mode": "prove",
+      "engine": "smtbmc yices",
+      "reached_covers": [],
+      "unreached_covers": [],
+      "log": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove_stall.log",
+      "workdir": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove_stall"
+    },
+    "cover": {
+      "outcome": "COVERS_REACHED",
+      "sby_status": "PASS",
+      "rc": 0,
+      "elapsed_seconds": 0.5,
+      "depth": 16,
+      "mode": "cover",
+      "engine": "smtbmc yices",
+      "reached_covers": [
+        "rift_lic2x2_formal.sv:157.7-157.29",
+        "rift_lic2x2_formal.sv:159.7-159.83",
+        "rift_lic2x2_formal.sv:158.7-158.32",
+        "rift_lic2x2_formal.sv:161.7-161.36",
+        "rift_lic2x2_formal.sv:160.7-160.65"
+      ],
+      "unreached_covers": [],
+      "log": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/cover.log",
+      "workdir": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/cover"
+    },
+    "negative_control": {
+      "outcome": "COUNTEREXAMPLE",
+      "sby_status": "FAIL",
+      "rc": 2,
+      "elapsed_seconds": 0.49,
+      "depth": 16,
+      "mode": "bmc",
+      "engine": "smtbmc yices",
+      "reached_covers": [],
+      "unreached_covers": [],
+      "log": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg.log",
+      "workdir": "artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg"
+    }
+  },
+  "harness_valid": true,
+  "harness_problems": [],
+  "claims": {
+    "all_properties": "PROVED",
+    "all_properties_assumptions": "listed assumptions only",
+    "all_properties_stall_le3": "PROVED",
+    "all_properties_stall_le3_assumptions": "listed assumptions plus: every bank stall lasts at most 3 consecutive cycles",
+    "bounded": "BOUNDED_NO_COUNTEREXAMPLE",
+    "bound_cycles": 16
+  },
+  "scope_note": "Transport/response properties of the RTL harness under the listed assumptions. No memory-content, progress, BFLY, or fast-model claim."
+}

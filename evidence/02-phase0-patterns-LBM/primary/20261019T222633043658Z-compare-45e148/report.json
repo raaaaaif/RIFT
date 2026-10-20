@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "experiment_id": "phase0-patterns-v1",
+  "experiment_digest": "sha256:a90d097699482fa62a2b090db64842ffaf7a21f9f808ee3299f8322cf11d1e0e",
+  "experiment_path": "experiments/phase0_patterns.json",
+  "admitted_designs": [
+    {
+      "design": "A",
+      "config": "lic8x8"
+    },
+    {
+      "design": "B",
+      "config": "bfly4_8x16"
+    }
+  ],
+  "models": {
+    "A": {
+      "model_id": "lic_exact_v1",
+      "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765"
+    },
+    "B": {
+      "model_id": "bank_only_v1",
+      "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282"
+    }
+  },
+  "comparisons": [
+    {
+      "schema_version": 1,
+      "evaluator": "rift.evaluate.compare/v1",
+      "admitted_order": [
+        "A",
+        "B"
+      ],
+      "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+      "metric_id": "inclusive_cycle_makespan_v1",
+      "direction": "lower_is_better",
+      "model_status": {
+        "A": "COMPLETED",
+        "B": "COMPLETED"
+      },
+      "rtl_status": {
+        "A": "COMPLETED",
+        "B": "COMPLETED"
+      },
+      "verdict": "TIE_OR_SMALL_MARGIN",
+      "model_costs": {
+        "A": 33,
+        "B": 33
+      },
+      "rtl_costs": {
+        "A": 33,
+        "B": 65
+      },
+      "dM": 0,
+      "dR": -32,
+      "sign_product": 0,
+      "model_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 33,
+        "relative_term": "33/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": false
+      },
+      "rtl_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 33,
+        "relative_term": "33/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "model_choice": "A",
+      "rtl_best": "A",
+      "selection": {
+        "chosen": "A",
+        "reference_best": "A",
+        "extra_cycles": 0,
+        "denominator_cycles": 33,
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        }
+      },
+      "workload_digest": "sha256:b7f2d4e417eea9c295632eab11aab96d15058a50f0dba6cecd992e73579eb5bf",
+      "workload_label": "Pattern L (supplied calibration)",
+      "designs": {
+        "A": {
+          "config_id": "lic8x8",
+          "config_digest": "sha256:5af28f83b13a6ece14bcdb6e338fa7f57160607737ce5f8d684534da9ffc3773",
+          "descriptive_name": "Full crossbar \u00b7 8 banks"
+        },
+        "B": {
+          "config_id": "bfly4_8x16",
+          "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+          "descriptive_name": "Radix-4 butterfly \u00b7 16 banks"
+        }
+      },
+      "models": {
+        "A": {
+          "model_id": "lic_exact_v1",
+          "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765",
+          "contract": {
+            "promise": "EXACT_TIMING",
+            "scope": "LIC configurations, read-only per-initiator release programs, always-grant or declared bank stalls",
+            "declared_omissions": []
+          }
+        },
+        "B": {
+          "model_id": "bank_only_v1",
+          "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282",
+          "contract": {
+            "promise": "RANKING_PRESERVATION",
+            "scope": "claims bank conflicts dominate; read-only programs",
+            "declared_omissions": [
+              "internal butterfly route contention",
+              "LFSR-derived external priorities"
+            ]
+          }
+        }
+      },
+      "rtl_run_ids": {
+        "A": "20261019T222632677965Z-rtl-51151d",
+        "B": "20261019T222632753082Z-rtl-3e75b6"
+      },
+      "model_run_ids": {
+        "A": "20261019T222632691137Z-model-521902",
+        "B": "20261019T222632764289Z-model-24dcd6"
+      },
+      "reference_epoch": "epoch-dfa3739b2a85",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "INSTRUMENT_TEST",
+      "discovery_credit": 0,
+      "rtl_wall_seconds": {
+        "A": 0.00689,
+        "B": 0.005679
+      },
+      "model_elapsed_seconds": {
+        "A": 0.001440207997802645,
+        "B": 0.0009815410012379289
+      },
+      "workload_id": "L",
+      "comparison_run_id": "20261019T222632770246Z-comparison-8ad130"
+    },
+    {
+      "schema_version": 1,
+      "evaluator": "rift.evaluate.compare/v1",
+      "admitted_order": [
+        "A",
+        "B"
+      ],
+      "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+      "metric_id": "inclusive_cycle_makespan_v1",
+      "direction": "lower_is_better",
+      "model_status": {
+        "A": "COMPLETED",
+        "B": "COMPLETED"
+      },
+      "rtl_status": {
+        "A": "COMPLETED",
+        "B": "COMPLETED"
+      },
+      "verdict": "VALID_NO_REVERSAL",
+      "model_costs": {
+        "A": 65,
+        "B": 33
+      },
+      "rtl_costs": {
+        "A": 65,
+        "B": 33
+      },
+      "dM": 32,
+      "dR": 32,
+      "sign_product": 1024,
+      "model_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 33,
+        "relative_term": "33/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "rtl_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 33,
+        "relative_term": "33/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "model_choice": "B",
+      "rtl_best": "B",
+      "selection": {
+        "chosen": "B",
+        "reference_best": "B",
+        "extra_cycles": 0,
+        "denominator_cycles": 33,
+        "regret": {
+          "numerator": 0,
+          "denominator": 1,
+          "decimal": 0.0
+        }
+      },
+      "workload_digest": "sha256:0309a37900fabd572266f2d22beadc7b75c57e024461d42591ea131b28dd88f7",
+      "workload_label": "Pattern B (supplied calibration)",
+      "designs": {
+        "A": {
+          "config_id": "lic8x8",
+          "config_digest": "sha256:5af28f83b13a6ece14bcdb6e338fa7f57160607737ce5f8d684534da9ffc3773",
+          "descriptive_name": "Full crossbar \u00b7 8 banks"
+        },
+        "B": {
+          "config_id": "bfly4_8x16",
+          "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+          "descriptive_name": "Radix-4 butterfly \u00b7 16 banks"
+        }
+      },
+      "models": {
+        "A": {
+          "model_id": "lic_exact_v1",
+          "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765",
+          "contract": {
+            "promise": "EXACT_TIMING",
+            "scope": "LIC configurations, read-only per-initiator release programs, always-grant or declared bank stalls",
+            "declared_omissions": []
+          }
+        },
+        "B": {
+          "model_id": "bank_only_v1",
+          "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282",
+          "contract": {
+            "promise": "RANKING_PRESERVATION",
+            "scope": "claims bank conflicts dominate; read-only programs",
+            "declared_omissions": [
+              "internal butterfly route contention",
+              "LFSR-derived external priorities"
+            ]
+          }
+        }
+      },
+      "rtl_run_ids": {
+        "A": "20261019T222632821044Z-rtl-5cfaad",
+        "B": "20261019T222632886506Z-rtl-c5e09a"
+      },
+      "model_run_ids": {
+        "A": "20261019T222632831972Z-model-5b21c8",
+        "B": "20261019T222632897585Z-model-a8c31a"
+      },
+      "reference_epoch": "epoch-dfa3739b2a85",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "INSTRUMENT_TEST",
+      "discovery_credit": 0,
+      "rtl_wall_seconds": {
+        "A": 0.005206,
+        "B": 0.005522
+      },
+      "model_elapsed_seconds": {
+        "A": 0.0010462090140208602,
+        "B": 0.0009745840216055512
+      },
+      "workload_id": "B",
+      "comparison_run_id": "20261019T222632903290Z-comparison-b13c1c"
+    },
+    {
+      "schema_version": 1,
+      "evaluator": "rift.evaluate.compare/v1",
+      "admitted_order": [
+        "A",
+        "B"
+      ],
+      "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+      "metric_id": "inclusive_cycle_makespan_v1",
+      "direction": "lower_is_better",
+      "model_status": {
+        "A": "COMPLETED",
+        "B": "COMPLETED"
+      },
+      "rtl_status": {
+        "A": "COMPLETED",
+        "B": "COMPLETED"
+      },
+      "verdict": "VALID_COUNTEREXAMPLE",
+      "model_costs": {
+        "A": 41,
+        "B": 33
+      },
+      "rtl_costs": {
+        "A": 41,
+        "B": 65
+      },
+      "dM": 8,
+      "dR": -24,
+      "sign_product": -192,
+      "model_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 33,
+        "relative_term": "33/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "rtl_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 41,
+        "relative_term": "41/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "model_choice": "B",
+      "rtl_best": "A",
+      "selection": {
+        "chosen": "B",
+        "reference_best": "A",
+        "extra_cycles": 24,
+        "denominator_cycles": 41,
+        "regret": {
+          "numerator": 24,
+          "denominator": 41,
+          "decimal": 0.5853658536585366
+        }
+      },
+      "workload_digest": "sha256:9d9955e51c87a5f7426a581377fe9c4dcfe3e1291394e2f5d6aae34e808a686f",
+      "workload_label": "Pattern M (supplied calibration)",
+      "designs": {
+        "A": {
+          "config_id": "lic8x8",
+          "config_digest": "sha256:5af28f83b13a6ece14bcdb6e338fa7f57160607737ce5f8d684534da9ffc3773",
+          "descriptive_name": "Full crossbar \u00b7 8 banks"
+        },
+        "B": {
+          "config_id": "bfly4_8x16",
+          "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+          "descriptive_name": "Radix-4 butterfly \u00b7 16 banks"
+        }
+      },
+      "models": {
+        "A": {
+          "model_id": "lic_exact_v1",
+          "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765",
+          "contract": {
+            "promise": "EXACT_TIMING",
+            "scope": "LIC configurations, read-only per-initiator release programs, always-grant or declared bank stalls",
+            "declared_omissions": []
+          }
+        },
+        "B": {
+          "model_id": "bank_only_v1",
+          "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282",
+          "contract": {
+            "promise": "RANKING_PRESERVATION",
+            "scope": "claims bank conflicts dominate; read-only programs",
+            "declared_omissions": [
+              "internal butterfly route contention",
+              "LFSR-derived external priorities"
+            ]
+          }
+        }
+      },
+      "rtl_run_ids": {
+        "A": "20261019T222632954160Z-rtl-42bcdd",
+        "B": "20261019T222633022048Z-rtl-f86cc4"
+      },
+      "model_run_ids": {
+        "A": "20261019T222632965245Z-model-ace565",
+        "B": "20261019T222633035632Z-model-b7af25"
+      },
+      "reference_epoch": "epoch-dfa3739b2a85",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "STRESS_WITNESS",
+      "discovery_credit": 0,
+      "rtl_wall_seconds": {
+        "A": 0.005389,
+        "B": 0.00594
+      },
+      "model_elapsed_seconds": {
+        "A": 0.000975416973233223,
+        "B": 0.0010614999919198453
+      },
+      "workload_id": "M",
+      "comparison_run_id": "20261019T222633041968Z-comparison-213664"
+    }
+  ],
+  "verdict_counts": {
+    "TIE_OR_SMALL_MARGIN": 1,
+    "VALID_NO_REVERSAL": 1,
+    "VALID_COUNTEREXAMPLE": 1
+  }
+}

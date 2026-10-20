@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "run_id": "20261019T223111399600Z-model-d64966",
+  "runner": "fast_model",
+  "model_id": "bank_only_v1",
+  "exit_status": "COMPLETED",
+  "makespan": 43,
+  "accepted": 95,
+  "completed": 95,
+  "last_response_cycle": 46,
+  "elapsed_seconds": 0.0004580420209094882
+}

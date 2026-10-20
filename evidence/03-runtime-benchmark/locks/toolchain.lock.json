@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "lock_id": "rift-toolchain-oss-cad-suite-20261016-darwin-arm64",
+  "bundle": {
+    "name": "OSS CAD Suite",
+    "release": "2026-10-16",
+    "asset": "oss-cad-suite-darwin-arm64-20261016.tgz",
+    "url": "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-10-16/oss-cad-suite-darwin-arm64-20261016.tgz",
+    "size_bytes": 526047995,
+    "sha256_published": "ac8765e94c5122c3e3b48b18f55cea306d08aa37ffc12cd9a938f3c485322326",
+    "sha256_downloaded": "ac8765e94c5122c3e3b48b18f55cea306d08aa37ffc12cd9a938f3c485322326",
+    "verified_on": "2026-10-19",
+    "install_dir": ".tools/oss-cad-suite-20261016/oss-cad-suite",
+    "bundle_version_file": "20261016",
+    "partial_extraction": {
+      "reason": "host had ~4 GiB free disk; FPGA place-and-route and VHDL components are outside RIFT scope",
+      "excluded_members": [
+        "oss-cad-suite/share/nextpnr",
+        "oss-cad-suite/libexec/nextpnr-*",
+        "oss-cad-suite/bin/nextpnr-*",
+        "oss-cad-suite/share/icebox",
+        "oss-cad-suite/share/trellis",
+        "oss-cad-suite/libexec/ghdl*",
+        "oss-cad-suite/lib/libghdl*",
+        "oss-cad-suite/lib/ghdl",
+        "oss-cad-suite/libexec/prjoxide",
+        "oss-cad-suite/share/openFPGALoader"
+      ]
+    }
+  },
+  "expected_tool_versions": {
+    "verilator": "Verilator 5.053 devel rev v5.052-448-g1272f7355 (mod)",
+    "yosys": "Yosys 0.70+145 (git sha1 a31d95ea0, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)",
+    "yices-smt2": "Yices 2.7.0",
+    "bitwuzla": "0.9.1",
+    "z3": "Z3 version 4.15.5 - 64 bit",
+    "boolector": "3.2.4"
+  },
+  "host": {
+    "platform": "darwin arm64 (Apple M1), macOS 27.0, native (no emulation)",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.3.34.2), target arm64-apple-darwin27.0.0",
+    "python": "CPython 3.12.5 (/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12)",
+    "reproducibility_note": "The handoff names a pinned Linux environment as the reproducibility target. No Linux image was built here (insufficient disk for a Docker image plus the Linux bundle). All recorded executions are native darwin-arm64; the Linux x64 asset digest is retained for a later clean-machine reproduction."
+  },
+  "linux_x64_asset": {
+    "asset": "oss-cad-suite-linux-x64-20261016.tgz",
+    "sha256_published": "95aead487287adf8fbbe965799e88e2ccb12a544f3d0a27b27f80bfc7c892911",
+    "status": "not downloaded"
+  }
+}

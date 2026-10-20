@@ -1,0 +1,10 @@
+RIFT_COMPILED_WORKLOAD 1
+digest sha256:b8f8c9afd82f905947e8598b2cacee20b4c5ddc96c962c9c0000614ae049638d
+masters 2
+op 0 0 0 A 0
+op 0 1 4 A 0
+op 0 2 0 A 0
+op 1 0 4 A 0
+op 1 1 0 A 0
+op 1 2 4 A 0
+end

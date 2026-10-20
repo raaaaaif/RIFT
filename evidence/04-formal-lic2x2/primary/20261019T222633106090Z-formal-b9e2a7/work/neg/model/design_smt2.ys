@@ -1,0 +1,8 @@
+# running in /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/neg/model/
+read_rtlil design_prep.il
+hierarchy -smtcheck
+delete */t:$print
+formalff -assume
+dffunmap
+stat
+write_smt2 -wires design_smt2.smt2

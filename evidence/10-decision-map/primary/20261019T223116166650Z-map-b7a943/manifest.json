@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "kind": "decision_map",
+  "status": "COMPLETED",
+  "map_id": "decision-map-v1",
+  "tags": [
+    "map"
+  ],
+  "run_id": "20261019T223116166650Z-map-b7a943",
+  "artifacts": {
+    "map.json": {
+      "sha256": "sha256:a4b1f354eca2f391e5ffa041a02f03885fa02a8fd0476819527c4319d455a231",
+      "bytes": 922916
+    },
+    "map_manifest.json": {
+      "sha256": "sha256:7bdb1c17c0267a36913a2f5e730a1e1a37a5ac97f41cbb08e03c4d8816063bb7",
+      "bytes": 3819
+    }
+  },
+  "manifest_digest": "sha256:50519870cac4b1009d04cd704e06a6c0d29fec9305d2256567ca47840750fa44"
+}

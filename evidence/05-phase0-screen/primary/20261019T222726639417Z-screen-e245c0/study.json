@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "study_id": "phase0-screen-v2",
+  "kind": "screen",
+  "frozen_on": "2026-10-19",
+  "description": "Phase 0 discovery screen: six authored audit cases on the LIC 8x8 (A) / BFLY4 8x16 (B) decision. Every arm gets the same legal grammar, architecture facts, public L/B/M patterns and per-case budget. All arms are deterministic; no AI service is used. All six cases were authored by the implementer.",
+  "admitted_designs": [
+    {
+      "design": "A",
+      "config": "lic8x8"
+    },
+    {
+      "design": "B",
+      "config": "bfly4_8x16"
+    }
+  ],
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+  "margin": "|d| >= max(2 cycles, 0.02*min(cost_A, cost_B)) in each domain",
+  "fitted_model": "fitted_penalty_bfly4_8x16_v1",
+  "budget": {
+    "accepted_proposals_per_case_per_arm": 32,
+    "rtl_executions_per_case_per_arm": 64,
+    "max_total_proposals_per_case_per_arm": 64,
+    "wall_seconds_per_case_per_arm": 600,
+    "reserve_reduction_rtl_executions": 32,
+    "reserve_repair_rtl_executions": 32,
+    "model_token_cap": 0,
+    "note": "Unused reserves never increase discovery credit. Cache hits are charged."
+  },
+  "workload_grammar": {
+    "program_kind": "read_sequences",
+    "max_ops_per_initiator": 64,
+    "max_gap": 4,
+    "release": [
+      "after_accept",
+      "after_response"
+    ]
+  },
+  "seed_ranges": {
+    "B2_legal_random": "20000+",
+    "B2_evolutionary": "30000+/31000",
+    "RIFT_decision_directed": "41000",
+    "B5_error_directed": "51000",
+    "training": "7000-7039",
+    "benchmark": "9000-9036"
+  },
+  "public_patterns_zero_credit": [
+    "L",
+    "B",
+    "M"
+  ],
+  "arms": [
+    "B1_public_sweeps",
+    "B2_legal_random",
+    "B2_evolutionary",
+    "B3_bounded_smt",
+    "B5_error_directed",
+    "RIFT_decision_directed"
+  ],
+  "cases": [
+    {
+      "case_id": "C1_bank_only_omission",
+      "models": {
+        "A": "lic_exact_v1",
+        "B": "bank_only_v1"
+      },
+      "provenance": "AUTHORED_DEFECT",
+      "expectation": "positive: handoff-specified omission of internal route contention",
+      "mechanism_family": "internal_route_contention"
+    },
+    {
+      "case_id": "C2_topology_rr_control",
+      "models": {
+        "A": "lic_exact_v1",
+        "B": "bfly_topology_rr_v1"
+      },
+      "provenance": "PERMITTED_APPROXIMATION",
+      "expectation": "control: only the declared arbitration-winner approximation differs",
+      "mechanism_family": "permitted_approximation"
+    },
+    {
+      "case_id": "C3_lfsr_every_cycle",
+      "models": {
+        "A": "lic_exact_v1",
+        "B": "defect_bfly_lfsr_every_cycle_v1"
+      },
+      "provenance": "AUTHORED_DEFECT",
+      "expectation": "subtle: wrong priority-state advance; may be decision-irrelevant",
+      "mechanism_family": "priority_state_advance"
+    },
+    {
+      "case_id": "C4_bank_mapping_width",
+      "models": {
+        "A": "lic_exact_v1",
+        "B": "defect_bfly_bank_mod8_v1"
+      },
+      "provenance": "AUTHORED_DEFECT",
+      "expectation": "positive: wrong mapping width invents bank conflicts",
+      "mechanism_family": "bank_mapping"
+    },
+    {
+      "case_id": "C5_lic_unfair_arbitration",
+      "models": {
+        "A": "defect_lic_unfair_arb_v1",
+        "B": "bfly_topology_rr_v1"
+      },
+      "provenance": "AUTHORED_DEFECT",
+      "expectation": "subtle: FairArb=0 priority advance on the crossbar side",
+      "mechanism_family": "arbitration_fairness"
+    },
+    {
+      "case_id": "C6_response_latency_offset",
+      "models": {
+        "A": "lic_exact_v1",
+        "B": "defect_bfly_resp_lat2_v1"
+      },
+      "provenance": "AUTHORED_DEFECT",
+      "expectation": "decision-irrelevant control: a +1 cycle offset on B can never create a strict reversal under the 2-cycle margin",
+      "mechanism_family": "response_latency"
+    }
+  ],
+  "supersedes": {
+    "study_id": "phase0-screen-v1",
+    "change": "removed the optional LLM-investigator comparison arm from scope; all other fields identical"
+  }
+}

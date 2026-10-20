@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "addr_width": 32,
+  "data_width": 32,
+  "byte_off_width": 2,
+  "be_width": 4,
+  "resp_lat": 1,
+  "write_resp_on": 1,
+  "num_par": 1,
+  "capacity_words": 4096,
+  "config_id": "bfly2_8x16",
+  "role": "heldout_architecture",
+  "role_label": "Held-out architecture B'",
+  "descriptive_name": "Radix-2 butterfly \u00b7 16 banks",
+  "topology": "BFLY2",
+  "num_in": 8,
+  "num_out": 16,
+  "addr_mem_width": 8
+}

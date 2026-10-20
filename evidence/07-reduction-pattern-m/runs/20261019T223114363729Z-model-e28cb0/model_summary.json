@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "run_id": "20261019T223114363729Z-model-e28cb0",
+  "runner": "fast_model",
+  "model_id": "lic_exact_v1",
+  "exit_status": "COMPLETED",
+  "makespan": 9,
+  "accepted": 14,
+  "completed": 14,
+  "last_response_cycle": 12,
+  "elapsed_seconds": 9.254197357222438e-05
+}

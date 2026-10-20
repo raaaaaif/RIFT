@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "lock_id": "rift-sources-v1",
+  "repositories": [
+    {
+      "name": "cluster_interconnect",
+      "url": "https://github.com/pulp-platform/cluster_interconnect.git",
+      "commit": "2967d8d17be0a6139229ca8d3d4956e182aec3de",
+      "checkout": "vendor/cluster_interconnect",
+      "resolution": "pinned commit (RIFT handoff section 2)"
+    },
+    {
+      "name": "common_cells",
+      "url": "https://github.com/pulp-platform/common_cells.git",
+      "commit": "015917ff33e5f944e866814f72f2074fb0f4220f",
+      "checkout": "vendor/common_cells",
+      "resolution": "Bender.yml declares version 1.22.1; tag refs/tags/v1.22.1 resolved to this commit via https://api.github.com/repos/pulp-platform/common_cells/git/ref/tags/v1.22.1 on 2026-10-19"
+    }
+  ],
+  "dependency_resolution_note": "Bender is not part of the pinned OSS CAD Suite bundle and was not installed. The compilation closure below was resolved manually from cluster_interconnect/Bender.yml and common_cells/Bender.yml level ordering, then verified by successful Verilator elaboration of all three configurations. cf_math_pkg is required by lzc; clos_net is part of the top's generate closure although it is not elaborated for LIC/BFLY.",
+  "compilation_order": [
+    "vendor/common_cells/src/cf_math_pkg.sv",
+    "vendor/common_cells/src/lzc.sv",
+    "vendor/common_cells/src/rr_arb_tree.sv",
+    "vendor/common_cells/src/lfsr.sv",
+    "vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect_pkg.sv",
+    "vendor/cluster_interconnect/rtl/tcdm_interconnect/addr_dec_resp_mux.sv",
+    "vendor/cluster_interconnect/rtl/tcdm_interconnect/xbar.sv",
+    "vendor/cluster_interconnect/rtl/tcdm_interconnect/clos_net.sv",
+    "vendor/cluster_interconnect/rtl/tcdm_interconnect/bfly_net.sv",
+    "vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect.sv"
+  ],
+  "rift_sources": [
+    "rtl_wrapper/rift_tcdm_top.sv",
+    "oracle/main.cpp"
+  ]
+}

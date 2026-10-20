@@ -1,0 +1,36 @@
+.browser-lab h2{font-size:26px;letter-spacing:-.7px;margin:12px 0 8px}
+.lab-intro{max-width:740px;color:var(--secondary);line-height:1.6;margin:0 0 18px}
+.lab-toolbar{display:flex;align-items:end;gap:16px;flex-wrap:wrap;margin:14px 0}
+.lab-toolbar label{display:grid;gap:6px;font-size:12px;font-weight:650}
+.lab-toolbar select{max-width:100%;min-height:40px;border:1px solid var(--rule);border-radius:6px;background:#fff;padding:8px;color:var(--ink);font:inherit}
+.lab-work-count{font-size:12px;color:var(--secondary);padding-bottom:10px}
+.lab-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.lab-status{font-size:13px;min-height:42px;display:flex;align-items:center;padding:10px 12px;border-left:3px solid var(--teal);background:var(--inset);line-height:1.5;margin:16px 0}
+.lab-status.busy{border-color:var(--amber)}
+.lab-details{border-top:1px solid var(--rule);padding:12px 0;margin-top:12px;font-size:13px;line-height:1.6}
+.lab-details summary{font-weight:650;color:var(--teal);cursor:pointer;min-height:24px}
+.lab-details p{max-width:850px}
+.lab-fingerprints{display:grid;grid-template-columns:110px minmax(0,1fr);gap:8px;font-size:12px}
+.lab-fingerprints dt{font-weight:650}.lab-fingerprints dd{margin:0;overflow-wrap:anywhere;font-family:var(--mono)}
+.lab-command,.lab-receipt{overflow:auto;background:var(--inset);padding:12px;border-radius:5px;font-size:12px}
+.lab-receipt{max-height:300px}
+.lab-result{border-top:1px solid var(--rule);padding-top:20px}
+.lab-outcome{padding:16px 20px;background:#EDF5F3;border-radius:8px;border:1px solid #C9DEDA;margin-bottom:18px}
+.lab-outcome h3{font-size:25px;letter-spacing:-.6px;margin:5px 0 8px}.lab-outcome p{font-size:13px;margin:0}
+.live-values caption{text-align:left;font-size:12px;color:var(--secondary);padding:0 0 10px}
+.live-values td{font-size:20px;font-weight:650;font-variant-numeric:tabular-nums}.live-values th{white-space:normal;min-width:95px}
+.live-race{margin:20px 0}.live-race .race-fig{margin:0}.live-race .race-fig figcaption{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;margin-bottom:12px}.live-race .race-fig figcaption span{color:var(--secondary)}
+.live-race .race-controls{flex-wrap:wrap}.live-race .race-controls .scrub{min-width:80px}.live-race .race-invalid{padding:25px 12px;font-size:13px;color:var(--error)}
+.lab-scope{font-size:12px;color:var(--secondary);border-top:1px solid var(--rule);padding-top:14px;line-height:1.6;margin:16px 0 0}
+.editor-boundary{border:0;padding:0;margin:0;min-width:0}
+.browser-lab input:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.initiator-editor-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.initiator-editor-grid fieldset{border:1px solid var(--rule);border-radius:6px;padding:12px;min-width:0}
+.initiator-editor-grid legend{font-size:13px;font-weight:650;padding:0 5px}
+.read-segment{display:grid;grid-template-columns:1.1fr .65fr 1.4fr .55fr;gap:8px;padding-bottom:12px;margin-bottom:10px;border-bottom:1px solid var(--rule)}
+.read-segment label{font-size:11px;display:grid;gap:4px;min-width:0}
+.read-segment input,.read-segment select{width:100%;min-width:0;min-height:36px;border:1px solid var(--rule);background:#fff;color:var(--ink);border-radius:4px;padding:6px;font:inherit;font-size:12px}
+.read-segment button{justify-self:start;grid-column:1/-1}
+.workload-editor>.actions{margin-top:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+@media(max-width:900px){.initiator-editor-grid{grid-template-columns:1fr}}
+@media(max-width:540px){.browser-lab h2{font-size:23px}.lab-outcome{padding:14px}.lab-outcome h3{font-size:23px}.lab-fingerprints{grid-template-columns:1fr;gap:3px}.lab-fingerprints dd{margin-bottom:8px}.read-segment{grid-template-columns:1fr 1fr}.lab-toolbar label{width:100%}.live-values td{font-size:17px}}

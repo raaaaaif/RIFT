@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "kind": "verification",
+  "status": "ACCEPTED_UNDER_CONTRACT",
+  "case_id": "C1_bank_only_omission",
+  "candidate_model_id": "repair_C1_bank_only_omission_68fb9e6b",
+  "observation_role": "INDEPENDENT_EVALUATOR_RESULT",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "tags": [
+    "verify",
+    "C1_bank_only_omission"
+  ],
+  "run_id": "20261019T223044974241Z-verify-2e78e7",
+  "artifacts": {
+    "verification.json": {
+      "sha256": "sha256:066e396f3ce90954f5dfec12bf053dd0d8d0a5b4e85e4ef107ea8e301a7f2894",
+      "bytes": 65628
+    }
+  },
+  "manifest_digest": "sha256:1db709be38a073b7051407716462075cd1d0ecea6ecf1be503416203f043f0dc"
+}

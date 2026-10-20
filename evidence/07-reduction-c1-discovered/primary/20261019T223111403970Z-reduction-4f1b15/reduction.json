@@ -1,0 +1,1235 @@
+{
+  "schema_version": 1,
+  "status": "REDUCED",
+  "mode": "surrogate_complete",
+  "case_id": "C1_bank_only_omission",
+  "provenance": "AUTHORED_DEFECT",
+  "designs": [
+    {
+      "design": "A",
+      "config": "lic8x8"
+    },
+    {
+      "design": "B",
+      "config": "bfly4_8x16"
+    }
+  ],
+  "models": {
+    "A": "lic_exact_v1",
+    "B": "bank_only_v1"
+  },
+  "orientation": {
+    "model_choice": "B",
+    "rtl_best": "A"
+  },
+  "original": {
+    "workload": {
+      "schema_version": 1,
+      "capacity_words": 4096,
+      "word_bytes": 4,
+      "masters": 8,
+      "arrival_policy": "per_operation_release",
+      "program": {
+        "kind": "read_sequences",
+        "per_master": [
+          {
+            "master": 0,
+            "ops": [
+              {
+                "byte_address": 10472
+              },
+              {
+                "byte_address": 4456
+              },
+              {
+                "byte_address": 7264
+              },
+              {
+                "byte_address": 7896,
+                "release": "after_response",
+                "gap": 1
+              },
+              {
+                "byte_address": 6780
+              },
+              {
+                "byte_address": 6780
+              },
+              {
+                "byte_address": 4032
+              },
+              {
+                "byte_address": 4032,
+                "gap": 3
+              },
+              {
+                "byte_address": 7264,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 7264
+              },
+              {
+                "byte_address": 14884
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              },
+              {
+                "byte_address": 12096
+              }
+            ]
+          },
+          {
+            "master": 1,
+            "ops": [
+              {
+                "byte_address": 14308,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 6508
+              },
+              {
+                "byte_address": 14184
+              },
+              {
+                "byte_address": 14884,
+                "gap": 3
+              },
+              {
+                "byte_address": 14308
+              },
+              {
+                "byte_address": 112,
+                "gap": 3
+              },
+              {
+                "byte_address": 12232,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 12232,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 7896
+              },
+              {
+                "byte_address": 11180
+              },
+              {
+                "byte_address": 12232,
+                "gap": 2
+              },
+              {
+                "byte_address": 7264,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 14184
+              },
+              {
+                "byte_address": 10472
+              },
+              {
+                "byte_address": 7264,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 14884
+              },
+              {
+                "byte_address": 14184
+              },
+              {
+                "byte_address": 7264,
+                "gap": 2
+              },
+              {
+                "byte_address": 1788,
+                "gap": 3
+              },
+              {
+                "byte_address": 112,
+                "gap": 3
+              },
+              {
+                "byte_address": 11180
+              }
+            ]
+          },
+          {
+            "master": 2,
+            "ops": [
+              {
+                "byte_address": 11348,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 11348
+              },
+              {
+                "byte_address": 7264
+              },
+              {
+                "byte_address": 14884,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 1788,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 1788,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 1788
+              },
+              {
+                "byte_address": 7264,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 6508
+              },
+              {
+                "byte_address": 7896
+              },
+              {
+                "byte_address": 4032,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 10472
+              },
+              {
+                "byte_address": 11180,
+                "gap": 1
+              },
+              {
+                "byte_address": 11348,
+                "release": "after_response",
+                "gap": 3
+              },
+              {
+                "byte_address": 11348
+              },
+              {
+                "byte_address": 7264,
+                "gap": 2
+              },
+              {
+                "byte_address": 14884,
+                "gap": 1
+              },
+              {
+                "byte_address": 10472
+              },
+              {
+                "byte_address": 3132
+              },
+              {
+                "byte_address": 4032
+              },
+              {
+                "byte_address": 7896
+              },
+              {
+                "byte_address": 10472
+              },
+              {
+                "byte_address": 14184,
+                "release": "after_response",
+                "gap": 3
+              }
+            ]
+          },
+          {
+            "master": 3,
+            "ops": [
+              {
+                "byte_address": 10472,
+                "gap": 2
+              },
+              {
+                "byte_address": 416
+              },
+              {
+                "byte_address": 112
+              }
+            ]
+          },
+          {
+            "master": 4,
+            "ops": [
+              {
+                "byte_address": 416
+              },
+              {
+                "byte_address": 416
+              },
+              {
+                "byte_address": 7896,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 14184
+              }
+            ]
+          },
+          {
+            "master": 5,
+            "ops": [
+              {
+                "byte_address": 10472
+              },
+              {
+                "byte_address": 4456
+              },
+              {
+                "byte_address": 11348,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 416,
+                "gap": 1
+              },
+              {
+                "byte_address": 14884
+              },
+              {
+                "byte_address": 7896,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 14308,
+                "gap": 1
+              },
+              {
+                "byte_address": 4032
+              }
+            ]
+          },
+          {
+            "master": 6,
+            "ops": [
+              {
+                "byte_address": 11180,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 11180,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 6780
+              },
+              {
+                "byte_address": 7264
+              },
+              {
+                "byte_address": 14884,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 4032,
+                "release": "after_response"
+              }
+            ]
+          },
+          {
+            "master": 7,
+            "ops": [
+              {
+                "byte_address": 10480,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 6516
+              },
+              {
+                "byte_address": 7272
+              },
+              {
+                "byte_address": 14192
+              },
+              {
+                "byte_address": 14316
+              },
+              {
+                "byte_address": 14192
+              },
+              {
+                "byte_address": 6516
+              },
+              {
+                "byte_address": 14192,
+                "release": "after_response",
+                "gap": 1
+              }
+            ]
+          }
+        ]
+      },
+      "label": "reduction start"
+    },
+    "workload_digest": "sha256:03cf124b55a3ce674e03fb2428c884f376751057dc75a0b6635424b536be95b6",
+    "operations": 95,
+    "verdict": {
+      "verdict": "VALID_COUNTEREXAMPLE",
+      "model_costs": {
+        "A": 45,
+        "B": 43
+      },
+      "rtl_costs": {
+        "A": 45,
+        "B": 49
+      },
+      "selection": {
+        "chosen": "B",
+        "reference_best": "A",
+        "extra_cycles": 4,
+        "denominator_cycles": 45,
+        "regret": {
+          "numerator": 4,
+          "denominator": 45,
+          "decimal": 0.08888888888888889
+        }
+      }
+    }
+  },
+  "reduced": {
+    "workload": {
+      "schema_version": 1,
+      "capacity_words": 4096,
+      "word_bytes": 4,
+      "masters": 8,
+      "arrival_policy": "per_operation_release",
+      "program": {
+        "kind": "read_sequences",
+        "per_master": [
+          {
+            "master": 0,
+            "ops": [
+              {
+                "byte_address": 40
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0,
+                "gap": 3
+              },
+              {
+                "byte_address": 32,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 32
+              },
+              {
+                "byte_address": 36
+              },
+              {
+                "byte_address": 0
+              },
+              {
+                "byte_address": 0
+              }
+            ]
+          },
+          {
+            "master": 1,
+            "ops": [
+              {
+                "byte_address": 36
+              },
+              {
+                "byte_address": 44
+              },
+              {
+                "byte_address": 40
+              },
+              {
+                "byte_address": 32,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 40
+              },
+              {
+                "byte_address": 40
+              },
+              {
+                "byte_address": 32,
+                "release": "after_response"
+              },
+              {
+                "byte_address": 40
+              },
+              {
+                "byte_address": 32,
+                "gap": 2
+              },
+              {
+                "byte_address": 60
+              }
+            ]
+          },
+          {
+            "master": 2,
+            "ops": []
+          },
+          {
+            "master": 3,
+            "ops": []
+          },
+          {
+            "master": 4,
+            "ops": []
+          },
+          {
+            "master": 5,
+            "ops": []
+          },
+          {
+            "master": 6,
+            "ops": []
+          },
+          {
+            "master": 7,
+            "ops": []
+          }
+        ]
+      },
+      "label": "reduction candidate"
+    },
+    "workload_digest": "sha256:f0ac6ae1c745351caeaf273b2048fd3f797f6dd59282268bf928b9ec4f1fd4a7",
+    "operations": 19,
+    "verdict": {
+      "verdict": "VALID_COUNTEREXAMPLE",
+      "model_costs": {
+        "A": 17,
+        "B": 15
+      },
+      "rtl_costs": {
+        "A": 17,
+        "B": 19
+      },
+      "dM": 2,
+      "dR": -2,
+      "model_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 15,
+        "relative_term": "3/10",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "rtl_margin": {
+        "absolute_cycles": 2,
+        "relative": "0.02",
+        "min_cost": 17,
+        "relative_term": "17/50",
+        "threshold": "2/1",
+        "threshold_decimal": 2.0,
+        "met": true
+      },
+      "selection": {
+        "chosen": "B",
+        "reference_best": "A",
+        "extra_cycles": 2,
+        "denominator_cycles": 17,
+        "regret": {
+          "numerator": 2,
+          "denominator": 17,
+          "decimal": 0.11764705882352941
+        }
+      }
+    },
+    "final_rtl_run_ids": {
+      "A": "20261019T223112336565Z-rtl-86dfc5",
+      "B": "20261019T223112389969Z-rtl-e3fde7"
+    },
+    "final_model_run_ids": {
+      "A": "20261019T223112396787Z-model-7d2225",
+      "B": "20261019T223112398717Z-model-f0256f"
+    },
+    "reference_epoch": "epoch-dfa3739b2a85"
+  },
+  "reduction_ratio_operations": "19/95",
+  "edit_set": [
+    "drop_initiator: remove one initiator's whole program",
+    "halve_program: keep the first or second half of one initiator's operations",
+    "drop_chunk: remove a contiguous chunk (size n/2, n/4, ..., 1) from one initiator",
+    "shorten_burst: halve one run of identical addresses",
+    "canonicalize_address: replace word w by w mod 16 (preserves LIC and BFLY bank)",
+    "clear_gap: set one operation's release gap to 0",
+    "accept_release: change one after_response dependency to after_accept"
+  ],
+  "attempts": 692,
+  "invalid_candidates": 0,
+  "surrogate_rejected": 49,
+  "rtl_rejected": 14,
+  "rtl_executions_used": 32,
+  "rtl_budget": 32,
+  "surrogate_models": {
+    "A": "lic_exact_v1",
+    "B": "bfly_lfsr_transliteration_v1"
+  },
+  "neighbours": {
+    "total": 49,
+    "surrogate_rejected": 49,
+    "rtl_rechecked": 14,
+    "rtl_rechecked_rejected": 14,
+    "rtl_contradictions": [],
+    "rtl_checks": [
+      {
+        "edit": "drop_initiator m0",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 15,
+          "B": 15
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223112490318Z-rtl-c52140",
+          "B": "20261019T223112544869Z-rtl-69da87"
+        }
+      },
+      {
+        "edit": "drop_initiator m1",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 14,
+          "B": 14
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223112598865Z-rtl-0a1fa0",
+          "B": "20261019T223112652335Z-rtl-ab79f7"
+        }
+      },
+      {
+        "edit": "halve_program m0 keep first",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 15,
+          "B": 17
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223112706054Z-rtl-91476d",
+          "B": "20261019T223112759833Z-rtl-8e7daf"
+        }
+      },
+      {
+        "edit": "halve_program m0 keep second",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 16,
+          "B": 18
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223112813611Z-rtl-8f3fa6",
+          "B": "20261019T223112866153Z-rtl-90c433"
+        }
+      },
+      {
+        "edit": "halve_program m1 keep first",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 14,
+          "B": 14
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223112920161Z-rtl-1ec19f",
+          "B": "20261019T223112974255Z-rtl-7f9801"
+        }
+      },
+      {
+        "edit": "halve_program m1 keep second",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 14,
+          "B": 15
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113027354Z-rtl-cf2383",
+          "B": "20261019T223113082006Z-rtl-42e2a6"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [0:4]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 16,
+          "B": 18
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113135569Z-rtl-31a823",
+          "B": "20261019T223113189805Z-rtl-04ff87"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [4:8]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 15,
+          "B": 17
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113243506Z-rtl-5e95a2",
+          "B": "20261019T223113298295Z-rtl-7a418f"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [8:12]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 16,
+          "B": 19
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113351184Z-rtl-b09efe",
+          "B": "20261019T223113407407Z-rtl-f6d413"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [0:2]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 17,
+          "B": 16
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113461466Z-rtl-48f56d",
+          "B": "20261019T223113514904Z-rtl-b9abf0"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [2:4]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 16,
+          "B": 19
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113568226Z-rtl-2be2aa",
+          "B": "20261019T223113623245Z-rtl-a5e970"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [4:6]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 16,
+          "B": 18
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113677023Z-rtl-14aa9d",
+          "B": "20261019T223113736695Z-rtl-372774"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [6:8]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 16,
+          "B": 18
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113791759Z-rtl-c38e09",
+          "B": "20261019T223113845446Z-rtl-ca21e3"
+        }
+      },
+      {
+        "edit": "drop_chunk m0 [8:10]",
+        "verdict": "TIE_OR_SMALL_MARGIN",
+        "rtl_costs": {
+          "A": 16,
+          "B": 19
+        },
+        "rtl_run_ids": {
+          "A": "20261019T223113898903Z-rtl-a13076",
+          "B": "20261019T223113952543Z-rtl-4332e3"
+        }
+      }
+    ]
+  },
+  "history": "every candidate replayed from the 4-cycle reset; no checkpoints",
+  "minimality": "1-minimal under the edit set: all 49 single-edit neighbours break the reversal under the event-exact surrogate; 14 of them re-checked on the RTL, all broken; final witness confirmed on the RTL",
+  "minimality_established": true,
+  "elapsed_seconds": 2.56,
+  "log": [
+    {
+      "attempt": 0,
+      "edit": "original witness replay (RTL)",
+      "verdict": "VALID_COUNTEREXAMPLE",
+      "rtl_run_ids": {
+        "A": "20261019T223111455192Z-rtl-d8d476",
+        "B": "20261019T223111512417Z-rtl-74e696"
+      }
+    },
+    {
+      "attempt": 3,
+      "edit": "drop_initiator m2",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 45,
+        "B": 43
+      },
+      "surrogate_costs": {
+        "A": 45,
+        "B": 48
+      }
+    },
+    {
+      "attempt": 6,
+      "edit": "drop_initiator m3",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 46,
+        "B": 44
+      },
+      "surrogate_costs": {
+        "A": 46,
+        "B": 48
+      }
+    },
+    {
+      "attempt": 9,
+      "edit": "drop_initiator m4",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 46,
+        "B": 44
+      },
+      "surrogate_costs": {
+        "A": 46,
+        "B": 48
+      }
+    },
+    {
+      "attempt": 12,
+      "edit": "drop_initiator m5",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 45,
+        "B": 43
+      },
+      "surrogate_costs": {
+        "A": 45,
+        "B": 49
+      }
+    },
+    {
+      "attempt": 15,
+      "edit": "drop_initiator m6",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 44,
+        "B": 42
+      },
+      "surrogate_costs": {
+        "A": 44,
+        "B": 49
+      }
+    },
+    {
+      "attempt": 18,
+      "edit": "drop_initiator m7",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 44,
+        "B": 42
+      },
+      "surrogate_costs": {
+        "A": 44,
+        "B": 49
+      }
+    },
+    {
+      "attempt": 36,
+      "edit": "drop_chunk m0 [0:1]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 44,
+        "B": 42
+      },
+      "surrogate_costs": {
+        "A": 44,
+        "B": 49
+      }
+    },
+    {
+      "attempt": 61,
+      "edit": "drop_chunk m1 [20:30]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 43,
+        "B": 41
+      },
+      "surrogate_costs": {
+        "A": 43,
+        "B": 48
+      }
+    },
+    {
+      "attempt": 87,
+      "edit": "drop_chunk m1 [5:10]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 33,
+        "B": 31
+      },
+      "surrogate_costs": {
+        "A": 33,
+        "B": 35
+      }
+    },
+    {
+      "attempt": 94,
+      "edit": "drop_chunk m0 [20:30]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 33,
+        "B": 31
+      },
+      "surrogate_costs": {
+        "A": 33,
+        "B": 35
+      }
+    },
+    {
+      "attempt": 103,
+      "edit": "drop_chunk m0 [2:4]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 34,
+        "B": 31
+      },
+      "surrogate_costs": {
+        "A": 34,
+        "B": 36
+      }
+    },
+    {
+      "attempt": 111,
+      "edit": "drop_chunk m0 [8:12]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 33,
+        "B": 31
+      },
+      "surrogate_costs": {
+        "A": 33,
+        "B": 36
+      }
+    },
+    {
+      "attempt": 124,
+      "edit": "drop_chunk m0 [2:3]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 33,
+        "B": 31
+      },
+      "surrogate_costs": {
+        "A": 33,
+        "B": 36
+      }
+    },
+    {
+      "attempt": 143,
+      "edit": "drop_chunk m1 [14:21]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 29,
+        "B": 27
+      },
+      "surrogate_costs": {
+        "A": 29,
+        "B": 32
+      }
+    },
+    {
+      "attempt": 162,
+      "edit": "drop_chunk m1 [3:6]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 21,
+        "B": 19
+      },
+      "surrogate_costs": {
+        "A": 21,
+        "B": 23
+      }
+    },
+    {
+      "attempt": 169,
+      "edit": "drop_chunk m0 [12:18]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 21,
+        "B": 19
+      },
+      "surrogate_costs": {
+        "A": 21,
+        "B": 23
+      }
+    },
+    {
+      "attempt": 185,
+      "edit": "drop_chunk m0 [7:8]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 21,
+        "B": 19
+      },
+      "surrogate_costs": {
+        "A": 21,
+        "B": 23
+      }
+    },
+    {
+      "attempt": 192,
+      "edit": "drop_chunk m0 [10:15]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 21,
+        "B": 19
+      },
+      "surrogate_costs": {
+        "A": 21,
+        "B": 23
+      }
+    },
+    {
+      "attempt": 222,
+      "edit": "drop_chunk m1 [7:8]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 239,
+      "edit": "drop_chunk m0 [7:8]",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 271,
+      "edit": "canonicalize_address m0 word 1008->0",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 303,
+      "edit": "canonicalize_address m0 word 1114->10",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 334,
+      "edit": "canonicalize_address m0 word 1816->8",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 368,
+      "edit": "canonicalize_address m0 word 3024->0",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 401,
+      "edit": "canonicalize_address m0 word 3721->9",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 431,
+      "edit": "canonicalize_address m1 word 447->15",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 462,
+      "edit": "canonicalize_address m1 word 1627->11",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 493,
+      "edit": "canonicalize_address m1 word 1816->8",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 527,
+      "edit": "canonicalize_address m1 word 2618->10",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 558,
+      "edit": "canonicalize_address m1 word 3546->10",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 591,
+      "edit": "canonicalize_address m1 word 3577->9",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 623,
+      "edit": "accept_release m1 op0",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 20,
+        "B": 18
+      },
+      "surrogate_costs": {
+        "A": 20,
+        "B": 22
+      }
+    },
+    {
+      "attempt": 658,
+      "edit": "clear_gap m1 op9",
+      "result": "ACCEPTED_BY_SURROGATE",
+      "model_costs": {
+        "A": 17,
+        "B": 15
+      },
+      "surrogate_costs": {
+        "A": 17,
+        "B": 19
+      }
+    }
+  ]
+}

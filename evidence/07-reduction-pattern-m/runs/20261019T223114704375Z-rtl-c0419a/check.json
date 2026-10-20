@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "checker": "rift.evaluate.checker/v1",
+  "status": "COMPLETED",
+  "functional_valid": true,
+  "workload_digest": "sha256:d102d1735f58aa8b4736c8803c58f94125ee767a0fad100161b2382420d4bd0f",
+  "expected_operations": 8,
+  "makespan": 7,
+  "makespan_from_events_unvalidated": 7,
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "first_release_cycle": 4,
+  "last_response_cycle": 10,
+  "accepted": 8,
+  "completed": 8,
+  "offered": 8,
+  "acceptance_cycles_distinct": 6,
+  "acceptance_window": 6,
+  "monitor_failures": 0,
+  "violation_counts": {},
+  "violations": [],
+  "summary_agreement": {
+    "makespan": true,
+    "accepted": true,
+    "completed": true,
+    "runner_exit_status": "COMPLETED"
+  }
+}

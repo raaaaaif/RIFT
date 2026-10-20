@@ -1,0 +1,18 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc yices) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement rift_lic2x2_formal._witness_.check_780 at rift_lic2x2_formal.sv:157.7-157.29 step 1
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement rift_lic2x2_formal._witness_.check_786 at rift_lic2x2_formal.sv:159.7-159.83 step 1
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement rift_lic2x2_formal._witness_.check_783 at rift_lic2x2_formal.sv:158.7-158.32 step 1
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement rift_lic2x2_formal._witness_.check_805 at rift_lic2x2_formal.sv:161.7-161.36 step 2
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement rift_lic2x2_formal._witness_.check_793 at rift_lic2x2_formal.sv:160.7-160.65 step 2

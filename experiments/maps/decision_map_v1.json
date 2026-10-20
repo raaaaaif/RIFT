@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "map_id": "decision-map-v1",
+  "question": "Across a family of workloads that vary only in butterfly route sharing and crossbar bank collisions, which interconnect finishes sooner on the RTL, and where does the fast model pick the wrong one?",
+  "designs": [
+    {"design": "A", "config": "lic8x8"},
+    {"design": "B", "config": "bfly4_8x16"}
+  ],
+  "models": {
+    "A": "lic_exact_v1",
+    "B_parent": "bank_only_v1",
+    "B_repaired": "candidate model of the C1 repair submission from the same pipeline run"
+  },
+  "generator": {
+    "name": "decision_map_cell",
+    "initiators": 8,
+    "reads_per_initiator": 32,
+    "release": "after_accept, no gaps (back-to-back reads)",
+    "seed_base": 71000,
+    "seed_rule": "seed = seed_base + 17 * i + j for grid cell (i, j)",
+    "construction": "per slot (the t-th read of every initiator) the eight words map to eight distinct butterfly banks (q mod 16); route sharing and crossbar collisions are set per slot and spread over the 32 slots so that the totals equal the grid target exactly"
+  },
+  "axes": {
+    "x": {
+      "id": "route_sharing",
+      "label": "How often paired initiators need the same butterfly route",
+      "definition": "fraction of (initiator pair 2k/2k+1, slot) in which both requests leave stage-1 router k through the same output toward different banks",
+      "unit": "pair-slots",
+      "denominator": 128,
+      "levels": [0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128]
+    },
+    "y": {
+      "id": "crossbar_collisions",
+      "label": "How often requests collide on a crossbar bank",
+      "definition": "fraction of (initiator, slot) whose word maps (q mod 8) to a crossbar bank that another initiator also requests in the same slot",
+      "unit": "doubled crossbar-bank slots (each is two colliding requests out of 256)",
+      "denominator": 128,
+      "levels": [0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128]
+    }
+  },
+  "features_note": "Features are nominal: computed from the programs by slot index. Once an initiator stalls, its stream drifts relative to the others, so the executed interaction differs from the nominal one.",
+  "evaluation": "rift.evaluate.compare/v1 classify: same margin (max(2 cycles, 2% of the smaller cost)) and tie policy as every other comparison",
+  "scope": {
+    "role": "EXPLORATORY_MAP",
+    "acceptance": "not part of repair acceptance; the repaired model was frozen and accepted on heldout-v1 and heldout-v2 before this map was defined",
+    "provenance": "AUTHORED_FAMILY",
+    "discovery_credit": 0
+  },
+  "prediction_before_execution": {
+    "recorded": "2026-10-19, before any map cell was executed",
+    "bank_only_model": "predicts a butterfly cost of 33 cycles in every cell (no butterfly bank conflicts by construction); its choice therefore depends on crossbar collisions only: a tie with no collisions, the butterfly everywhere else",
+    "hardware": "crossbar cost grows with crossbar collisions and butterfly cost grows with route sharing; the measured switch-over should lie near the diagonal",
+    "wrong_region": "strict reversals concentrated where route sharing exceeds crossbar collisions",
+    "repaired_model": "switch-over close to the measured diagonal; residual disagreements possible near the diagonal because the repaired model uses round-robin rather than LFSR priorities",
+    "landmarks": "pattern L near (1, 0), pattern B at (0, 1), pattern M near (0.94, 0.06)"
+  }
+}

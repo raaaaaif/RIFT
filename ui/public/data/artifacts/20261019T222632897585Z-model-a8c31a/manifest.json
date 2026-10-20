@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "kind": "model",
+  "runner": "fast_model",
+  "observation_role": "MODEL_PREDICTION",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "status": "COMPLETED",
+  "makespan": 33,
+  "config_id": "bfly4_8x16",
+  "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+  "workload_digest": "sha256:0309a37900fabd572266f2d22beadc7b75c57e024461d42591ea131b28dd88f7",
+  "workload_label": "Pattern B (supplied calibration)",
+  "model_id": "bank_only_v1",
+  "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282",
+  "model_spec": {
+    "family": "crossbar",
+    "params": {
+      "fair": true,
+      "lock_in": true
+    },
+    "applies_to": [
+      "BFLY4",
+      "BFLY2",
+      "LIC"
+    ],
+    "contract": {
+      "promise": "RANKING_PRESERVATION",
+      "scope": "claims bank conflicts dominate; read-only programs",
+      "declared_omissions": [
+        "internal butterfly route contention",
+        "LFSR-derived external priorities"
+      ]
+    },
+    "provenance": "handoff-specified explicitly lower-fidelity bank-only butterfly model (seeded omission)",
+    "admissible_fast_model": true,
+    "model_id": "bank_only_v1"
+  },
+  "approximation_contract": {
+    "promise": "RANKING_PRESERVATION",
+    "scope": "claims bank conflicts dominate; read-only programs",
+    "declared_omissions": [
+      "internal butterfly route contention",
+      "LFSR-derived external priorities"
+    ]
+  },
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "timeout_cycles": 4096,
+  "elapsed_seconds": 0.0009745840216055512,
+  "tags": [
+    "gate0c",
+    "phase0",
+    "phase0-patterns-v1"
+  ],
+  "run_id": "20261019T222632897585Z-model-a8c31a",
+  "artifacts": {
+    "check.json": {
+      "sha256": "sha256:c3d8f693c9167fac4cbd9eea2c83b53de2e69213b865d6cc55ce844e5c7c90ad",
+      "bytes": 735
+    },
+    "events.jsonl": {
+      "sha256": "sha256:8c4d2a2182ae09fc8c98337b4fabcfd17064edc47cd58e4954780c83292fc791",
+      "bytes": 155328
+    },
+    "model_summary.json": {
+      "sha256": "sha256:35238fe8582e8dfdb4e35873b32a2625479dec0c742dd97cc0ef86a468d1c1f6",
+      "bytes": 293
+    },
+    "workload.json": {
+      "sha256": "sha256:4f99755038cad2f3e1b120186732a2b78a074aa6e34c24d90e331d0f480de3e0",
+      "bytes": 361
+    }
+  },
+  "manifest_digest": "sha256:08500b741a81e8f31c48a648d90f69cd75867c42408a315447374523935247e0"
+}

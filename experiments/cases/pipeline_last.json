@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "ids": {
+    "gate0a": "20261019T222632386466Z-gate0a-d8055c",
+    "compare": "20261019T222633043658Z-compare-45e148",
+    "formal": "20261019T222633106090Z-formal-b9e2a7",
+    "benchmark": "20261019T222726131162Z-benchmark-634be8",
+    "screen": "20261019T222726639417Z-screen-e245c0",
+    "repair": "20261019T223036360386Z-repair-8f3a10",
+    "verify_v1": "20261019T223044974241Z-verify-2e78e7",
+    "verify_v2": "20261019T223054078991Z-verify-5ef01f",
+    "map": "20261019T223116166650Z-map-b7a943"
+  },
+  "lbm": {
+    "L": "20261019T222632770246Z-comparison-8ad130",
+    "B": "20261019T222632903290Z-comparison-b13c1c",
+    "M": "20261019T222633041968Z-comparison-213664"
+  },
+  "published": {
+    "c1_comparison": "20261019T223111402842Z-comparison-12c6a0",
+    "c1_reduction": "20261019T223111403970Z-reduction-4f1b15",
+    "m_reduction": "20261019T223113961844Z-reduction-2f5e99",
+    "c4_comparison": "20261019T223116019791Z-comparison-2c6a9b",
+    "invalid_comparison": "20261019T223116153272Z-comparison-6eef02"
+  },
+  "controls": {
+    "control_overfit_lookup_C1": "20261019T223054181185Z-verify-4cbed7",
+    "control_wrong_structure_C1": "20261019T223102821298Z-verify-4ec137",
+    "control_parametric_fit_C1": "20261019T223111254480Z-verify-5d7f9b"
+  },
+  "static": {
+    "out": "ui/public/data",
+    "cases": 6,
+    "traces": 32,
+    "artifact_runs": 34,
+    "map_cells": 289,
+    "json_bytes": 4097292,
+    "artifact_bytes": 3419211
+  },
+  "elapsed_seconds": 346.4
+}

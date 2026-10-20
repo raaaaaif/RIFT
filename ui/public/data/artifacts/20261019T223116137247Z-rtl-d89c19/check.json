@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "checker": "rift.evaluate.checker/v1",
+  "status": "HARNESS_INVALID",
+  "functional_valid": false,
+  "workload_digest": "sha256:9d9955e51c87a5f7426a581377fe9c4dcfe3e1291394e2f5d6aae34e808a686f",
+  "expected_operations": 256,
+  "makespan": null,
+  "makespan_from_events_unvalidated": 65,
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "first_release_cycle": 4,
+  "last_response_cycle": 68,
+  "accepted": 256,
+  "completed": 256,
+  "offered": 256,
+  "acceptance_cycles_distinct": 64,
+  "acceptance_window": 64,
+  "monitor_failures": 64,
+  "violation_counts": {
+    "MONITOR_FAILURE": 64
+  },
+  "violations": [
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 4: wrapper monitor asserted",
+      "cycle": 4
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 5: wrapper monitor asserted",
+      "cycle": 5
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 6: wrapper monitor asserted",
+      "cycle": 6
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 7: wrapper monitor asserted",
+      "cycle": 7
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 8: wrapper monitor asserted",
+      "cycle": 8
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 9: wrapper monitor asserted",
+      "cycle": 9
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 10: wrapper monitor asserted",
+      "cycle": 10
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 11: wrapper monitor asserted",
+      "cycle": 11
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 12: wrapper monitor asserted",
+      "cycle": 12
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 13: wrapper monitor asserted",
+      "cycle": 13
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 14: wrapper monitor asserted",
+      "cycle": 14
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 15: wrapper monitor asserted",
+      "cycle": 15
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 16: wrapper monitor asserted",
+      "cycle": 16
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 17: wrapper monitor asserted",
+      "cycle": 17
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 18: wrapper monitor asserted",
+      "cycle": 18
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 19: wrapper monitor asserted",
+      "cycle": 19
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 20: wrapper monitor asserted",
+      "cycle": 20
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 21: wrapper monitor asserted",
+      "cycle": 21
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 22: wrapper monitor asserted",
+      "cycle": 22
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 23: wrapper monitor asserted",
+      "cycle": 23
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 24: wrapper monitor asserted",
+      "cycle": 24
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 25: wrapper monitor asserted",
+      "cycle": 25
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 26: wrapper monitor asserted",
+      "cycle": 26
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 27: wrapper monitor asserted",
+      "cycle": 27
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 28: wrapper monitor asserted",
+      "cycle": 28
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 29: wrapper monitor asserted",
+      "cycle": 29
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 30: wrapper monitor asserted",
+      "cycle": 30
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 31: wrapper monitor asserted",
+      "cycle": 31
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 32: wrapper monitor asserted",
+      "cycle": 32
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 33: wrapper monitor asserted",
+      "cycle": 33
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 34: wrapper monitor asserted",
+      "cycle": 34
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 35: wrapper monitor asserted",
+      "cycle": 35
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 36: wrapper monitor asserted",
+      "cycle": 36
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 37: wrapper monitor asserted",
+      "cycle": 37
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 38: wrapper monitor asserted",
+      "cycle": 38
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 39: wrapper monitor asserted",
+      "cycle": 39
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 40: wrapper monitor asserted",
+      "cycle": 40
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 41: wrapper monitor asserted",
+      "cycle": 41
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 42: wrapper monitor asserted",
+      "cycle": 42
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "SV3_PAYLOAD_ROUTING at cycle 43: wrapper monitor asserted",
+      "cycle": 43
+    }
+  ],
+  "summary_agreement": {
+    "makespan": true,
+    "accepted": true,
+    "completed": true,
+    "runner_exit_status": "HARNESS_INVALID"
+  }
+}

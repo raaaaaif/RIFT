@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "gate": "0A",
+  "config_id": "lic2x2",
+  "scope": "Harness and tool semantics only (transport, sampling, mapping, ownership, drain, monitor activity). No topology, model or AI claim.",
+  "passed": true,
+  "checks": [
+    {
+      "check": "single_read_sampling",
+      "run_ids": [
+        "20261019T222631457422Z-rtl-69e544"
+      ],
+      "expectation": "offer and accept at first release cycle 4 (A_4); response at V_5 with f(3); inclusive makespan 2",
+      "observed": {
+        "accept_cycle": 4,
+        "complete_cycle": 5,
+        "read_data": 2130917193,
+        "makespan": 2
+      },
+      "passed": true
+    },
+    {
+      "check": "reset_quiet",
+      "run_ids": [
+        "20261019T222631457422Z-rtl-69e544"
+      ],
+      "expectation": "4 reset cycles evaluated with no grant/response",
+      "observed": {
+        "evaluations": 4,
+        "failures": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "two_independent_banks",
+      "run_ids": [
+        "20261019T222631523581Z-rtl-095e0a"
+      ],
+      "expectation": "both initiators accepted in cycle 4",
+      "observed": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "check": "same_bank_contention",
+      "run_ids": [
+        "20261019T222631582042Z-rtl-b02f35"
+      ],
+      "expectation": "bank 0 accepts one initiator per cycle: cycles 4 and 5",
+      "observed": [
+        4,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "check": "bank_stall_request_stability",
+      "run_ids": [
+        "20261019T222631642930Z-rtl-9d7846"
+      ],
+      "expectation": "bank 0 stalled cycles 4-6; request held stable and accepted at 7",
+      "observed": {
+        "accept_cycle": 7,
+        "stability_failures": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "address_mapping_and_registered_reads",
+      "run_ids": [
+        "20261019T222631702844Z-rtl-b9c4fa"
+      ],
+      "expectation": "rows 0..3 of bank 0 read back-to-back plus last words 4094/4095; all data equal f(q); word 4095 -> bank 1 row 2047",
+      "observed": {
+        "completes": 8,
+        "data_ok": true,
+        "last_word_bank_row": [
+          1,
+          2047
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "response_ownership",
+      "run_ids": [
+        "20261019T222631758715Z-rtl-6e7a98"
+      ],
+      "expectation": "every response matches its own operation's logical word",
+      "observed": {
+        "completes": 6,
+        "own_data": true
+      },
+      "passed": true
+    },
+    {
+      "check": "complete_drain",
+      "run_ids": [
+        "20261019T222631758715Z-rtl-6e7a98"
+      ],
+      "expectation": "3 post-completion cycles with no grant or response; all operations accepted/completed once",
+      "observed": {
+        "drain_evaluations": 3,
+        "drain_failures": 0,
+        "accepted": 6,
+        "completed": 6
+      },
+      "passed": true
+    },
+    {
+      "check": "monitor_inventory",
+      "run_ids": [
+        "20261019T222631758715Z-rtl-6e7a98"
+      ],
+      "expectation": "7 SV wrapper monitors + 7 C++ monitors evaluated for LIC",
+      "observed": [
+        "SV0_GNT_IMPLIES_REQ",
+        "SV1_BANK_SINGLE_ACCEPT",
+        "SV2_ACCEPT_CONSERVATION",
+        "SV3_PAYLOAD_ROUTING",
+        "SV4_RESP_CORRESPONDENCE",
+        "SV5_LIC_WORK_CONSERVING",
+        "SV6_NO_SPURIOUS_BANK_REQ",
+        "C0_RESET_QUIET",
+        "C1_REQUEST_STABILITY",
+        "C2_RESPONSE_TIMING",
+        "C3_RESPONSE_DATA",
+        "C4_DRAIN_QUIET",
+        "C5_COMPLETION",
+        "C6_TIMEOUT"
+      ],
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:SV0_GNT_IMPLIES_REQ",
+      "run_ids": [
+        "20261019T222631817620Z-rtl-da8568"
+      ],
+      "expectation": "monitor SV0_GNT_IMPLIES_REQ fires and the run is rejected (HARNESS_INVALID)",
+      "observed": {
+        "failures": 5,
+        "status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:SV1_BANK_SINGLE_ACCEPT",
+      "run_ids": [
+        "20261019T222631873738Z-rtl-3086e4"
+      ],
+      "expectation": "monitor SV1_BANK_SINGLE_ACCEPT fires and the run is rejected (HARNESS_INVALID)",
+      "observed": {
+        "failures": 3,
+        "status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:SV2_ACCEPT_CONSERVATION",
+      "run_ids": [
+        "20261019T222631931643Z-rtl-b261df"
+      ],
+      "expectation": "monitor SV2_ACCEPT_CONSERVATION fires and the run is rejected (HARNESS_INVALID)",
+      "observed": {
+        "failures": 3,
+        "status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:SV3_PAYLOAD_ROUTING",
+      "run_ids": [
+        "20261019T222631987673Z-rtl-cfdce9"
+      ],
+      "expectation": "monitor SV3_PAYLOAD_ROUTING fires and the run is rejected (HARNESS_INVALID)",
+      "observed": {
+        "failures": 4,
+        "status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:SV4_RESP_CORRESPONDENCE",
+      "run_ids": [
+        "20261019T222632045803Z-rtl-019435"
+      ],
+      "expectation": "monitor SV4_RESP_CORRESPONDENCE fires and the run is rejected (HARNESS_INVALID)",
+      "observed": {
+        "failures": 8,
+        "status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:SV5_LIC_WORK_CONSERVING",
+      "run_ids": [
+        "20261019T222632100419Z-rtl-d130d6"
+      ],
+      "expectation": "monitor SV5_LIC_WORK_CONSERVING fires and the run is rejected (HARNESS_INVALID)",
+      "observed": {
+        "failures": 3,
+        "status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:SV6_NO_SPURIOUS_BANK_REQ",
+      "run_ids": [
+        "20261019T222632156141Z-rtl-1d9c24"
+      ],
+      "expectation": "monitor SV6_NO_SPURIOUS_BANK_REQ fires and the run is rejected (HARNESS_INVALID)",
+      "observed": {
+        "failures": 3,
+        "status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:C1_REQUEST_STABILITY",
+      "run_ids": [
+        "20261019T222632211009Z-rtl-91cbeb"
+      ],
+      "expectation": "changing a held request is detected and rejected",
+      "observed": {
+        "failures": 1,
+        "status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "injected_fault_detected:C3_RESPONSE_DATA",
+      "run_ids": [
+        "20261019T222632266171Z-rtl-acfaa2"
+      ],
+      "expectation": "a wrong scoreboard expectation is detected by the driver monitor",
+      "observed": {
+        "failures": 7,
+        "runner_status": "FUNCTIONAL_MISMATCH",
+        "independent_checker_status": "HARNESS_INVALID"
+      },
+      "passed": true
+    },
+    {
+      "check": "timeout_classification",
+      "run_ids": [
+        "20261019T222632324259Z-rtl-ffb060"
+      ],
+      "expectation": "a never-granting bank yields TIMEOUT with no makespan",
+      "observed": {
+        "status": "TIMEOUT",
+        "makespan": null
+      },
+      "passed": true
+    },
+    {
+      "check": "invalid_workload_rejected",
+      "run_ids": [],
+      "expectation": "unaligned, out-of-range, wrong initiator count and zero-count workloads rejected",
+      "observed": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "passed": true
+    },
+    {
+      "check": "checker_rejects_tampered_events",
+      "run_ids": [
+        "20261019T222632379744Z-rtl-0a3630"
+      ],
+      "expectation": "dropped response -> HARNESS_INVALID; shifted response -> HARNESS_INVALID; corrupted data -> FUNCTIONAL_MISMATCH",
+      "observed": [
+        "HARNESS_INVALID",
+        "HARNESS_INVALID",
+        "FUNCTIONAL_MISMATCH"
+      ],
+      "passed": true
+    }
+  ],
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "reference": {
+    "rtl_commit": "2967d8d17be0a6139229ca8d3d4956e182aec3de",
+    "dependency_commit": "015917ff33e5f944e866814f72f2074fb0f4220f",
+    "wrapper_digest": "sha256:03c1fc2c4ea7d7c79a093594419125eb1f7b416dd3a9c710328d2b326b7f70cc",
+    "driver_digest": "sha256:46d8698719410821979c0795fc494ee08fd6eb960fd448cfdc4f2af53b322d89",
+    "memory_oracle_digest": "sha256:5b1e7b337487ea421b7c709df2b03c6cc94cc13917f7a6142b1fccd5c085cd57",
+    "sampling_convention": "pre_rise_v1",
+    "config_digest": "sha256:7bfbc336c89c3752e6b6a0d21299a9cd3ac09e17a63e7b061e0fb417cbcb4aa6",
+    "build_key_digest": "sha256:695446f8ef7ef275cca9d5dc7f2fd56609894121e84a96ce01b446fa27151fad",
+    "binary_sha256": "sha256:cd3b7e59ea329ad6b673af22a40abc5b377f44e4b7d4ee4398752425d88ed966",
+    "toolchain_lock_digest": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+    "assertion_register_digest": "sha256:e2f241afc63e2182eed9a650bb343a5ce2b55e67ad5c52316b64f1b5fd98b04d"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "build_id": "sha256:39dfefc6a52091058dbc8a57da3232c18cdc012eddc18157a4f4a9d6b3d76dc7",
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "toolchain": {
+    "schema_version": 1,
+    "emscripten_version": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.13-git (e13ee988ce3d87a738dd8f3661d02223308c412a)",
+    "release": "6.0.13",
+    "release_hash": "eb132757325583b787fe9414b09afea9442b72ad",
+    "darwin_arm64_archive_sha256": "3d8ced05935fbef5b3edda4252dce260004860bf8d579617f13d417338aa4cac",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-fexceptions",
+      "-sMODULARIZE=1",
+      "-sEXPORT_ES6=1",
+      "-sENVIRONMENT=worker,node",
+      "-sINVOKE_RUN=0",
+      "-sEXIT_RUNTIME=0",
+      "-sALLOW_MEMORY_GROWTH=1",
+      "-sMAXIMUM_MEMORY=268435456",
+      "-sFORCE_FILESYSTEM=1",
+      "-sEXPORTED_FUNCTIONS=['_main']",
+      "-sEXPORTED_RUNTIME_METHODS=['callMain','FS']"
+    ],
+    "runtime_adaptations": [
+      {
+        "path": "verilated.h",
+        "original_sha256": "sha256:a233a36ec0c19d613bf9b9ba0c8baf8967a6365ea6abba62f03534c805cc82ec",
+        "adapted_sha256": "sha256:77cfeefbec9e63c4d62fc8eb34756aecb14d493c6aef78580d091f1212dd0e1f",
+        "change": "default context thread count = 1"
+      },
+      {
+        "path": "verilatedos_c.h",
+        "original_sha256": "sha256:e54ec58ab846d2afc12dd62f640d1c25bc11bac0a778f67022dc77e99195044b",
+        "adapted_sha256": "sha256:4b548975dde8f049b1e3b68d723708c2cf360c8f3427285cef7253f667537475",
+        "change": "use upstream non-affinity branch on Emscripten"
+      },
+      {
+        "path": "verilated_threads.cpp",
+        "original_sha256": "sha256:41aa47e2e54f5f1e6723a056013cdd510a872ed44e3c3367e36f6ed553c07265",
+        "adapted_sha256": "sha256:ec243121e1ad2866a1cd4e4756d98755c52785d0b57b6090e2486342ce6d7603",
+        "change": "use upstream non-affinity branch on Emscripten"
+      }
+    ],
+    "native_toolchain_lock_sha256": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+    "builder_sha256": "sha256:72ef3c6c55605baa312608711cc938a7287dc8e13d757ecb9c19c3d82fad1b4e",
+    "fastmodel_source_sha256": "sha256:52956f4729922b9cadc69419cf9e47b8eacb4adbb4a3c70a02f13266fbb78802"
+  },
+  "modules": {
+    "lic8x8": {
+      "build_key": "sha256:c916480f915844f3bf12246dc275a703b5def5719a72ce89a54a29769716da8a",
+      "native_reference": {
+        "rtl_commit": "2967d8d17be0a6139229ca8d3d4956e182aec3de",
+        "dependency_commit": "015917ff33e5f944e866814f72f2074fb0f4220f",
+        "wrapper_digest": "sha256:03c1fc2c4ea7d7c79a093594419125eb1f7b416dd3a9c710328d2b326b7f70cc",
+        "driver_digest": "sha256:46d8698719410821979c0795fc494ee08fd6eb960fd448cfdc4f2af53b322d89",
+        "memory_oracle_digest": "sha256:5b1e7b337487ea421b7c709df2b03c6cc94cc13917f7a6142b1fccd5c085cd57",
+        "sampling_convention": "pre_rise_v1",
+        "config_digest": "sha256:5af28f83b13a6ece14bcdb6e338fa7f57160607737ce5f8d684534da9ffc3773",
+        "build_key_digest": "sha256:50b1ec71f53490937f2a69e988733954d90d9ac48e7c6462343c9fccc5a1dddf",
+        "binary_sha256": "sha256:214378252fcc962a3357aeb6780c89088e5d6569605bd3f380836c2c2400fce9",
+        "toolchain_lock_digest": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+        "assertion_register_digest": "sha256:e2f241afc63e2182eed9a650bb343a5ce2b55e67ad5c52316b64f1b5fd98b04d"
+      },
+      "js_sha256": "sha256:2330f3df1f3045ab82c9ce008129da080e860ff6ff1544ca81a406dc4435fbb7",
+      "wasm_sha256": "sha256:ce399986557b5526b98d965449c1cabddc4ffd4b7990050f806952a7378bbd5c",
+      "wasm_bytes": 280710,
+      "gzip_bytes": 115837,
+      "js_url": "/browser/39dfefc6a5209105/lic8x8.mjs",
+      "wasm_url": "/browser/39dfefc6a5209105/lic8x8.wasm"
+    },
+    "bfly4_8x16": {
+      "build_key": "sha256:0627078d3c88a3504d224443c90fecc7819033479624a90e25a7d192cb351306",
+      "native_reference": {
+        "rtl_commit": "2967d8d17be0a6139229ca8d3d4956e182aec3de",
+        "dependency_commit": "015917ff33e5f944e866814f72f2074fb0f4220f",
+        "wrapper_digest": "sha256:03c1fc2c4ea7d7c79a093594419125eb1f7b416dd3a9c710328d2b326b7f70cc",
+        "driver_digest": "sha256:46d8698719410821979c0795fc494ee08fd6eb960fd448cfdc4f2af53b322d89",
+        "memory_oracle_digest": "sha256:5b1e7b337487ea421b7c709df2b03c6cc94cc13917f7a6142b1fccd5c085cd57",
+        "sampling_convention": "pre_rise_v1",
+        "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+        "build_key_digest": "sha256:e747b504a154032da716222e19e0c56a51bb72acd723a04d0d1fa7e1c6b9522d",
+        "binary_sha256": "sha256:a2d0f30be4e964c7f75e0d478ac9ccfbffdfadfe9e70f9400bd6f8359ded8ea3",
+        "toolchain_lock_digest": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+        "assertion_register_digest": "sha256:e2f241afc63e2182eed9a650bb343a5ce2b55e67ad5c52316b64f1b5fd98b04d"
+      },
+      "js_sha256": "sha256:2330f3df1f3045ab82c9ce008129da080e860ff6ff1544ca81a406dc4435fbb7",
+      "wasm_sha256": "sha256:03b3f7737fb9c189c23a1cbb04ac5b2cc550b40db0848e716eee8394ea028c05",
+      "wasm_bytes": 286852,
+      "gzip_bytes": 114869,
+      "js_url": "/browser/39dfefc6a5209105/bfly4_8x16.mjs",
+      "wasm_url": "/browser/39dfefc6a5209105/bfly4_8x16.wasm"
+    },
+    "fastmodel": {
+      "build_key": "sha256:376ca9abc41bdceb765c14df153af01b3171bf4e6bceb65e14f7fb01abb77a16",
+      "native_reference": {
+        "source_sha256": "sha256:52956f4729922b9cadc69419cf9e47b8eacb4adbb4a3c70a02f13266fbb78802"
+      },
+      "js_sha256": "sha256:a3977713e93e3edfe267bb1024114daf9ec7eaedb7bffea2262e41d054afecb0",
+      "wasm_sha256": "sha256:47dcfa4cc55567908d511787cb8b716ba8552da926d2069898cc0cd5bb3a0ebd",
+      "wasm_bytes": 211264,
+      "gzip_bytes": 91779,
+      "js_url": "/browser/39dfefc6a5209105/fastmodel.mjs",
+      "wasm_url": "/browser/39dfefc6a5209105/fastmodel.wasm"
+    }
+  },
+  "models": {
+    "bank_only_v1": {
+      "model_id": "bank_only_v1",
+      "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282",
+      "config_id": "bfly4_8x16",
+      "args": [
+        "--family",
+        "crossbar",
+        "--num-in",
+        "8",
+        "--num-out",
+        "16",
+        "--resp-lat",
+        "1",
+        "--fair",
+        "1",
+        "--lock-in",
+        "1"
+      ],
+      "resp_lat": 1
+    },
+    "defect_bfly_bank_mod8_v1": {
+      "model_id": "defect_bfly_bank_mod8_v1",
+      "model_digest": "sha256:fcc3bc4f80e00c3bd35d9908e2a2b26e6779153a0ba976f40b9c3d5c0a2cd217",
+      "config_id": "bfly4_8x16",
+      "args": [
+        "--family",
+        "butterfly",
+        "--num-in",
+        "8",
+        "--num-out",
+        "16",
+        "--resp-lat",
+        "1",
+        "--radix",
+        "4",
+        "--bank-mod",
+        "8"
+      ],
+      "resp_lat": 1
+    },
+    "lic_exact_v1": {
+      "model_id": "lic_exact_v1",
+      "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765",
+      "config_id": "lic8x8",
+      "args": [
+        "--family",
+        "crossbar",
+        "--num-in",
+        "8",
+        "--num-out",
+        "8",
+        "--resp-lat",
+        "1",
+        "--fair",
+        "1",
+        "--lock-in",
+        "1"
+      ],
+      "resp_lat": 1
+    },
+    "repair_C1_bank_only_omission_68fb9e6b": {
+      "model_id": "repair_C1_bank_only_omission_68fb9e6b",
+      "model_digest": "sha256:8ff94863fee2a2a2f96fc041ad87eb5892151c81ad855d0427acfdf3329fd3b1",
+      "config_id": "bfly4_8x16",
+      "args": [
+        "--family",
+        "shared_link",
+        "--num-in",
+        "8",
+        "--num-out",
+        "16",
+        "--resp-lat",
+        "1",
+        "--links",
+        "2,2"
+      ],
+      "resp_lat": 1
+    }
+  },
+  "default_models": {
+    "A": "lic_exact_v1",
+    "parent": "bank_only_v1",
+    "repaired": "repair_C1_bank_only_omission_68fb9e6b"
+  },
+  "contract": {
+    "workload": "rift.contracts.workload/v1",
+    "checker": "rift.evaluate.checker/v1",
+    "verdict": "rift.evaluate.compare/v1",
+    "discovery_credit": 0
+  },
+  "curated": {
+    "url": "/browser/39dfefc6a5209105/curated.5e48e9ced0dabfea.json",
+    "sha256": "sha256:5e48e9ced0dabfea4d4d6127158329f9ad51d6e5482519a1164a6dc5b24f4a75",
+    "count": 8
+  },
+  "map": {
+    "url": "/browser/39dfefc6a5209105/map.446672154da03cbb.json",
+    "sha256": "sha256:446672154da03cbb8fd6e718b808395a9ce45160b06f29d47f3188381d7d96f0",
+    "count": 289
+  },
+  "browser_contract_sources": {
+    "ui/src/browser/assets.ts": "sha256:f2cb8e1218263d306a1b3d5167b0484ae51dc6214563d7e53d641c912e4c8139",
+    "ui/src/browser/checker.ts": "sha256:279c1dc89abf002b7eca1731aebb23a4c15199c1fd2e9b7e824ec31a002c9a0b",
+    "ui/src/browser/client.ts": "sha256:3053222e6bbc37de8823ceedc4dd6b5f3d4e1b020f49c60f76d3482111263227",
+    "ui/src/browser/contracts.ts": "sha256:861e73779a8ee6be03b1f504b29cab8fe7adf21a38228f0b81b65ebb2705aebe",
+    "ui/src/browser/engine.worker.ts": "sha256:a9a274b37c62189962c52fed699bd5383f707c10a9ecc6d1e247b83caff36c93",
+    "ui/src/browser/types.ts": "sha256:9f71b27dbca77f3ed331aa3e9f61d18030de04a4fe9a67236432f4ead3a086af",
+    "ui/src/replay.ts": "sha256:300ef37141e1b96d00d8ca3c37a3d5cda22e2eccb9b536e582f96d39a300ef28"
+  },
+  "runtime_source": {
+    "url": "/browser/39dfefc6a5209105/runtime-source.ce1f12d364366ac4.zip",
+    "sha256": "sha256:ce1f12d364366ac4c09eb75fd8e44b2f4f216b4e69768deb0d5059be49f31ad1"
+  },
+  "manifest_digest": "sha256:6c2b1959f1e967564cabfbb3b89cf321574ecc3e301d7817244b927dddda070a"
+}

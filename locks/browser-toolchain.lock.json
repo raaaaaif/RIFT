@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "emscripten_version": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.13-git (e13ee988ce3d87a738dd8f3661d02223308c412a)",
+  "release": "6.0.13",
+  "release_hash": "eb132757325583b787fe9414b09afea9442b72ad",
+  "darwin_arm64_archive_sha256": "3d8ced05935fbef5b3edda4252dce260004860bf8d579617f13d417338aa4cac",
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-fexceptions",
+    "-sMODULARIZE=1",
+    "-sEXPORT_ES6=1",
+    "-sENVIRONMENT=worker,node",
+    "-sINVOKE_RUN=0",
+    "-sEXIT_RUNTIME=0",
+    "-sALLOW_MEMORY_GROWTH=1",
+    "-sMAXIMUM_MEMORY=268435456",
+    "-sFORCE_FILESYSTEM=1",
+    "-sEXPORTED_FUNCTIONS=['_main']",
+    "-sEXPORTED_RUNTIME_METHODS=['callMain','FS']"
+  ],
+  "runtime_adaptations": [
+    {
+      "path": "verilated.h",
+      "original_sha256": "sha256:a233a36ec0c19d613bf9b9ba0c8baf8967a6365ea6abba62f03534c805cc82ec",
+      "adapted_sha256": "sha256:77cfeefbec9e63c4d62fc8eb34756aecb14d493c6aef78580d091f1212dd0e1f",
+      "change": "default context thread count = 1"
+    },
+    {
+      "path": "verilatedos_c.h",
+      "original_sha256": "sha256:e54ec58ab846d2afc12dd62f640d1c25bc11bac0a778f67022dc77e99195044b",
+      "adapted_sha256": "sha256:4b548975dde8f049b1e3b68d723708c2cf360c8f3427285cef7253f667537475",
+      "change": "use upstream non-affinity branch on Emscripten"
+    },
+    {
+      "path": "verilated_threads.cpp",
+      "original_sha256": "sha256:41aa47e2e54f5f1e6723a056013cdd510a872ed44e3c3367e36f6ed553c07265",
+      "adapted_sha256": "sha256:ec243121e1ad2866a1cd4e4756d98755c52785d0b57b6090e2486342ce6d7603",
+      "change": "use upstream non-affinity branch on Emscripten"
+    }
+  ],
+  "native_toolchain_lock_sha256": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+  "builder_sha256": "sha256:72ef3c6c55605baa312608711cc938a7287dc8e13d757ecb9c19c3d82fad1b4e",
+  "fastmodel_source_sha256": "sha256:52956f4729922b9cadc69419cf9e47b8eacb4adbb4a3c70a02f13266fbb78802"
+}

@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "registry_id": "rift-cases-v2",
+  "generated_by": "rift pipeline",
+  "question": "For this read-only workload, which interconnect finishes sooner at equal 16 KiB capacity: an 8x8 full crossbar with 8 banks (A) or a radix-4 butterfly with 16 banks (B)?",
+  "designs": [
+    {
+      "design": "A",
+      "config": "lic8x8"
+    },
+    {
+      "design": "B",
+      "config": "bfly4_8x16"
+    }
+  ],
+  "gate0a_study": "20261019T222632386466Z-gate0a-d8055c",
+  "formal_study": "20261019T222633106090Z-formal-b9e2a7",
+  "benchmark_study": "20261019T222726131162Z-benchmark-634be8",
+  "compare_study": "20261019T222633043658Z-compare-45e148",
+  "screen_run_id": "20261019T222726639417Z-screen-e245c0",
+  "verifications": {
+    "structural_repair": "20261019T223044974241Z-verify-2e78e7",
+    "structural_repair_heldout_v2": "20261019T223054078991Z-verify-5ef01f",
+    "overfit_lookup": "20261019T223054181185Z-verify-4cbed7",
+    "wrong_structure": "20261019T223102821298Z-verify-4ec137",
+    "parametric_fit": "20261019T223111254480Z-verify-5d7f9b"
+  },
+  "cases": [
+    {
+      "case_id": "pattern-m",
+      "title": "Pattern M: the bank-only model picks the slower design",
+      "short": "Pattern M \u00b7 strict reversal",
+      "group": "Executed cases",
+      "comparison_run_id": "20261019T222633041968Z-comparison-213664",
+      "reduction_id": "20261019T223113961844Z-reduction-2f5e99",
+      "repair_id": "20261019T223036360386Z-repair-8f3a10",
+      "verification_id": "20261019T223044974241Z-verify-2e78e7",
+      "verification_v2_id": "20261019T223054078991Z-verify-5ef01f",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "STRESS_WITNESS",
+      "discovery_credit": 0,
+      "mechanism": {
+        "role": "INTERPRETATION",
+        "hypothesis": "Internal route contention: in BFLY4 8x16, initiators 2k and 2k+1 share stage-1 router k; two requests whose bank IDs share bits [3:2] compete for one router output even when their banks differ. The bank-only model charges only bank conflicts.",
+        "prediction_before_execution": {
+          "source": "RIFT_PHASE0_FEASIBILITY_AUDIT (2026-10-17), recorded before any execution",
+          "evidence_basis": "SOURCE_DERIVED_HYPOTHESIS",
+          "predicted_active_acceptance_windows": {
+            "LIC 8x8": 40,
+            "BFLY bank-only model": 32,
+            "BFLY4 RTL": 64
+          }
+        },
+        "observations": [
+          {
+            "statement": "Measured acceptance windows for M: LIC 40, BFLY4 RTL 64, bank-only model 32; makespans 41 / 33 / 65.",
+            "artifact": "20261019T222633041968Z-comparison-213664"
+          },
+          {
+            "statement": "Pattern L isolates it: eight distinct banks on both designs, yet the butterfly RTL needs 65 cycles while the model predicts 33.",
+            "artifact": "20261019T222632770246Z-comparison-8ad130"
+          },
+          {
+            "statement": "Pattern B has no shared stage-1 outputs and the bank-only model is exact (33 = 33).",
+            "artifact": "20261019T222632903290Z-comparison-b13c1c"
+          },
+          {
+            "statement": "Measured inside the RTL (diagnostic trace, boundary events identical to the reference run): some stage-1 router output has two or more competing requests in M 59 of 65 cycles, L 59 of 65 cycles, B 0 of 33 cycles.",
+            "artifact": "20261019T223203476823Z-rtl-5491d8"
+          },
+          {
+            "statement": "Adding exactly one shared link per (initiator pair, bank>>2) resolves 13 of 13 development witnesses and cuts held-out reversals 3 \u2192 0 across both sealed baskets.",
+            "artifact": "20261019T223044974241Z-verify-2e78e7"
+          }
+        ],
+        "alternatives": [
+          {
+            "explanation": "bank mapping error",
+            "status": "ruled out",
+            "why": "Pattern B: model 33 vs RTL 33 cycles; every response passes the bank/row data check",
+            "artifact": "20261019T222632903290Z-comparison-b13c1c"
+          },
+          {
+            "explanation": "latency or sampling offset",
+            "status": "ruled out",
+            "why": "Gate 0A single-read calibration fixes A_4 \u2192 V_5; adding a cycle of response latency gives 20 development reversals (parent 13)",
+            "artifact": "20261019T223036360386Z-repair-8f3a10"
+          },
+          {
+            "explanation": "arbitration priority alone",
+            "status": "not supported",
+            "why": "unfair round robin leaves 7 of 13 development witnesses unresolved",
+            "artifact": "20261019T223036360386Z-repair-8f3a10"
+          },
+          {
+            "explanation": "per-path delay penalties (parametric fit)",
+            "status": "not supported",
+            "why": "fitted penalties leave 3 of 13 witnesses unresolved; independent verification: REJECTED (R1, R2, R4, R5)",
+            "artifact": "20261019T223111254480Z-verify-5d7f9b"
+          }
+        ],
+        "internal_activity": "Measured from a diagnostic trace of the unchanged RTL (same epoch); boundary events identical to the reference run."
+      },
+      "summary": "Supplied calibration: initiators 0-6 repeat words 0-6; initiator 7 reads word 8 eight times, then word 7.",
+      "limitations": [
+        "Supplied calibration: zero discovery credit.",
+        "One stress workload; not a deployment-wide claim."
+      ],
+      "diagnostic_run_id": "20261019T223203476823Z-rtl-5491d8"
+    },
+    {
+      "case_id": "c1-discovered",
+      "title": "A witness found by RIFT's search",
+      "short": "C1 \u00b7 discovered reversal",
+      "group": "Executed cases",
+      "comparison_run_id": "20261019T223111402842Z-comparison-12c6a0",
+      "reduction_id": "20261019T223111403970Z-reduction-4f1b15",
+      "repair_id": "20261019T223036360386Z-repair-8f3a10",
+      "verification_id": "20261019T223044974241Z-verify-2e78e7",
+      "verification_v2_id": "20261019T223054078991Z-verify-5ef01f",
+      "provenance": "AUTHORED_DEFECT",
+      "scope": "STRESS_WITNESS",
+      "discovery_credit": 1,
+      "mechanism": {
+        "role": "INTERPRETATION",
+        "hypothesis": "Internal route contention: in BFLY4 8x16, initiators 2k and 2k+1 share stage-1 router k; two requests whose bank IDs share bits [3:2] compete for one router output even when their banks differ. The bank-only model charges only bank conflicts.",
+        "prediction_before_execution": {
+          "source": "RIFT_PHASE0_FEASIBILITY_AUDIT (2026-10-17), recorded before any execution",
+          "evidence_basis": "SOURCE_DERIVED_HYPOTHESIS",
+          "predicted_active_acceptance_windows": {
+            "LIC 8x8": 40,
+            "BFLY bank-only model": 32,
+            "BFLY4 RTL": 64
+          }
+        },
+        "observations": [
+          {
+            "statement": "Measured acceptance windows for M: LIC 40, BFLY4 RTL 64, bank-only model 32; makespans 41 / 33 / 65.",
+            "artifact": "20261019T222633041968Z-comparison-213664"
+          },
+          {
+            "statement": "Pattern L isolates it: eight distinct banks on both designs, yet the butterfly RTL needs 65 cycles while the model predicts 33.",
+            "artifact": "20261019T222632770246Z-comparison-8ad130"
+          },
+          {
+            "statement": "Pattern B has no shared stage-1 outputs and the bank-only model is exact (33 = 33).",
+            "artifact": "20261019T222632903290Z-comparison-b13c1c"
+          },
+          {
+            "statement": "Measured inside the RTL (diagnostic trace, boundary events identical to the reference run): some stage-1 router output has two or more competing requests in M 59 of 65 cycles, L 59 of 65 cycles, B 0 of 33 cycles.",
+            "artifact": "20261019T223203476823Z-rtl-5491d8"
+          },
+          {
+            "statement": "Adding exactly one shared link per (initiator pair, bank>>2) resolves 13 of 13 development witnesses and cuts held-out reversals 3 \u2192 0 across both sealed baskets.",
+            "artifact": "20261019T223044974241Z-verify-2e78e7"
+          }
+        ],
+        "alternatives": [
+          {
+            "explanation": "bank mapping error",
+            "status": "ruled out",
+            "why": "Pattern B: model 33 vs RTL 33 cycles; every response passes the bank/row data check",
+            "artifact": "20261019T222632903290Z-comparison-b13c1c"
+          },
+          {
+            "explanation": "latency or sampling offset",
+            "status": "ruled out",
+            "why": "Gate 0A single-read calibration fixes A_4 \u2192 V_5; adding a cycle of response latency gives 20 development reversals (parent 13)",
+            "artifact": "20261019T223036360386Z-repair-8f3a10"
+          },
+          {
+            "explanation": "arbitration priority alone",
+            "status": "not supported",
+            "why": "unfair round robin leaves 7 of 13 development witnesses unresolved",
+            "artifact": "20261019T223036360386Z-repair-8f3a10"
+          },
+          {
+            "explanation": "per-path delay penalties (parametric fit)",
+            "status": "not supported",
+            "why": "fitted penalties leave 3 of 13 witnesses unresolved; independent verification: REJECTED (R1, R2, R4, R5)",
+            "artifact": "20261019T223111254480Z-verify-5d7f9b"
+          }
+        ],
+        "internal_activity": "Measured from a diagnostic trace of the unchanged RTL (same epoch); boundary events identical to the reference run."
+      },
+      "summary": "Found by decision-directed acquisition within the 64-run budget of case C1.",
+      "limitations": [
+        "Witness for an authored model omission (the handoff's bank-only model)."
+      ],
+      "diagnostic_run_id": "20261019T223203558708Z-rtl-d775f4"
+    },
+    {
+      "case_id": "pattern-l",
+      "title": "Pattern L: the model cannot tell the designs apart",
+      "short": "Pattern L \u00b7 small margin",
+      "group": "Executed cases",
+      "comparison_run_id": "20261019T222632770246Z-comparison-8ad130",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "INSTRUMENT_TEST",
+      "discovery_credit": 0,
+      "summary": "Initiator i repeatedly reads word i.",
+      "limitations": [
+        "Supplied calibration: zero discovery credit."
+      ],
+      "diagnostic_run_id": "20261019T223203623168Z-rtl-81a19b"
+    },
+    {
+      "case_id": "pattern-b",
+      "title": "Pattern B: model and hardware agree",
+      "short": "Pattern B \u00b7 agreement",
+      "group": "Executed cases",
+      "comparison_run_id": "20261019T222632903290Z-comparison-b13c1c",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "INSTRUMENT_TEST",
+      "discovery_credit": 0,
+      "summary": "Words [0,8,1,9,2,10,3,11]: crossbar bank conflicts, no butterfly route conflicts.",
+      "limitations": [
+        "Agreement here does not validate the model elsewhere."
+      ],
+      "diagnostic_run_id": "20261019T223203692799Z-rtl-1a9de9"
+    },
+    {
+      "case_id": "c4-tie",
+      "title": "Wrong bank mapping: a tie that costs almost double",
+      "short": "C4 \u00b7 tie with large regret",
+      "group": "Executed cases",
+      "comparison_run_id": "20261019T223116019791Z-comparison-2c6a9b",
+      "provenance": "AUTHORED_DEFECT",
+      "scope": "STRESS_WITNESS",
+      "discovery_credit": 0,
+      "summary": "The authored defect maps banks with q mod 8 on a 16-bank butterfly; the model ties and the tie policy picks the crossbar.",
+      "limitations": [
+        "Authored defect.",
+        "Not a strict reversal: the model's ordering is below the margin; tie-policy regret is in the details."
+      ],
+      "diagnostic_run_id": "20261019T223203767441Z-rtl-dd1e17"
+    },
+    {
+      "case_id": "invalid-reference",
+      "title": "Invalid reference: an injected monitor fault blocks the comparison",
+      "short": "Control \u00b7 invalid reference",
+      "group": "Instrument controls",
+      "comparison_run_id": "20261019T223116153272Z-comparison-6eef02",
+      "provenance": "SUPPLIED_CALIBRATION",
+      "scope": "INSTRUMENT_TEST",
+      "discovery_credit": 0,
+      "summary": "Pattern M with a deliberately injected payload-routing monitor fault on the design-B reference run.",
+      "limitations": [
+        "Deliberate instrument control: the fault is injected into the monitor's view, not the design."
+      ]
+    }
+  ],
+  "global_limitations": [
+    "Cycles at a common abstract clock; no silicon speed, area, power or frequency claim.",
+    "RTL simulation is a reference implementation, not fabricated silicon.",
+    "Audit cases were authored by the implementer; none is independently authored or naturally occurring."
+  ],
+  "status_record": {
+    "implemented": [
+      "Pinned RTL and toolchain, verified against locks",
+      "Verilator harness with 14 counted monitors and an independent event checker",
+      "Harness validation: 21/21 checks, every monitor catches an injected fault",
+      "L/B/M measured; strict reversal on M",
+      "Python and compiled C++ fast models, cross-checked event-for-event",
+      "Six-case discovery screen with six deterministic search methods",
+      "Unrestricted formal proof of 10 transport properties on the 2x2 harness",
+      "Witness reduction with established 1-minimality",
+      "Structural repair accepted on two sealed held-out baskets; three wrong repairs rejected",
+      "Measured internal router activity from diagnostic traces",
+      "Static, Cloudflare-ready viewer over executed artifacts",
+      "Decision map: 289 workloads on both RTL designs; the bank-only model picks the wrong design in 11 and cannot decide in 16 more; the repaired model: 2 and 14"
+    ],
+    "not_done": [
+      "Model speed: 1.7x end-to-end (5x target not met; simulation kernel alone 2-8x). Process start-up and workload I/O dominate; Verilator is already fast on this small design.",
+      "No independently authored or naturally occurring audit case",
+      "Single subsystem family (interconnect)",
+      "No human usability study",
+      "Linux reproducibility image not built"
+    ]
+  },
+  "reproduce": [
+    "python3.12 -m rift fetch",
+    "python3.12 -m rift doctor",
+    "python3.12 -m rift pipeline"
+  ],
+  "map_study": "20261019T223116166650Z-map-b7a943"
+}

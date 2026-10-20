@@ -1,0 +1,9 @@
+# running in /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/
+plugin -i slang
+read_slang  -I . --top rift_lic2x2_formal cf_math_pkg.sv lzc.sv rr_arb_tree.sv lfsr.sv tcdm_interconnect_pkg.sv addr_dec_resp_mux.sv xbar.sv clos_net.sv bfly_net.sv tcdm_interconnect.sv rift_tcdm_top.sv rift_lic2x2_formal.sv
+prep -top rift_lic2x2_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

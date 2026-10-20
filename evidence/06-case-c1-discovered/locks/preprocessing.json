@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "preprocessing_id": "rift-verilator-pre-v1",
+  "frontend": "verilator",
+  "defines": {
+    "VERILATOR": "implicitly defined by Verilator; selects the `ifndef VERILATOR exclusions recorded in locks/assertion_exclusions.json"
+  },
+  "verilator_flags": [
+    "--cc",
+    "--exe",
+    "--build",
+    "--assert",
+    "--x-assign", "0",
+    "--x-initial", "0",
+    "-Wno-fatal",
+    "--top-module", "rift_tcdm_top"
+  ],
+  "cxx_flags": ["-std=c++17", "-O2"],
+  "trace_variant_extra_flags": ["--trace-fst", "-CFLAGS", "-DRIFT_TRACE"],
+  "translate_off_semantics": "Verilator 5.053 does not honour `// pragma translate_off`; code inside those regions is compiled and executed (verified by tests/test_toolchain_semantics.py). Vendor elaboration-time initial assertions are therefore live and are constant-folded when they hold.",
+  "parameters_by_config": "taken from configs/<config_id>.json and passed as -G overrides on rift_tcdm_top and -D defines for oracle/main.cpp"
+}

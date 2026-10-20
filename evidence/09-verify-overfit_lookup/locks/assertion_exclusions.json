@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "register_id": "rift-assertion-exclusions-v1",
+  "frontend": "Verilator 5.053 devel rev v5.052-448-g1272f7355 (mod), --assert",
+  "summary": "Every concurrent vendor assertion in the elaborated closure is guarded by `ifndef VERILATOR and therefore did not execute in any RIFT simulation. Vendor elaboration-time initial assertions are compiled because Verilator ignores translate_off pragmas; they hold for all RIFT configurations and leave no residual runtime code. RIFT does not claim that vendor assertions executed and passed. RIFT's own boundary monitors are listed in docs/monitor_inventory.md and are counted per run.",
+  "excluded_under_verilator": [
+    {
+      "file": "vendor/common_cells/src/rr_arb_tree.sv",
+      "guard": "`ifndef VERILATOR (and `ifndef XSIM)",
+      "items": [
+        {"name": "initial assert(NumIn)", "kind": "elaboration"},
+        {"name": "initial assert(!(LockIn && ExtPrio))", "kind": "elaboration",
+         "note": "THE LockIn/ExtPrio CONFLICT: xbar passes LockIn=1 unconditionally while bfly_net instantiates xbar with ExtPrio=1. With ExtPrio=1 rr_arb_tree takes the gen_ext_rr branch, so the LockIn branch is not elaborated. Under a non-Verilator frontend this assertion would reject the BFLY4 configuration. RIFT preserves the source unmodified and records the exclusion; any alternative simulator/formal frontend requires an explicit disposition before its results are accepted."},
+        {"name": "hot_one: assert property $onehot0(gnt_o)", "kind": "concurrent"},
+        {"name": "gnt0: |gnt_o |-> gnt_i", "kind": "concurrent"},
+        {"name": "gnt1: req_o |-> gnt_i |-> |gnt_o", "kind": "concurrent"},
+        {"name": "gnt_idx: req_o |-> gnt_i |-> gnt_o[idx_o]", "kind": "concurrent"},
+        {"name": "req0: |req_i |-> req_o", "kind": "concurrent"},
+        {"name": "req1: req_o |-> |req_i", "kind": "concurrent"},
+        {"name": "lock: LockIn |-> req_o && (!gnt_i && !flush_i) |=> idx_o == $past(idx_o)", "kind": "concurrent", "note": "inside gen_lock; elaborated only for LIC"},
+        {"name": "lock_req: assume property (unserved requests not deasserted)", "kind": "concurrent assumption", "note": "RIFT checks the equivalent driver obligation with monitor C1_REQUEST_STABILITY"}
+      ]
+    },
+    {
+      "file": "vendor/common_cells/src/lfsr.sv",
+      "guard": "`ifndef VERILATOR",
+      "items": [
+        {"name": "all_zero: en_i |-> lfsr_d", "kind": "concurrent"}
+      ]
+    }
+  ],
+  "compiled_elaboration_assertions": [
+    {"file": "vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect.sv", "items": ["AddrMemWidth+NumOutLog2 <= AddrWidth", "NumOut >= NumIn | Topology == LIC"]},
+    {"file": "vendor/cluster_interconnect/rtl/tcdm_interconnect/bfly_net.sv", "items": ["Radix inside {2,4}", "NumIn power of 2", "NumOut power of 2", "NumOut >= NumIn"]},
+    {"file": "vendor/cluster_interconnect/rtl/tcdm_interconnect/xbar.sv", "items": ["NumIn > 0", "NumOut > 0"]},
+    {"file": "vendor/cluster_interconnect/rtl/tcdm_interconnect/addr_dec_resp_mux.sv", "items": ["RespLat > 0", "NumOut > 0"]},
+    {"file": "vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect.sv (gen_bfly)", "items": ["NumPar >= 1"]},
+    {"file": "vendor/common_cells/src/lfsr.sv", "items": ["OutWidth <= LfsrWidth", "RstVal > 0", "LfsrWidth in mask table", "mask MSB set", "cipher layers only with 64-bit LFSR"]},
+    {"file": "vendor/common_cells/src/lzc.sv", "items": ["WIDTH > 0"]}
+  ],
+  "disposition": "No vendor source was patched. No global assertion disable was used (--assert is on). RIFT's acceptance relies on its own counted monitors and independent event checking, not on vendor assertion counts."
+}

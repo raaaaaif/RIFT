@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "capacity_words": 4096,
+  "word_bytes": 4,
+  "masters": 2,
+  "arrival_policy": "per_operation_release",
+  "program": {
+    "kind": "read_sequences",
+    "per_master": [
+      {
+        "master": 0,
+        "ops": [
+          {
+            "byte_address": 0
+          }
+        ]
+      },
+      {
+        "master": 1,
+        "ops": [
+          {
+            "byte_address": 8
+          },
+          {
+            "byte_address": 8
+          }
+        ]
+      }
+    ]
+  }
+}

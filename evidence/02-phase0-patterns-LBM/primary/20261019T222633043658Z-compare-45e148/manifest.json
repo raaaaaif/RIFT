@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "kind": "compare_study",
+  "status": "COMPLETED",
+  "experiment_id": "phase0-patterns-v1",
+  "tags": [
+    "gate0c",
+    "phase0"
+  ],
+  "run_id": "20261019T222633043658Z-compare-45e148",
+  "artifacts": {
+    "experiment.json": {
+      "sha256": "sha256:6024407e374e1bf1bfdd5437289be692b9ae80b8838df3b48bff668103ac7824",
+      "bytes": 1866
+    },
+    "report.json": {
+      "sha256": "sha256:26b307c05494f5b2abf8f0085136b847127ce03c9462900fb1f1391762838647",
+      "bytes": 12036
+    }
+  },
+  "manifest_digest": "sha256:b613656ea1be0d85d5fdb1b2eff73faa9947f06faf238330aa449b0c69464101"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "kind": "model",
+  "runner": "fast_model",
+  "observation_role": "MODEL_PREDICTION",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "status": "COMPLETED",
+  "makespan": 17,
+  "config_id": "lic8x8",
+  "config_digest": "sha256:5af28f83b13a6ece14bcdb6e338fa7f57160607737ce5f8d684534da9ffc3773",
+  "workload_digest": "sha256:f0ac6ae1c745351caeaf273b2048fd3f797f6dd59282268bf928b9ec4f1fd4a7",
+  "workload_label": "reduction candidate",
+  "model_id": "lic_exact_v1",
+  "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765",
+  "model_spec": {
+    "family": "crossbar",
+    "params": {
+      "fair": true,
+      "lock_in": true
+    },
+    "applies_to": [
+      "LIC"
+    ],
+    "contract": {
+      "promise": "EXACT_TIMING",
+      "scope": "LIC configurations, read-only per-initiator release programs, always-grant or declared bank stalls",
+      "declared_omissions": []
+    },
+    "provenance": "reviewed model of the pinned xbar/rr_arb_tree (FairArb=1, LockIn=1)",
+    "admissible_fast_model": true,
+    "model_id": "lic_exact_v1"
+  },
+  "approximation_contract": {
+    "promise": "EXACT_TIMING",
+    "scope": "LIC configurations, read-only per-initiator release programs, always-grant or declared bank stalls",
+    "declared_omissions": []
+  },
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "timeout_cycles": 4096,
+  "elapsed_seconds": 0.00012116599828004837,
+  "tags": [
+    "reduction",
+    "C1_bank_only_omission",
+    "final_replay"
+  ],
+  "run_id": "20261019T223112396787Z-model-7d2225",
+  "artifacts": {
+    "check.json": {
+      "sha256": "sha256:deba226460f7c26d6590c12e6ac86034d881c6331f6c59dc6c3b4b69fb78a26b",
+      "bytes": 731
+    },
+    "events.jsonl": {
+      "sha256": "sha256:7b1f3aaefb7385abce9d5e95b5631d3476b0b53da4ddb9898089f7be4df47a96",
+      "bytes": 12148
+    },
+    "model_summary.json": {
+      "sha256": "sha256:8ec18b525e5ace54d9bae4c3d5ae33084b5354f80a6650e321df6aac5914aed7",
+      "bytes": 292
+    },
+    "workload.json": {
+      "sha256": "sha256:74c7185c5d4a804cab894232969170806fd11618321430d264a455ce55a0b4db",
+      "bytes": 1932
+    }
+  },
+  "manifest_digest": "sha256:70411831ec331ba218800af0caf98e2f872f38c4953e8a2388a29ec7e0a45eed"
+}

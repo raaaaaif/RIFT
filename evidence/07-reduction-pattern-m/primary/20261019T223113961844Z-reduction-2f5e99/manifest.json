@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "kind": "reduction",
+  "status": "REDUCED",
+  "case_id": "pattern_M",
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "tags": [
+    "reduction",
+    "pattern_M"
+  ],
+  "run_id": "20261019T223113961844Z-reduction-2f5e99",
+  "artifacts": {
+    "reduction.json": {
+      "sha256": "sha256:03eca9f1861d2d8e6c678e2e4dbe535c5b108f5a3f2a64392a17655662f910ac",
+      "bytes": 33683
+    }
+  },
+  "manifest_digest": "sha256:0077f34b8903d87d1dd20cbd08b36f5471ac0e14f191b79199bdc125c4b9f25d"
+}

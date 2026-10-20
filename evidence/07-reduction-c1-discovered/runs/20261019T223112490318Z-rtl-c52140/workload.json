@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "capacity_words": 4096,
+  "word_bytes": 4,
+  "masters": 8,
+  "arrival_policy": "per_operation_release",
+  "program": {
+    "kind": "read_sequences",
+    "per_master": [
+      {
+        "master": 0,
+        "ops": []
+      },
+      {
+        "master": 1,
+        "ops": [
+          {
+            "byte_address": 36
+          },
+          {
+            "byte_address": 44
+          },
+          {
+            "byte_address": 40
+          },
+          {
+            "byte_address": 32,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 40
+          },
+          {
+            "byte_address": 40
+          },
+          {
+            "byte_address": 32,
+            "release": "after_response"
+          },
+          {
+            "byte_address": 40
+          },
+          {
+            "byte_address": 32,
+            "gap": 2
+          },
+          {
+            "byte_address": 60
+          }
+        ]
+      },
+      {
+        "master": 2,
+        "ops": []
+      },
+      {
+        "master": 3,
+        "ops": []
+      },
+      {
+        "master": 4,
+        "ops": []
+      },
+      {
+        "master": 5,
+        "ops": []
+      },
+      {
+        "master": 6,
+        "ops": []
+      },
+      {
+        "master": 7,
+        "ops": []
+      }
+    ]
+  },
+  "label": "reduction candidate"
+}

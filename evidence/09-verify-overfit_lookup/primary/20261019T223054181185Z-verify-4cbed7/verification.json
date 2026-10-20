@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "verifier": "rift.evaluate.verify/v1",
+  "submission": "artifacts/studies/20261019T223054116024Z-repair-026948/submission.json",
+  "submission_digest": "sha256:df8cc6d7a117f5b8fda8a1d8127dc2bfde110fbfaded748b933b1ed2a06fad16",
+  "case_id": "C1_bank_only_omission",
+  "contract_id": "repair-acceptance-v1",
+  "basket_id": "heldout-v1",
+  "parent_models": {
+    "A": "lic_exact_v1",
+    "B": "bank_only_v1"
+  },
+  "candidate_model_id": "control_overfit_lookup_C1",
+  "patch_digest": "sha256:8c24df4108057cc90fe6f8071915b21e93cde3ecba4fb6225a14887b57999518",
+  "semantic_change": "negative control: memorized witness costs",
+  "status": "REJECTED",
+  "failed_rules": [
+    "R6"
+  ],
+  "rules": {
+    "R6": {
+      "passed": false,
+      "detail": [
+        "family 'lookup_override' is outside the editable model surface",
+        "specification references workload identities or addresses (benchmark-specific predicate)"
+      ]
+    }
+  },
+  "retained_model": "bank_only_v1",
+  "families": {},
+  "heldout_rows": [],
+  "development_replay": [],
+  "runtime": {},
+  "notes": [
+    "patch boundary violated: the candidate was not built or evaluated"
+  ],
+  "elapsed_seconds": 0.0,
+  "scope": "Acceptance under contract repair-acceptance-v1 on basket heldout-v1 (4 families x 12 workloads). Not a full research-study result."
+}

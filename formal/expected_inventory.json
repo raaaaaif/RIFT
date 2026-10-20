@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "note": "Frozen elaborated $check inventory for rift_lic2x2_formal (yosys-slang). P1x2 P2x2 P3 P4x2 P5x2 P6x2 P7x2 P8x2 P9 P10x2 = 18 asserts; 2 global + 4x2 per-initiator assumptions = 10; K1-K5 = 5 covers. P10 is a strengthening invariant on the pinned rr_arb_tree lock registers (read through hierarchical references, sources unmodified). The negative-control define adds exactly one assertion.",
+  "lic2x2": {
+    "asserts": 18,
+    "assumes": 10,
+    "covers": 5
+  }
+}

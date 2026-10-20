@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "evaluator": "rift.evaluate.compare/v1",
+  "admitted_order": [
+    "A",
+    "B"
+  ],
+  "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "direction": "lower_is_better",
+  "model_status": {
+    "A": "COMPLETED",
+    "B": "COMPLETED"
+  },
+  "rtl_status": {
+    "A": "COMPLETED",
+    "B": "COMPLETED"
+  },
+  "verdict": "VALID_COUNTEREXAMPLE",
+  "model_costs": {
+    "A": 45,
+    "B": 43
+  },
+  "rtl_costs": {
+    "A": 45,
+    "B": 49
+  },
+  "dM": 2,
+  "dR": -4,
+  "sign_product": -8,
+  "model_margin": {
+    "absolute_cycles": 2,
+    "relative": "0.02",
+    "min_cost": 43,
+    "relative_term": "43/50",
+    "threshold": "2/1",
+    "threshold_decimal": 2.0,
+    "met": true
+  },
+  "rtl_margin": {
+    "absolute_cycles": 2,
+    "relative": "0.02",
+    "min_cost": 45,
+    "relative_term": "9/10",
+    "threshold": "2/1",
+    "threshold_decimal": 2.0,
+    "met": true
+  },
+  "model_choice": "B",
+  "rtl_best": "A",
+  "selection": {
+    "chosen": "B",
+    "reference_best": "A",
+    "extra_cycles": 4,
+    "denominator_cycles": 45,
+    "regret": {
+      "numerator": 4,
+      "denominator": 45,
+      "decimal": 0.08888888888888889
+    }
+  },
+  "workload_digest": "sha256:124779d997377cbe89376b3aa5d2b4f1dc32d1a387026d632b0fffbbf30cf1b2",
+  "workload_label": "C1 decision-directed witness (screen step 23)",
+  "designs": {
+    "A": {
+      "config_id": "lic8x8",
+      "config_digest": "sha256:5af28f83b13a6ece14bcdb6e338fa7f57160607737ce5f8d684534da9ffc3773",
+      "descriptive_name": "Full crossbar \u00b7 8 banks"
+    },
+    "B": {
+      "config_id": "bfly4_8x16",
+      "config_digest": "sha256:3ee3df362591068229f8e1a65c6d87d8e5d9932e06515782872934773cbea74f",
+      "descriptive_name": "Radix-4 butterfly \u00b7 16 banks"
+    }
+  },
+  "models": {
+    "A": {
+      "model_id": "lic_exact_v1",
+      "model_digest": "sha256:1d14d8ca72022cb3d162a6399cb7b5f1c323c391bc824ecf8179b9d1ac46d765",
+      "contract": {
+        "promise": "EXACT_TIMING",
+        "scope": "LIC configurations, read-only per-initiator release programs, always-grant or declared bank stalls",
+        "declared_omissions": []
+      }
+    },
+    "B": {
+      "model_id": "bank_only_v1",
+      "model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282",
+      "contract": {
+        "promise": "RANKING_PRESERVATION",
+        "scope": "claims bank conflicts dominate; read-only programs",
+        "declared_omissions": [
+          "internal butterfly route contention",
+          "LFSR-derived external priorities"
+        ]
+      }
+    }
+  },
+  "rtl_run_ids": {
+    "A": "20261019T223111323585Z-rtl-aa0a1b",
+    "B": "20261019T223111391402Z-rtl-dcd230"
+  },
+  "model_run_ids": {
+    "A": "20261019T223111331729Z-model-9010d7",
+    "B": "20261019T223111399600Z-model-d64966"
+  },
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "provenance": "AUTHORED_DEFECT",
+  "scope": "STRESS_WITNESS",
+  "discovery_credit": 1,
+  "rtl_wall_seconds": {
+    "A": 0.004307,
+    "B": 0.004289
+  },
+  "model_elapsed_seconds": {
+    "A": 0.0004992499598301947,
+    "B": 0.0004580420209094882
+  },
+  "workload_id": "C1-witness"
+}

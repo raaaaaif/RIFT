@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "addr_width": 32,
+  "data_width": 32,
+  "byte_off_width": 2,
+  "be_width": 4,
+  "resp_lat": 1,
+  "write_resp_on": 1,
+  "num_par": 1,
+  "capacity_words": 4096,
+  "config_id": "lic8x8",
+  "role": "architecture",
+  "role_label": "Architecture A",
+  "descriptive_name": "Full crossbar \u00b7 8 banks",
+  "topology": "LIC",
+  "num_in": 8,
+  "num_out": 8,
+  "addr_mem_width": 9
+}

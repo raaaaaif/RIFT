@@ -1,0 +1,7 @@
+{"schema_version":1,"run_id":"20261019T222632324259Z-rtl-ffb060","cycle":0,"sample_phase":"pre_rise","event_kind":"reset","master":null,"operation_index":null,"byte_address":null}
+{"schema_version":1,"run_id":"20261019T222632324259Z-rtl-ffb060","cycle":1,"sample_phase":"pre_rise","event_kind":"reset","master":null,"operation_index":null,"byte_address":null}
+{"schema_version":1,"run_id":"20261019T222632324259Z-rtl-ffb060","cycle":2,"sample_phase":"pre_rise","event_kind":"reset","master":null,"operation_index":null,"byte_address":null}
+{"schema_version":1,"run_id":"20261019T222632324259Z-rtl-ffb060","cycle":3,"sample_phase":"pre_rise","event_kind":"reset","master":null,"operation_index":null,"byte_address":null}
+{"schema_version":1,"run_id":"20261019T222632324259Z-rtl-ffb060","cycle":4,"sample_phase":"pre_rise","event_kind":"offer","master":0,"operation_index":0,"byte_address":0,"bank":0,"row":0}
+{"schema_version":1,"run_id":"20261019T222632324259Z-rtl-ffb060","cycle":36,"sample_phase":"pre_rise","event_kind":"monitor_failure","master":0,"operation_index":null,"byte_address":null,"monitor_id":"C5_COMPLETION","detail":"operation not accepted and completed exactly once"}
+{"schema_version":1,"run_id":"20261019T222632324259Z-rtl-ffb060","cycle":36,"sample_phase":"pre_rise","event_kind":"monitor_failure","master":null,"operation_index":null,"byte_address":null,"monitor_id":"C6_TIMEOUT","detail":"active-cycle limit reached before drain"}

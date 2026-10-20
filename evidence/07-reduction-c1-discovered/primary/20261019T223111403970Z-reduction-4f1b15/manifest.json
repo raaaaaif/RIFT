@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "kind": "reduction",
+  "status": "REDUCED",
+  "case_id": "C1_bank_only_omission",
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "tags": [
+    "reduction",
+    "C1_bank_only_omission"
+  ],
+  "run_id": "20261019T223111403970Z-reduction-4f1b15",
+  "artifacts": {
+    "reduction.json": {
+      "sha256": "sha256:93b01bfc4f3d949d1b75c1764c72998f8f1e1298ef526cf6ddc8fc17936bdde0",
+      "bytes": 28241
+    }
+  },
+  "manifest_digest": "sha256:c6462082fab69c90f1407023c6836430833106cd1b0a5faa0b15a3809ea1d326"
+}

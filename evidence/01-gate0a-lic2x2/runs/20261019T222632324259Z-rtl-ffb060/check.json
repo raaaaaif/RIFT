@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "checker": "rift.evaluate.checker/v1",
+  "status": "TIMEOUT",
+  "functional_valid": false,
+  "workload_digest": "sha256:76d3e89cc223a24943bae900f12bd1a07784832fd4e1e9fd91bd721e7627f000",
+  "expected_operations": 1,
+  "makespan": null,
+  "makespan_from_events_unvalidated": null,
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "first_release_cycle": 4,
+  "last_response_cycle": null,
+  "accepted": 0,
+  "completed": 0,
+  "offered": 1,
+  "acceptance_cycles_distinct": 0,
+  "acceptance_window": null,
+  "monitor_failures": 2,
+  "violation_counts": {
+    "MONITOR_FAILURE": 2,
+    "INCOMPLETE_OPERATION": 1
+  },
+  "violations": [
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C5_COMPLETION at cycle 36: operation not accepted and completed exactly once",
+      "cycle": 36
+    },
+    {
+      "code": "MONITOR_FAILURE",
+      "detail": "C6_TIMEOUT at cycle 36: active-cycle limit reached before drain",
+      "cycle": 36
+    },
+    {
+      "code": "INCOMPLETE_OPERATION",
+      "detail": "m0:op0000 offer=True accept=False complete=False",
+      "op_id": "m0:op0000"
+    }
+  ],
+  "summary_agreement": {
+    "makespan": true,
+    "accepted": true,
+    "completed": true,
+    "runner_exit_status": "TIMEOUT"
+  }
+}

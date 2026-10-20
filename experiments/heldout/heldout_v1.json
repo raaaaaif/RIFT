@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "basket_id": "heldout-v1",
+  "sealed": true,
+  "frozen_on": "2026-10-19",
+  "access_rule": "Read only by rift.evaluate.verify (the independent verifier). rift.repair refuses to open any path under experiments/heldout/. Only the verifier's disposition and aggregate metrics are reported; no per-workload feedback is returned to candidate selection.",
+  "families": [
+    {"family_id": "H1_word_permutations", "mechanism": "new address permutations mixing crossbar bank conflicts and butterfly first-stage conflicts",
+     "generator": "fixed_streams_random", "params": {"word_range": 64, "reads": 24}, "seeds": [61000, 61011], "designs": [{"design": "A", "config": "lic8x8"}, {"design": "B", "config": "bfly4_8x16"}]},
+    {"family_id": "H2_dependency_prefix", "mechanism": "response-dependent releases, gaps and warm-up prefixes",
+     "generator": "random_legal", "params": {"p_response": 0.6, "max_gap": 3, "hot_words": 6, "max_ops": 20}, "seeds": [62000, 62011], "designs": [{"design": "A", "config": "lic8x8"}, {"design": "B", "config": "bfly4_8x16"}]},
+    {"family_id": "H3_heldout_architecture", "mechanism": "same decision question against a radix-2 butterfly (held-out configuration)",
+     "generator": "fixed_streams_random", "params": {"word_range": 32, "reads": 24}, "seeds": [63000, 63011], "designs": [{"design": "A", "config": "lic8x8"}, {"design": "B", "config": "bfly2_8x16"}]},
+    {"family_id": "H4_representative", "mechanism": "representative legal random traffic, equal weights",
+     "generator": "random_legal", "params": {"p_response": 0.3, "max_gap": 3, "max_ops": 24}, "seeds": [64000, 64011], "designs": [{"design": "A", "config": "lic8x8"}, {"design": "B", "config": "bfly4_8x16"}]}
+  ],
+  "acceptance_contract": {
+    "contract_id": "repair-acceptance-v1",
+    "rules": [
+      "R1 no MODEL_ERROR or TIMEOUT for the candidate on any held-out workload",
+      "R2 strict ranking reversals across the basket: candidate < parent",
+      "R3 no regression: no held-out workload on which the parent's choice is correct (zero regret) and the candidate's choice incurs regret beyond the margin",
+      "R4 candidate warm cost-only runtime <= 3x the parent's on the basket",
+      "R5 every development discovery witness is resolved (no longer a strict reversal)",
+      "R6 patch boundary: only the editable design's model specification changes; no workload digests, address literals or benchmark identities in the specification"
+    ],
+    "reference_failure_rule": "if any held-out reference run is not COMPLETED, the affected workloads are excluded for both parent and candidate and the disposition is INCONCLUSIVE when more than 10% are affected",
+    "tie_policy": "argmin; ties resolved to the first design in the admitted order",
+    "margin": "|d| >= max(2 cycles, 0.02*min(cost_A, cost_B))"
+  }
+}

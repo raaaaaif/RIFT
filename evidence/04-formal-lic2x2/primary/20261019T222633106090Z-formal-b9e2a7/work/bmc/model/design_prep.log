@@ -1,0 +1,90 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.70+145 (git sha1 a31d95ea0, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module rift_lic2x2_formal.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing rift_lic2x2_formal.$driver$acc_q[0] ($aldff): ALOAD=\rst_ni, AD=1'0, D=$564y, Q=\acc_q [1]
+Replacing rift_lic2x2_formal.$driver$acc_q[1] ($aldff): ALOAD=\rst_ni, AD=1'0, D=$567y, Q=\acc_q [0]
+Replacing rift_lic2x2_formal.$driver$bank_q[0] ($aldff): ALOAD=\rst_ni, AD=1'0, D=\add_i [34], Q=\bank_q [1]
+Replacing rift_lic2x2_formal.$driver$bank_q[1] ($aldff): ALOAD=\rst_ni, AD=1'0, D=\add_i [2], Q=\bank_q [0]
+Replacing rift_lic2x2_formal.$driver$dut.acc_q ($aldff): ALOAD=\rst_ni, AD=2'00, D=$375y, Q=\dut.acc_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_inputs[0].i_addr_dec_resp_mux.gen_several_outputs.gen_no_broadcast.bank_sel_q[0] ($aldff): ALOAD=\rst_ni, AD=1'0, D=\add_i [34], Q=\dut.i_tcdm.gen_lic.i_xbar.gen_inputs[0].i_addr_dec_resp_mux.gen_several_outputs.gen_no_broadcast.bank_sel_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_inputs[0].i_addr_dec_resp_mux.vld_q ($aldff): ALOAD=\rst_ni, AD=1'0, D=\dut.i_tcdm.gen_lic.i_xbar.gen_inputs[0].i_addr_dec_resp_mux.vld_d, Q=\dut.i_tcdm.gen_lic.i_xbar.gen_inputs[0].i_addr_dec_resp_mux.vld_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_inputs[1].i_addr_dec_resp_mux.gen_several_outputs.gen_no_broadcast.bank_sel_q[0] ($aldff): ALOAD=\rst_ni, AD=1'0, D=\add_i [2], Q=\dut.i_tcdm.gen_lic.i_xbar.gen_inputs[1].i_addr_dec_resp_mux.gen_several_outputs.gen_no_broadcast.bank_sel_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_inputs[1].i_addr_dec_resp_mux.vld_q ($aldff): ALOAD=\rst_ni, AD=1'0, D=\dut.i_tcdm.gen_lic.i_xbar.gen_inputs[1].i_addr_dec_resp_mux.vld_d, Q=\dut.i_tcdm.gen_lic.i_xbar.gen_inputs[1].i_addr_dec_resp_mux.vld_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_q ($aldff): ALOAD=\rst_ni, AD=1'0, D=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_d, Q=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.req_q ($aldff): ALOAD=\rst_ni, AD=2'00, D=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.req_d, Q=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.req_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.rr_q ($aldff): ALOAD=\rst_ni, AD=1'0, D=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.rr_d, Q=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.rr_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_q ($aldff): ALOAD=\rst_ni, AD=1'0, D=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_d, Q=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.req_q ($aldff): ALOAD=\rst_ni, AD=2'00, D=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.req_d, Q=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.req_q
+Replacing rift_lic2x2_formal.$driver$dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.rr_q ($aldff): ALOAD=\rst_ni, AD=1'0, D=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.rr_d, Q=\dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.rr_q
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+Removed 61 unused cells and 61 unused wires.
+<suppressed ~62 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+Removed 8 unused cells and 8 unused wires.
+<suppressed ~9 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module rift_lic2x2_formal...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rift_lic2x2_formal.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rift_lic2x2_formal'.
+Computing hashes of 350 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Computing hashes of 348 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+Removed 14 unused cells and 20 unused wires.
+<suppressed ~19 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+Removed 0 unused cells and 19 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 37655b436a, time: 0.03s, user: 0.03s, system: 0.01s, MEM: 17.72 MB peak
+Yosys 0.70+145 (git sha1 a31d95ea0, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 40% 4x opt_clean (0 sec), 20% 2x write_rtlil (0 sec), ...

@@ -1,0 +1,28 @@
+{
+  "family": "lookup_override",
+  "params": {
+    "base": "bank_only_v1",
+    "overrides": {
+      "sha256:9d9955e51c87a5f7426a581377fe9c4dcfe3e1291394e2f5d6aae34e808a686f": 65,
+      "sha256:84364601a7d9be0dd3014626ab33895eef0c2a4e2fa5797f967ad4aa7ae9e422": 35,
+      "sha256:38c203c021c0200b0511523dd4fedf78dcebbc0599748abc8111043071b028ab": 33,
+      "sha256:60b6d04e1bfb1dc89028a668e813ceb37c6ae5e59d33830afe98c42c75ebf2a7": 33,
+      "sha256:dbc43d790915e849c5feba36b287f3bd083d615aad115d37807d4111bed6fccb": 47,
+      "sha256:c4fc9f4564f7ccf3d9d8dca0016080cd05d23c596b7905df30811a515c2128fc": 47,
+      "sha256:4d6fe46c664a5e036ebe62ddff025ee6d38e6ba058d07944079ad545b520a5a5": 48,
+      "sha256:8efa0b620723c2d2520a7d5065ee9caf15c0c273fc78ba71dcec1281ca45eb71": 49,
+      "sha256:841d56d90b80dd20cad01eeedbdcf13246214f79aa6d46df2f6a0f6991cba71e": 48,
+      "sha256:1ea9cbd4ce4122e054ea24b3862ff802046f2e0cdf15108078b295a74d0c055f": 48,
+      "sha256:5a28c766c881b6f7a665f8d655d5660e9a5744c55712f04f16768f706b43370d": 48,
+      "sha256:6b7e847a406baf5ca53baa8c8279d6edab56c6f474416be8e920b923ead53aa4": 51,
+      "sha256:1592559c3798182dd5b991a6aa2709cca4132675e6f68f4eb27a8c8245c5f95b": 49
+    }
+  },
+  "applies_to": [
+    "BFLY4"
+  ],
+  "contract": {
+    "promise": "EXACT_TIMING",
+    "scope": "negative control: memorizes development witness costs"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "kind": "rtl",
+  "runner": "verilator_rtl",
+  "observation_role": "RTL_REFERENCE_OBSERVATION",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "status": "COMPLETED",
+  "makespan": 7,
+  "config_id": "lic8x8",
+  "config": {
+    "schema_version": 1,
+    "addr_width": 32,
+    "data_width": 32,
+    "byte_off_width": 2,
+    "be_width": 4,
+    "resp_lat": 1,
+    "write_resp_on": 1,
+    "num_par": 1,
+    "capacity_words": 4096,
+    "config_id": "lic8x8",
+    "role": "architecture",
+    "role_label": "Architecture A",
+    "descriptive_name": "Full crossbar \u00b7 8 banks",
+    "topology": "LIC",
+    "num_in": 8,
+    "num_out": 8,
+    "addr_mem_width": 9
+  },
+  "workload_digest": "sha256:d8b0a8e3c108ff6d713e935c54901a71659d99aeb91428df6dd34c9bf3cbb136",
+  "workload_label": "reduction candidate",
+  "reference": {
+    "rtl_commit": "2967d8d17be0a6139229ca8d3d4956e182aec3de",
+    "dependency_commit": "015917ff33e5f944e866814f72f2074fb0f4220f",
+    "wrapper_digest": "sha256:03c1fc2c4ea7d7c79a093594419125eb1f7b416dd3a9c710328d2b326b7f70cc",
+    "driver_digest": "sha256:46d8698719410821979c0795fc494ee08fd6eb960fd448cfdc4f2af53b322d89",
+    "memory_oracle_digest": "sha256:5b1e7b337487ea421b7c709df2b03c6cc94cc13917f7a6142b1fccd5c085cd57",
+    "sampling_convention": "pre_rise_v1",
+    "config_digest": "sha256:5af28f83b13a6ece14bcdb6e338fa7f57160607737ce5f8d684534da9ffc3773",
+    "build_key_digest": "sha256:50b1ec71f53490937f2a69e988733954d90d9ac48e7c6462343c9fccc5a1dddf",
+    "binary_sha256": "sha256:214378252fcc962a3357aeb6780c89088e5d6569605bd3f380836c2c2400fce9",
+    "toolchain_lock_digest": "sha256:a712c57af3b8e7d969a50dfeaab0e9e8abf2d105cf1dfd538465050630696266",
+    "assertion_register_digest": "sha256:e2f241afc63e2182eed9a650bb343a5ce2b55e67ad5c52316b64f1b5fd98b04d"
+  },
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "reset_cycles": 4,
+  "metric_id": "inclusive_cycle_makespan_v1",
+  "timeout_cycles": 4096,
+  "stalls": [],
+  "cpp_inject": null,
+  "sv_inject_mask": 0,
+  "fst_dumped": false,
+  "command": [
+    "build/lic8x8-50b1ec71f534/obj_dir/rift_sim",
+    "--workload",
+    "artifacts/runs/20261019T223115297552Z-rtl-fa9bae/compiled_workload.txt",
+    "--events",
+    "artifacts/runs/20261019T223115297552Z-rtl-fa9bae/events.jsonl",
+    "--summary",
+    "artifacts/runs/20261019T223115297552Z-rtl-fa9bae/runner_summary.json",
+    "--run-id",
+    "20261019T223115297552Z-rtl-fa9bae",
+    "--timeout",
+    "4096"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.003794,
+  "build": {
+    "cache_hit": true,
+    "build_key_digest": "sha256:50b1ec71f53490937f2a69e988733954d90d9ac48e7c6462343c9fccc5a1dddf",
+    "warnings": [
+      "%Warning-UNSIGNED: /Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/rr_arb_tree.sv:209:37: Comparison is constant due to unsigned arithmetic",
+      "%Warning-UNSIGNED: /Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/rr_arb_tree.sv:210:37: Comparison is constant due to unsigned arithmetic"
+    ]
+  },
+  "tags": [
+    "reduction",
+    "pattern_M",
+    "neighbour_check"
+  ],
+  "run_id": "20261019T223115297552Z-rtl-fa9bae",
+  "artifacts": {
+    "check.json": {
+      "sha256": "sha256:ffc04ec6e327763cb24addf7ecd55efdf746e335af20bfb9e32a647854f09dea",
+      "bytes": 727
+    },
+    "compiled_workload.txt": {
+      "sha256": "sha256:8ce8e32dc9f51e342e0898953f6ee3983b3fb49b2d9db928865c0e31d7fcb56a",
+      "bytes": 270
+    },
+    "events.jsonl.gz": {
+      "sha256": "sha256:8b56bfe8b829f5cda550ce040350300b755a2ef123348cdb2503fd87c9d12284",
+      "bytes": 496
+    },
+    "runner_summary.json": {
+      "sha256": "sha256:cefb606a81ce055fdec8aa685159df4c248916ede46678e3ca72f52b364cea3c",
+      "bytes": 3558
+    },
+    "workload.json": {
+      "sha256": "sha256:13db306e6ca815ca180bd3cbb8f9786388206647e6aa078629822211b310d487",
+      "bytes": 1327
+    }
+  },
+  "manifest_digest": "sha256:4663295c61b48ece1e4d5acf368751eec3c89b402cc7b1006c4ea6ceae8bdecf"
+}

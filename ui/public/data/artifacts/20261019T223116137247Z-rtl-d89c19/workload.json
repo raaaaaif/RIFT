@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "capacity_words": 4096,
+  "word_bytes": 4,
+  "masters": 8,
+  "arrival_policy": "saturated_after_accept",
+  "program": {
+    "kind": "ordered_read_segments",
+    "per_master": [
+      {
+        "master": 0,
+        "segments": [
+          {
+            "byte_address": 0,
+            "count": 32
+          }
+        ]
+      },
+      {
+        "master": 1,
+        "segments": [
+          {
+            "byte_address": 4,
+            "count": 32
+          }
+        ]
+      },
+      {
+        "master": 2,
+        "segments": [
+          {
+            "byte_address": 8,
+            "count": 32
+          }
+        ]
+      },
+      {
+        "master": 3,
+        "segments": [
+          {
+            "byte_address": 12,
+            "count": 32
+          }
+        ]
+      },
+      {
+        "master": 4,
+        "segments": [
+          {
+            "byte_address": 16,
+            "count": 32
+          }
+        ]
+      },
+      {
+        "master": 5,
+        "segments": [
+          {
+            "byte_address": 20,
+            "count": 32
+          }
+        ]
+      },
+      {
+        "master": 6,
+        "segments": [
+          {
+            "byte_address": 24,
+            "count": 32
+          }
+        ]
+      },
+      {
+        "master": 7,
+        "segments": [
+          {
+            "byte_address": 32,
+            "count": 8
+          },
+          {
+            "byte_address": 28,
+            "count": 24
+          }
+        ]
+      }
+    ]
+  },
+  "label": "Pattern M (supplied calibration)"
+}

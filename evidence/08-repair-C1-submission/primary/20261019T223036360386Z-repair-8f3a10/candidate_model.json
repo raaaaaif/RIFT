@@ -1,0 +1,28 @@
+{
+  "family": "shared_link",
+  "params": {
+    "links": [
+      [
+        2,
+        2
+      ]
+    ]
+  },
+  "applies_to": [
+    "BFLY4",
+    "BFLY2"
+  ],
+  "contract": {
+    "promise": "RANKING_PRESERVATION",
+    "scope": "candidate repair of bank_only_v1; acceptance decided by the independent verifier",
+    "declared_omissions": [
+      "LFSR-derived priorities (round-robin arbitration)"
+    ]
+  },
+  "provenance": "deterministic structural repair search for case C1_bank_only_omission",
+  "admissible_fast_model": true,
+  "parent_model_id": "bank_only_v1",
+  "parent_model_digest": "sha256:22857c0b9865949dd70bf2883844bcd905305304247835b1b20948b58e10e282",
+  "mechanism": "shared_link [2,2]",
+  "model_id": "repair_C1_bank_only_omission_68fb9e6b"
+}

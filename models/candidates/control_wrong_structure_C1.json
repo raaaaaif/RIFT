@@ -1,0 +1,19 @@
+{
+  "family": "shared_link",
+  "params": {
+    "links": [
+      [
+        8,
+        0
+      ]
+    ]
+  },
+  "applies_to": [
+    "BFLY4",
+    "BFLY2"
+  ],
+  "contract": {
+    "promise": "RANKING_PRESERVATION",
+    "scope": "negative control: wrong structure"
+  }
+}

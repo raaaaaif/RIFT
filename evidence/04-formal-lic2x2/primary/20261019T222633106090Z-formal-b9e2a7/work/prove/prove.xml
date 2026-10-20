@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-19T18:26:36" hostname="MacBook-Pro.local" package="prove" id="0" name="default" tests="23" errors="0" failures="0" time="1" skipped="5">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:105.35-105.66" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:105.35-105.66" id="_witness_.check_643">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:105.35-105.66" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:105.35-105.66" id="_witness_.check_647">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:107.35-107.110" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:107.35-107.110" id="_witness_.check_651">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:107.35-107.110" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:107.35-107.110" id="_witness_.check_659">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:109.7-109.36" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:109.7-109.36" id="_witness_.check_667">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:113.11-114.78" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:113.11-114.78" id="_witness_.check_671">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:113.11-114.78" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:113.11-114.78" id="_witness_.check_683">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:116.35-116.65" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:116.35-116.65" id="_witness_.check_694">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:116.35-116.65" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:116.35-116.65" id="_witness_.check_697">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:118.49-118.91" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:118.49-118.91" id="_witness_.check_700">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:118.49-118.91" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:118.49-118.91" id="_witness_.check_708">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:122.11-122.87" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:122.11-122.87" id="_witness_.check_722">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:122.11-122.87" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:122.11-122.87" id="_witness_.check_735">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:124.7-124.29" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:124.7-124.29" id="_witness_.check_742">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:131.35-131.54" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:131.35-131.54" id="_witness_.check_745">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:131.35-131.54" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:131.35-131.54" id="_witness_.check_748">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:149.7-149.51" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:149.7-149.51" id="_witness_.check_765">
+</testcase>
+<testcase classname="default" name="Property ASSERT in rift_lic2x2_formal at rift_lic2x2_formal.sv:150.7-150.51" time="0" type="ASSERT" location="rift_lic2x2_formal.sv:150.7-150.51" id="_witness_.check_772">
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:157.7-157.29" time="0" type="COVER" location="rift_lic2x2_formal.sv:157.7-157.29" id="_witness_.check_780">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:158.7-158.32" time="0" type="COVER" location="rift_lic2x2_formal.sv:158.7-158.32" id="_witness_.check_783">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:159.7-159.83" time="0" type="COVER" location="rift_lic2x2_formal.sv:159.7-159.83" id="_witness_.check_786">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:160.7-160.65" time="0" type="COVER" location="rift_lic2x2_formal.sv:160.7-160.65" id="_witness_.check_793">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in rift_lic2x2_formal at rift_lic2x2_formal.sv:161.7-161.36" time="0" type="COVER" location="rift_lic2x2_formal.sv:161.7-161.36" id="_witness_.check_805">
+<skipped />
+</testcase>
+<system-out>SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Removing directory '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/cf_math_pkg.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/cf_math_pkg.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/lzc.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/lzc.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/rr_arb_tree.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/rr_arb_tree.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/common_cells/src/lfsr.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/lfsr.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect_pkg.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/tcdm_interconnect_pkg.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/addr_dec_resp_mux.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/addr_dec_resp_mux.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/xbar.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/xbar.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/clos_net.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/clos_net.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/bfly_net.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/bfly_net.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/vendor/cluster_interconnect/rtl/tcdm_interconnect/tcdm_interconnect.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/tcdm_interconnect.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/rtl_wrapper/rift_tcdm_top.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/rift_tcdm_top.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] Copy '/Users/raaifbokhari/Desktop/RIFT/formal/rift_lic2x2_formal.sv' to '/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src/rift_lic2x2_formal.sv'.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0: smtbmc yices
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] base: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] base: finished (returncode=0)
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] prep: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] prep: finished (returncode=0)
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] smt2: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] smt2: finished (returncode=0)
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove; yosys-smtbmc -s yices --presat --unroll --noprogress -t 16  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.induction: starting process &quot;cd /Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove; yosys-smtbmc -s yices --presat --unroll -i --noprogress -t 16  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2&quot;
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Solver: yices
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.induction: ##   0:00:00  Solver: yices
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.induction: ##   0:00:00  Trying induction in step 16..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.induction: ##   0:00:00  Trying induction in step 15..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.induction: ##   0:00:00  Temporal induction successful.
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.induction: ##   0:00:00  Status: passed
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.induction: finished (returncode=0)
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.induction: Status returned by engine for induction: pass
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
+SBY 18:26:35 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 14..
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 14..
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 15..
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 15..
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: ##   0:00:01  Status: passed
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: finished (returncode=0)
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] engine_0.basecase: Status returned by engine for basecase: pass
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] summary: engine_0 (smtbmc yices) returned pass for basecase
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] summary: engine_0 (smtbmc yices) returned pass for induction
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] summary: engine_0 did not produce any traces
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] summary: successful proof by k-induction.
+SBY 18:26:36 [/Users/raaifbokhari/Desktop/RIFT/artifacts/studies/20261019T222633106090Z-formal-b9e2a7/work/prove] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,37 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\clk_i"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\add_i"], "width": 64, "offset": 0, "init_only": false},
+    {"path": ["\\be_i"], "width": 8, "offset": 0, "init_only": false},
+    {"path": ["\\clk_i"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\gnt_i"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\rdata_i"], "width": 64, "offset": 0, "init_only": false},
+    {"path": ["\\req_i"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\rst_ni"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\wdata_i"], "width": 64, "offset": 0, "init_only": false},
+    {"path": ["\\wen_i"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyinit_driver_dut_i_tcdm_gen_lic_i_xbar_gen_inputs_0__i_addr_dec_resp_mux_vld_q"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_dut_i_tcdm_gen_lic_i_xbar_gen_inputs_1__i_addr_dec_resp_mux_vld_q"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_dut_i_tcdm_gen_lic_i_xbar_gen_outputs_0__gen_rr_arb_tree_i_rr_arb_tree_gen_arbiter_gen_int_rr_gen_lock_lock_q"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_dut_i_tcdm_gen_lic_i_xbar_gen_outputs_0__gen_rr_arb_tree_i_rr_arb_tree_gen_arbiter_gen_int_rr_gen_lock_req_q"], "width": 2, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_dut_i_tcdm_gen_lic_i_xbar_gen_outputs_0__gen_rr_arb_tree_i_rr_arb_tree_gen_arbiter_rr_q"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_dut_i_tcdm_gen_lic_i_xbar_gen_outputs_1__gen_rr_arb_tree_i_rr_arb_tree_gen_arbiter_gen_int_rr_gen_lock_lock_q"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_dut_i_tcdm_gen_lic_i_xbar_gen_outputs_1__gen_rr_arb_tree_i_rr_arb_tree_gen_arbiter_gen_int_rr_gen_lock_req_q"], "width": 2, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_dut_i_tcdm_gen_lic_i_xbar_gen_outputs_1__gen_rr_arb_tree_i_rr_arb_tree_gen_arbiter_rr_q"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\add_q", "\\[0]"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\add_q", "\\[1]"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\gnt_q", "\\[0]"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\gnt_q", "\\[1]"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\req_q", "\\[0]"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\req_q", "\\[1]"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\rst_q"], "width": 1, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "00000100000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111110000000000000000000000000000000000000000000000000000000000000000"},
+    {"bits": "0000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000000000000000000000100111111110000000000000000000000000000000000000000000000000000000000000000"}
+  ]
+}

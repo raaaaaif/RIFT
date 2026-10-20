@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "kind": "comparison",
+  "status": "VALID_NO_REVERSAL",
+  "workload_digest": "sha256:0309a37900fabd572266f2d22beadc7b75c57e024461d42591ea131b28dd88f7",
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "provenance": "SUPPLIED_CALIBRATION",
+  "scope": "INSTRUMENT_TEST",
+  "observation_role": "INDEPENDENT_EVALUATOR_RESULT",
+  "evidence_basis": "EXECUTED_ARTIFACT",
+  "tags": [
+    "gate0c",
+    "phase0",
+    "phase0-patterns-v1"
+  ],
+  "run_id": "20261019T222632903290Z-comparison-b13c1c",
+  "artifacts": {
+    "comparison.json": {
+      "sha256": "sha256:06b4c2358bf939b28d02cff9b80fc2a7b22fda2e7745efe69a135006f64e75f4",
+      "bytes": 3180
+    },
+    "workload.json": {
+      "sha256": "sha256:4f99755038cad2f3e1b120186732a2b78a074aa6e34c24d90e331d0f480de3e0",
+      "bytes": 361
+    }
+  },
+  "manifest_digest": "sha256:91fcbb420cb7a4e6fa34fdc6cb750d4562e65ecaa38d23590910c9045c2114a2"
+}

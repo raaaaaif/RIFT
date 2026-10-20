@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "kind": "gate0a",
+  "status": "PASSED",
+  "reference_epoch": "epoch-dfa3739b2a85",
+  "tags": [
+    "gate0a"
+  ],
+  "run_id": "20261019T222632386466Z-gate0a-d8055c",
+  "artifacts": {
+    "gate0a_report.json": {
+      "sha256": "sha256:f427f54967d2aaafe76f347f915a76e486286375f7dce4b84095d754914e18f7",
+      "bytes": 8995
+    }
+  },
+  "manifest_digest": "sha256:b68c030ed83454f8c373b4eb23ec6dd0d4f400f3a3cf7808ac1ad15184d8b09c"
+}

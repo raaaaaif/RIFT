@@ -1,0 +1,464 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.70+145 (git sha1 a31d95ea0, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing SLANG frontend.
+Top level design units:
+    rift_lic2x2_formal
+
+
+Build succeeded: 0 errors, 0 warnings
+
+1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\rift_lic2x2_formal.$638'.
+Removing empty process `rift_lic2x2_formal.$568'.
+Removing empty process `rift_lic2x2_formal.$559'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$540'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$376'.
+Removing empty process `rift_lic2x2_formal.$371'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$265'.
+Removing empty process `rift_lic2x2_formal.$244'.
+Removing empty process `rift_lic2x2_formal.$227'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$215'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$211'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$170'.
+Removing empty process `rift_lic2x2_formal.$149'.
+Removing empty process `rift_lic2x2_formal.$132'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$120'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$116'.
+Removing empty process `rift_lic2x2_formal.$86'.
+Removing empty process `rift_lic2x2_formal.$71'.
+Removing empty process `rift_lic2x2_formal.$49'.
+Removing empty process `rift_lic2x2_formal.$34'.
+Cleaned up 10 empty switches.
+
+1.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $215 in module rift_lic2x2_formal.
+Marked 1 switch rules as full_case in process $211 in module rift_lic2x2_formal.
+Marked 1 switch rules as full_case in process $170 in module rift_lic2x2_formal.
+Marked 1 switch rules as full_case in process $120 in module rift_lic2x2_formal.
+Marked 1 switch rules as full_case in process $116 in module rift_lic2x2_formal.
+Marked 36 switch rules as full_case in process $376 in module rift_lic2x2_formal.
+Marked 3 switch rules as full_case in process $638 in module rift_lic2x2_formal.
+Marked 1 switch rules as full_case in process $265 in module rift_lic2x2_formal.
+Marked 2 switch rules as full_case in process $572 in module rift_lic2x2_formal.
+Removed a total of 0 dead cases.
+
+1.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 16 redundant assignments.
+Promoted 6 assignments to connections.
+
+1.4. Executing PROC_INIT pass (extract init attributes).
+
+1.5. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~98 debug messages>
+
+1.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\rift_lic2x2_formal.$779'.
+     1/5: $806
+     2/5: $794
+     3/5: $787
+     4/5: $784
+     5/5: $781
+Creating decoders for process `\rift_lic2x2_formal.$215'.
+     1/1: $dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.req_q$218
+Creating decoders for process `\rift_lic2x2_formal.$211'.
+     1/1: $dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_q$214
+Creating decoders for process `\rift_lic2x2_formal.$170'.
+     1/1: $dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.rr_q$173
+Creating decoders for process `\rift_lic2x2_formal.$764'.
+     1/2: $773
+     2/2: $766
+Creating decoders for process `\rift_lic2x2_formal.$540'.
+Creating decoders for process `\rift_lic2x2_formal.$120'.
+     1/1: $dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.req_q$123
+Creating decoders for process `\rift_lic2x2_formal.$116'.
+     1/1: $dut.i_tcdm.gen_lic.i_xbar.gen_outputs[0].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.gen_int_rr.gen_lock.lock_q$119
+Creating decoders for process `\rift_lic2x2_formal.$376'.
+     1/37: $dut.m_conserve$518
+     2/37: $dut.m_work$516
+     3/37: $dut.m_spur$511
+     4/37: $dut.m_payload$508
+     5/37: $dut.n_acc_bank$504
+     6/37: $dut.m_single$501
+     7/37: $dut.requested_v6$499
+     8/37: $dut.requested$496
+     9/37: $dut.n_hits5$493
+    10/37: $dut.n_match$488
+    11/37: $dut.n_hits1$478
+    12/37: $dut.requested_v6$474
+    13/37: $dut.requested$471
+    14/37: $dut.n_hits5$468
+    15/37: $dut.n_match$464
+    16/37: $dut.n_hits1$455
+    17/37: $dut.m_work$452
+    18/37: $dut.m_spur$447
+    19/37: $dut.m_payload$444
+    20/37: $dut.n_acc_bank$440
+    21/37: $dut.m_single$438
+    22/37: $dut.requested_v6$436
+    23/37: $dut.requested$433
+    24/37: $dut.n_hits5$430
+    25/37: $dut.n_match$425
+    26/37: $dut.n_hits1$415
+    27/37: $dut.requested_v6$411
+    28/37: $dut.requested$408
+    29/37: $dut.n_hits5$405
+    30/37: $dut.n_match$401
+    31/37: $dut.n_hits1$392
+    32/37: $dut.m_resp$389
+    33/37: $dut.n_acc_in$387
+    34/37: $dut.m_gnt_req$385
+    35/37: $dut.m_resp$382
+    36/37: $dut.n_acc_in$380
+    37/37: $dut.m_gnt_req$379
+Creating decoders for process `\rift_lic2x2_formal.$638'.
+     1/16: $749
+     2/16: $746
+     3/16: $743
+     4/16: $736
+     5/16: $723
+     6/16: $709
+     7/16: $701
+     8/16: $698
+     9/16: $695
+    10/16: $684
+    11/16: $672
+    12/16: $668
+    13/16: $660
+    14/16: $652
+    15/16: $648
+    16/16: $644
+Creating decoders for process `\rift_lic2x2_formal.$265'.
+     1/1: $dut.i_tcdm.gen_lic.i_xbar.gen_outputs[1].gen_rr_arb_tree.i_rr_arb_tree.gen_arbiter.rr_q$268
+Creating decoders for process `\rift_lic2x2_formal.$572'.
+     1/10: $615
+     2/10: $610
+     3/10: $586
+     4/10: $581
+     5/10: $633
+     6/10: $621
+     7/10: $604
+     8/10: $592
+     9/10: $579
+    10/10: $574
+
+1.7. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$779'.
+Removing empty process `rift_lic2x2_formal.$779'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$215'.
+Removing empty process `rift_lic2x2_formal.$215'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$211'.
+Removing empty process `rift_lic2x2_formal.$211'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$170'.
+Removing empty process `rift_lic2x2_formal.$170'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$764'.
+Removing empty process `rift_lic2x2_formal.$764'.
+Removing empty process `rift_lic2x2_formal.$540'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$120'.
+Removing empty process `rift_lic2x2_formal.$120'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$116'.
+Removing empty process `rift_lic2x2_formal.$116'.
+Found and cleaned up 73 empty switches in `\rift_lic2x2_formal.$376'.
+Removing empty process `rift_lic2x2_formal.$376'.
+Found and cleaned up 9 empty switches in `\rift_lic2x2_formal.$638'.
+Removing empty process `rift_lic2x2_formal.$638'.
+Found and cleaned up 1 empty switch in `\rift_lic2x2_formal.$265'.
+Removing empty process `rift_lic2x2_formal.$265'.
+Found and cleaned up 8 empty switches in `\rift_lic2x2_formal.$572'.
+Removing empty process `rift_lic2x2_formal.$572'.
+Cleaned up 98 empty switches.
+
+1.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rift_lic2x2_formal.
+<suppressed ~78 debug messages>
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \rift_lic2x2_formal
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \rift_lic2x2_formal
+Removed 0 unused modules.
+Module rift_lic2x2_formal directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rift_lic2x2_formal.
+
+2.3. Executing FUTURE pass.
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rift_lic2x2_formal.
+
+2.5. Executing CHECK pass (checking for obvious problems).
+Checking module rift_lic2x2_formal...
+Found and reported 0 problems.
+
+2.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+Removed 38 unused cells and 318 unused wires.
+<suppressed ~310 debug messages>
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rift_lic2x2_formal.
+<suppressed ~23 debug messages>
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rift_lic2x2_formal'.
+Computing hashes of 423 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Computing hashes of 369 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Computing hashes of 353 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Computing hashes of 348 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Computing hashes of 347 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+<suppressed ~228 debug messages>
+Removed a total of 76 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rift_lic2x2_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~149 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rift_lic2x2_formal.
+  Optimizing cells in module \rift_lic2x2_formal.
+Performed a total of 4 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rift_lic2x2_formal'.
+Computing hashes of 347 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Computing hashes of 328 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Computing hashes of 326 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+<suppressed ~63 debug messages>
+Removed a total of 21 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+Removed 2 unused cells and 107 unused wires.
+<suppressed ~7 debug messages>
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rift_lic2x2_formal.
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rift_lic2x2_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~115 debug messages>
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rift_lic2x2_formal.
+Performed a total of 0 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rift_lic2x2_formal'.
+Computing hashes of 324 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Removed a total of 0 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rift_lic2x2_formal.
+
+2.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$801 (gnt_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$635 (add_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$629 (gnt_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$626 (req_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$798 (req_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$606 (add_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$558 (add_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$555 (gnt_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$552 (req_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$549 (add_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$546 (gnt_q).
+Removed top 31 address bits (of 32) from memory init port rift_lic2x2_formal.$543 (req_q).
+Removed top 31 bits (of 32) from port A of cell rift_lic2x2_formal.$126 ($gt).
+Removed top 31 bits (of 32) from port B of cell rift_lic2x2_formal.$126 ($gt).
+Removed top 31 bits (of 32) from port A of cell rift_lic2x2_formal.$221 ($gt).
+Removed top 31 bits (of 32) from port B of cell rift_lic2x2_formal.$221 ($gt).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$386 ($add).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$414 ($add).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$424 ($add).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$429 ($add).
+Removed top 31 bits (of 32) from port B of cell rift_lic2x2_formal.$437 ($gt).
+Removed top 31 bits (of 32) from port B of cell rift_lic2x2_formal.$442 ($ne).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$477 ($add).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$487 ($add).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$492 ($add).
+Removed top 31 bits (of 32) from port B of cell rift_lic2x2_formal.$500 ($gt).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$503 ($add).
+Removed top 31 bits (of 32) from port B of cell rift_lic2x2_formal.$506 ($ne).
+Removed top 1 bits (of 8) from mux cell rift_lic2x2_formal.$520 ($mux).
+Removed top 17 bits (of 32) from port B of cell rift_lic2x2_formal.$582 ($lt).
+Removed top 17 bits (of 32) from port B of cell rift_lic2x2_formal.$611 ($lt).
+Removed top 1 bits (of 2) from port A of cell rift_lic2x2_formal.$639 ($add).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$639 ($add).
+Removed top 1 bits (of 2) from port A of cell rift_lic2x2_formal.$642 ($add).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$642 ($add).
+Removed top 1 bits (of 2) from port A of cell rift_lic2x2_formal.$702 ($not).
+Removed top 1 bits (of 2) from port A of cell rift_lic2x2_formal.$710 ($not).
+Removed top 1 bits (of 2) from port B of cell rift_lic2x2_formal.$791 ($eq).
+Removed top 31 bits (of 32) from mux cell rift_lic2x2_formal.$procmux$70 ($mux).
+Removed top 31 bits (of 32) from mux cell rift_lic2x2_formal.$procmux$73 ($mux).
+Removed top 31 bits (of 32) from mux cell rift_lic2x2_formal.$procmux$76 ($mux).
+Removed top 31 bits (of 32) from mux cell rift_lic2x2_formal.$procmux$88 ($mux).
+Removed top 31 bits (of 32) from mux cell rift_lic2x2_formal.$procmux$115 ($mux).
+Removed top 31 bits (of 32) from mux cell rift_lic2x2_formal.$procmux$118 ($mux).
+Removed top 31 bits (of 32) from mux cell rift_lic2x2_formal.$procmux$121 ($mux).
+Removed top 31 bits (of 32) from mux cell rift_lic2x2_formal.$procmux$136 ($mux).
+Removed top 31 bits (of 32) from wire rift_lic2x2_formal.$dut.n_hits1$455.
+Removed top 31 bits (of 32) from wire rift_lic2x2_formal.$dut.n_acc_bank$440.
+Removed top 31 bits (of 32) from wire rift_lic2x2_formal.$dut.n_hits5$405.
+Removed top 31 bits (of 32) from wire rift_lic2x2_formal.$dut.n_match$401.
+Removed top 31 bits (of 32) from wire rift_lic2x2_formal.$dut.n_hits1$392.
+Removed top 31 bits (of 32) from wire rift_lic2x2_formal.$dut.n_acc_in$380.
+Removed top 31 bits (of 32) from wire rift_lic2x2_formal.$dut.n_hits5$468.
+Removed top 31 bits (of 32) from wire rift_lic2x2_formal.$dut.n_match$464.
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~1 debug messages>
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rift_lic2x2_formal.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rift_lic2x2_formal'.
+Computing hashes of 315 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+Computing hashes of 314 cells of `\rift_lic2x2_formal'.
+Finding duplicate cells in `\rift_lic2x2_formal'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rift_lic2x2_formal..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Executing SORT pass.
+
+2.13. Printing statistics.
+
+=== rift_lic2x2_formal ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      461 wires
+     4663 wire bits
+      244 public wires
+     3599 public wire bits
+        9 ports
+      208 port bits
+      314 cells
+       10   $add
+       15   $aldff
+       23   $and
+       33   $check
+        2   $demux
+        2   $dff
+       23   $eq
+        2   $ge
+        4   $gt
+       63   $logic_and
+       25   $logic_not
+       10   $logic_or
+        2   $lt
+        3   $mem_v2
+       71   $mux
+        5   $ne
+       15   $not
+        4   $or
+        2   $reduce_or
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module rift_lic2x2_formal...
+Found and reported 0 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `rift_lic2x2_formal'. Setting top module to rift_lic2x2_formal.
+
+3.1. Analyzing design hierarchy..
+Top module:  \rift_lic2x2_formal
+
+3.2. Analyzing design hierarchy..
+Top module:  \rift_lic2x2_formal
+Removed 0 unused modules.
+Module rift_lic2x2_formal directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing jny backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: bfd0080dca, time: 0.07s, user: 0.06s, system: 0.02s, MEM: 30.17 MB peak
+Yosys 0.70+145 (git sha1 a31d95ea0, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 23% 2x read_slang (0 sec), 18% 5x opt_clean (0 sec), ...
