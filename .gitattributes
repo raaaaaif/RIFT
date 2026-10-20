@@ -1,0 +1,5 @@
+# Recorded exports and compiler output remain available as evidence.
+# Exclude these generated copies from source-language statistics and default diffs.
+evidence/** linguist-generated=true
+ui/public/data/** linguist-generated=true
+ui/public/browser/** linguist-generated=true
